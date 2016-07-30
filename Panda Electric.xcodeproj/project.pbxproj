@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CF452973C4DB707252C73B3 /* Pods_Panda_ElectricUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7312525C16C8780588FE751D /* Pods_Panda_ElectricUITests.framework */; };
 		3B6CB70A1D4C9F95005C40D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7091D4C9F95005C40D8 /* AppDelegate.swift */; };
 		3B6CB70C1D4C9F95005C40D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB70B1D4C9F95005C40D8 /* ViewController.swift */; };
 		3B6CB70E1D4C9F95005C40D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB70D1D4C9F95005C40D8 /* Assets.xcassets */; };
 		3B6CB7111D4C9F95005C40D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB70F1D4C9F95005C40D8 /* Main.storyboard */; };
 		3B6CB71C1D4C9F95005C40D8 /* Panda_ElectricTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB71B1D4C9F95005C40D8 /* Panda_ElectricTests.swift */; };
 		3B6CB7271D4C9F95005C40D8 /* Panda_ElectricUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7261D4C9F95005C40D8 /* Panda_ElectricUITests.swift */; };
+		5063DEF9C8A8D694AD9B4B0C /* Pods_Panda_Electric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA6B77A1F457FCB3BB2E131 /* Pods_Panda_Electric.framework */; };
+		AF7648609DC4FB073F11EE1C /* Pods_Panda_ElectricTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964294233A3500784D9FEF85 /* Pods_Panda_ElectricTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E3D1656464D2EC6D974CA53 /* Pods-Panda ElectricUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda ElectricUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FA6B77A1F457FCB3BB2E131 /* Pods_Panda_Electric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Electric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6CB7061D4C9F95005C40D8 /* Panda Electric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Panda Electric.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6CB7091D4C9F95005C40D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B6CB70B1D4C9F95005C40D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +50,13 @@
 		3B6CB7221D4C9F95005C40D8 /* Panda ElectricUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda ElectricUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6CB7261D4C9F95005C40D8 /* Panda_ElectricUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_ElectricUITests.swift; sourceTree = "<group>"; };
 		3B6CB7281D4C9F95005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45FE0F13109E1EC7B754F807 /* Pods-Panda Electric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric.release.xcconfig"; sourceTree = "<group>"; };
+		53AEC92FE233781D8161380D /* Pods-Panda Electric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric.debug.xcconfig"; sourceTree = "<group>"; };
+		7312525C16C8780588FE751D /* Pods_Panda_ElectricUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_ElectricUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B25DFE3C5C2562EC32E09F /* Pods-Panda ElectricTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda ElectricTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8456FF23D1E8D35D317C0F5D /* Pods-Panda ElectricUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda ElectricUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests.release.xcconfig"; sourceTree = "<group>"; };
+		964294233A3500784D9FEF85 /* Pods_Panda_ElectricTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_ElectricTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7061EF3B932DCE4AC7434E8 /* Pods-Panda ElectricTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda ElectricTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5063DEF9C8A8D694AD9B4B0C /* Pods_Panda_Electric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7648609DC4FB073F11EE1C /* Pods_Panda_ElectricTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +80,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF452973C4DB707252C73B3 /* Pods_Panda_ElectricUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04FD9486AF2DD9A95995812E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FA6B77A1F457FCB3BB2E131 /* Pods_Panda_Electric.framework */,
+				964294233A3500784D9FEF85 /* Pods_Panda_ElectricTests.framework */,
+				7312525C16C8780588FE751D /* Pods_Panda_ElectricUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B6CB6FD1D4C9F95005C40D8 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +104,8 @@
 				3B6CB71A1D4C9F95005C40D8 /* Panda ElectricTests */,
 				3B6CB7251D4C9F95005C40D8 /* Panda ElectricUITests */,
 				3B6CB7071D4C9F95005C40D8 /* Products */,
+				5DD194CE7FECB3E4816DFA26 /* Pods */,
+				04FD9486AF2DD9A95995812E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +149,19 @@
 			path = "Panda ElectricUITests";
 			sourceTree = "<group>";
 		};
+		5DD194CE7FECB3E4816DFA26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53AEC92FE233781D8161380D /* Pods-Panda Electric.debug.xcconfig */,
+				45FE0F13109E1EC7B754F807 /* Pods-Panda Electric.release.xcconfig */,
+				75B25DFE3C5C2562EC32E09F /* Pods-Panda ElectricTests.debug.xcconfig */,
+				B7061EF3B932DCE4AC7434E8 /* Pods-Panda ElectricTests.release.xcconfig */,
+				0E3D1656464D2EC6D974CA53 /* Pods-Panda ElectricUITests.debug.xcconfig */,
+				8456FF23D1E8D35D317C0F5D /* Pods-Panda ElectricUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB72B1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric" */;
 			buildPhases = (
+				3D806333C817227002597715 /* [CP] Check Pods Manifest.lock */,
 				3B6CB7021D4C9F95005C40D8 /* Sources */,
 				3B6CB7031D4C9F95005C40D8 /* Frameworks */,
 				3B6CB7041D4C9F95005C40D8 /* Resources */,
+				EF729FA7650A2F97C139F265 /* [CP] Embed Pods Frameworks */,
+				719D16F07C044787A7F36D82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB72E1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricTests" */;
 			buildPhases = (
+				5BCD8B085D7E53820A491239 /* [CP] Check Pods Manifest.lock */,
 				3B6CB7131D4C9F95005C40D8 /* Sources */,
 				3B6CB7141D4C9F95005C40D8 /* Frameworks */,
 				3B6CB7151D4C9F95005C40D8 /* Resources */,
+				6CDAA6C9E7416B8B99495329 /* [CP] Embed Pods Frameworks */,
+				9848321D85063DBC94709095 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB7311D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricUITests" */;
 			buildPhases = (
+				6DA57A37643FC7BE4FE8488D /* [CP] Check Pods Manifest.lock */,
 				3B6CB71E1D4C9F95005C40D8 /* Sources */,
 				3B6CB71F1D4C9F95005C40D8 /* Frameworks */,
 				3B6CB7201D4C9F95005C40D8 /* Resources */,
+				44FE4AC6DE293523D4F466A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +294,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D806333C817227002597715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		44FE4AC6DE293523D4F466A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BCD8B085D7E53820A491239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CDAA6C9E7416B8B99495329 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA57A37643FC7BE4FE8488D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		719D16F07C044787A7F36D82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9848321D85063DBC94709095 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF729FA7650A2F97C139F265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B6CB7021D4C9F95005C40D8 /* Sources */ = {
@@ -384,6 +555,7 @@
 		};
 		3B6CB72C1D4C9F95005C40D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53AEC92FE233781D8161380D /* Pods-Panda Electric.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -396,6 +568,7 @@
 		};
 		3B6CB72D1D4C9F95005C40D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45FE0F13109E1EC7B754F807 /* Pods-Panda Electric.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -408,6 +581,7 @@
 		};
 		3B6CB72F1D4C9F95005C40D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B25DFE3C5C2562EC32E09F /* Pods-Panda ElectricTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -421,6 +595,7 @@
 		};
 		3B6CB7301D4C9F95005C40D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7061EF3B932DCE4AC7434E8 /* Pods-Panda ElectricTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -434,6 +609,7 @@
 		};
 		3B6CB7321D4C9F95005C40D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3D1656464D2EC6D974CA53 /* Pods-Panda ElectricUITests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Panda ElectricUITests/Info.plist";
@@ -446,6 +622,7 @@
 		};
 		3B6CB7331D4C9F95005C40D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8456FF23D1E8D35D317C0F5D /* Pods-Panda ElectricUITests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Panda ElectricUITests/Info.plist";
@@ -475,6 +652,7 @@
 				3B6CB72D1D4C9F95005C40D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B6CB72E1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +661,7 @@
 				3B6CB7301D4C9F95005C40D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B6CB7311D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +670,7 @@
 				3B6CB7331D4C9F95005C40D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
