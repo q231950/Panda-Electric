@@ -33,6 +33,27 @@
 			remoteGlobalIDString = 3B6CB7051D4C9F95005C40D8;
 			remoteInfo = "Panda Electric";
 		};
+		3B6CB7761D4CAAAB005C40D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6CB7701D4CAAAA005C40D8 /* Panda Electric Mobile.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3B6CB73D1D4CAAA9005C40D8;
+			remoteInfo = "Panda Electric Mobile";
+		};
+		3B6CB7781D4CAAAB005C40D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6CB7701D4CAAAA005C40D8 /* Panda Electric Mobile.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3B6CB7531D4CAAA9005C40D8;
+			remoteInfo = "Panda Electric MobileTests";
+		};
+		3B6CB77A1D4CAAAB005C40D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6CB7701D4CAAAA005C40D8 /* Panda Electric Mobile.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3B6CB75E1D4CAAAA005C40D8;
+			remoteInfo = "Panda Electric MobileUITests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +71,7 @@
 		3B6CB7221D4C9F95005C40D8 /* Panda ElectricUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda ElectricUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6CB7261D4C9F95005C40D8 /* Panda_ElectricUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_ElectricUITests.swift; sourceTree = "<group>"; };
 		3B6CB7281D4C9F95005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6CB7701D4CAAAA005C40D8 /* Panda Electric Mobile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Panda Electric Mobile.xcodeproj"; path = "Panda Electric Mobile/Panda Electric Mobile.xcodeproj"; sourceTree = "<group>"; };
 		45FE0F13109E1EC7B754F807 /* Pods-Panda Electric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric.release.xcconfig"; sourceTree = "<group>"; };
 		53AEC92FE233781D8161380D /* Pods-Panda Electric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric.debug.xcconfig"; sourceTree = "<group>"; };
 		7312525C16C8780588FE751D /* Pods_Panda_ElectricUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_ElectricUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +122,7 @@
 		3B6CB6FD1D4C9F95005C40D8 = {
 			isa = PBXGroup;
 			children = (
+				3B6CB7701D4CAAAA005C40D8 /* Panda Electric Mobile.xcodeproj */,
 				3B6CB7081D4C9F95005C40D8 /* Panda Electric */,
 				3B6CB71A1D4C9F95005C40D8 /* Panda ElectricTests */,
 				3B6CB7251D4C9F95005C40D8 /* Panda ElectricUITests */,
@@ -147,6 +170,16 @@
 				3B6CB7281D4C9F95005C40D8 /* Info.plist */,
 			);
 			path = "Panda ElectricUITests";
+			sourceTree = "<group>";
+		};
+		3B6CB7711D4CAAAA005C40D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7771D4CAAAB005C40D8 /* Panda Electric Mobile.app */,
+				3B6CB7791D4CAAAB005C40D8 /* Panda Electric MobileTests.xctest */,
+				3B6CB77B1D4CAAAB005C40D8 /* Panda Electric MobileUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5DD194CE7FECB3E4816DFA26 /* Pods */ = {
@@ -260,6 +293,12 @@
 			mainGroup = 3B6CB6FD1D4C9F95005C40D8;
 			productRefGroup = 3B6CB7071D4C9F95005C40D8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3B6CB7711D4CAAAA005C40D8 /* Products */;
+					ProjectRef = 3B6CB7701D4CAAAA005C40D8 /* Panda Electric Mobile.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3B6CB7051D4C9F95005C40D8 /* Panda Electric */,
@@ -268,6 +307,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3B6CB7771D4CAAAB005C40D8 /* Panda Electric Mobile.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Panda Electric Mobile.app";
+			remoteRef = 3B6CB7761D4CAAAB005C40D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B6CB7791D4CAAAB005C40D8 /* Panda Electric MobileTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Panda Electric MobileTests.xctest";
+			remoteRef = 3B6CB7781D4CAAAB005C40D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B6CB77B1D4CAAAB005C40D8 /* Panda Electric MobileUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Panda Electric MobileUITests.xctest";
+			remoteRef = 3B6CB77A1D4CAAAB005C40D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3B6CB7041D4C9F95005C40D8 /* Resources */ = {
