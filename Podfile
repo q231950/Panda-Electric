@@ -1,21 +1,34 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Panda Electric' do
-  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+abstract_target 'Pandas' do
   use_frameworks!
-
-  # Pods for Panda Electric
   pod 'Birdsong', :git => 'https://github.com/sjrmanning/Birdsong.git'
 
-  target 'Panda ElectricTests' do
-    inherit! :search_paths
-    # Pods for testing
+  target 'Panda Electric' do
+    project 'Panda Electric.xcodeproj'
+    workspace 'Panda Electric.xcworkspace'
+    platform :osx, '10.10'
+
+    # Pods for Panda Electric
+
+    target 'Panda ElectricTests' do
+      inherit! :search_paths
+      # Pods for testing
+    end
+
+    target 'Panda ElectricUITests' do
+      inherit! :search_paths
+      # Pods for testing
+    end
+
   end
 
-  target 'Panda ElectricUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  target 'Panda Electric Mobile' do
+      platform :ios, '9.0'
+      project 'Panda Electric Mobile.xcodeproj'
+      workspace 'Panda Electric Mobile.xcworkspace'
 
+      # Pods for Panda Electric Mobile
+  end
 end

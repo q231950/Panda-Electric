@@ -4,50 +4,70 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Birdsong.xcscheme</key>
+		<key>Birdsong-OSX.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
-		<key>Pods-Panda Electric.xcscheme</key>
+		<key>Birdsong-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-Panda ElectricTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods-Panda ElectricUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
-		<key>Starscream.xcscheme</key>
+		<key>Pods-Pandas-Panda Electric Mobile.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
+		</dict>
+		<key>Pods-Pandas-Panda Electric.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Starscream-OSX.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Starscream-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3616DC923A3F89288BBEF44DE825E013</key>
+		<key>571A83EE50CA1CAD6908C2365B26A628</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C9E4011F3DEF0B7424D3F51BB2811B3</key>
+		<key>581BEA68852C18BAC57C5DE3C41EA61C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88302DA9D881B4BEB65F0BEA630BE2D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D6C6E2FA149C6543F39302F31C224D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B672C0B5760A9F98A7049BBF0DE4D6A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE82259053172FA481EA9959A9590079</key>
+		<key>D1860EFBEDAB72B79AF4F843E5BB46E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

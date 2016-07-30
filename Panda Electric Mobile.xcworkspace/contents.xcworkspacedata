@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Panda Electric.xcodeproj">
+      location = "group:Panda Electric Mobile.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Panda Electric Mobile.xcodeproj">
+      location = "group:Panda Electric.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
