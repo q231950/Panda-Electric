@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B6CB70A1D4C9F95005C40D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7091D4C9F95005C40D8 /* AppDelegate.swift */; };
+		3B6CB70C1D4C9F95005C40D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB70B1D4C9F95005C40D8 /* ViewController.swift */; };
+		3B6CB70E1D4C9F95005C40D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB70D1D4C9F95005C40D8 /* Assets.xcassets */; };
+		3B6CB7111D4C9F95005C40D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB70F1D4C9F95005C40D8 /* Main.storyboard */; };
+		3B6CB71C1D4C9F95005C40D8 /* Panda_ElectricTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB71B1D4C9F95005C40D8 /* Panda_ElectricTests.swift */; };
+		3B6CB7271D4C9F95005C40D8 /* Panda_ElectricUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7261D4C9F95005C40D8 /* Panda_ElectricUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B6CB7181D4C9F95005C40D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6CB6FE1D4C9F95005C40D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6CB7051D4C9F95005C40D8;
+			remoteInfo = "Panda Electric";
+		};
+		3B6CB7231D4C9F95005C40D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6CB6FE1D4C9F95005C40D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6CB7051D4C9F95005C40D8;
+			remoteInfo = "Panda Electric";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B6CB7061D4C9F95005C40D8 /* Panda Electric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Panda Electric.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6CB7091D4C9F95005C40D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B6CB70B1D4C9F95005C40D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B6CB70D1D4C9F95005C40D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B6CB7101D4C9F95005C40D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B6CB7121D4C9F95005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6CB7171D4C9F95005C40D8 /* Panda ElectricTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda ElectricTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6CB71B1D4C9F95005C40D8 /* Panda_ElectricTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_ElectricTests.swift; sourceTree = "<group>"; };
+		3B6CB71D1D4C9F95005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6CB7221D4C9F95005C40D8 /* Panda ElectricUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda ElectricUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6CB7261D4C9F95005C40D8 /* Panda_ElectricUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_ElectricUITests.swift; sourceTree = "<group>"; };
+		3B6CB7281D4C9F95005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B6CB7031D4C9F95005C40D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB7141D4C9F95005C40D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB71F1D4C9F95005C40D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B6CB6FD1D4C9F95005C40D8 = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7081D4C9F95005C40D8 /* Panda Electric */,
+				3B6CB71A1D4C9F95005C40D8 /* Panda ElectricTests */,
+				3B6CB7251D4C9F95005C40D8 /* Panda ElectricUITests */,
+				3B6CB7071D4C9F95005C40D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B6CB7071D4C9F95005C40D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7061D4C9F95005C40D8 /* Panda Electric.app */,
+				3B6CB7171D4C9F95005C40D8 /* Panda ElectricTests.xctest */,
+				3B6CB7221D4C9F95005C40D8 /* Panda ElectricUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B6CB7081D4C9F95005C40D8 /* Panda Electric */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7091D4C9F95005C40D8 /* AppDelegate.swift */,
+				3B6CB70B1D4C9F95005C40D8 /* ViewController.swift */,
+				3B6CB70D1D4C9F95005C40D8 /* Assets.xcassets */,
+				3B6CB70F1D4C9F95005C40D8 /* Main.storyboard */,
+				3B6CB7121D4C9F95005C40D8 /* Info.plist */,
+			);
+			path = "Panda Electric";
+			sourceTree = "<group>";
+		};
+		3B6CB71A1D4C9F95005C40D8 /* Panda ElectricTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB71B1D4C9F95005C40D8 /* Panda_ElectricTests.swift */,
+				3B6CB71D1D4C9F95005C40D8 /* Info.plist */,
+			);
+			path = "Panda ElectricTests";
+			sourceTree = "<group>";
+		};
+		3B6CB7251D4C9F95005C40D8 /* Panda ElectricUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7261D4C9F95005C40D8 /* Panda_ElectricUITests.swift */,
+				3B6CB7281D4C9F95005C40D8 /* Info.plist */,
+			);
+			path = "Panda ElectricUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B6CB7051D4C9F95005C40D8 /* Panda Electric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6CB72B1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric" */;
+			buildPhases = (
+				3B6CB7021D4C9F95005C40D8 /* Sources */,
+				3B6CB7031D4C9F95005C40D8 /* Frameworks */,
+				3B6CB7041D4C9F95005C40D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Panda Electric";
+			productName = "Panda Electric";
+			productReference = 3B6CB7061D4C9F95005C40D8 /* Panda Electric.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B6CB7161D4C9F95005C40D8 /* Panda ElectricTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6CB72E1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricTests" */;
+			buildPhases = (
+				3B6CB7131D4C9F95005C40D8 /* Sources */,
+				3B6CB7141D4C9F95005C40D8 /* Frameworks */,
+				3B6CB7151D4C9F95005C40D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B6CB7191D4C9F95005C40D8 /* PBXTargetDependency */,
+			);
+			name = "Panda ElectricTests";
+			productName = "Panda ElectricTests";
+			productReference = 3B6CB7171D4C9F95005C40D8 /* Panda ElectricTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B6CB7211D4C9F95005C40D8 /* Panda ElectricUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6CB7311D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricUITests" */;
+			buildPhases = (
+				3B6CB71E1D4C9F95005C40D8 /* Sources */,
+				3B6CB71F1D4C9F95005C40D8 /* Frameworks */,
+				3B6CB7201D4C9F95005C40D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B6CB7241D4C9F95005C40D8 /* PBXTargetDependency */,
+			);
+			name = "Panda ElectricUITests";
+			productName = "Panda ElectricUITests";
+			productReference = 3B6CB7221D4C9F95005C40D8 /* Panda ElectricUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B6CB6FE1D4C9F95005C40D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = elbedev.com;
+				TargetAttributes = {
+					3B6CB7051D4C9F95005C40D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3B6CB7161D4C9F95005C40D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3B6CB7051D4C9F95005C40D8;
+					};
+					3B6CB7211D4C9F95005C40D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3B6CB7051D4C9F95005C40D8;
+					};
+				};
+			};
+			buildConfigurationList = 3B6CB7011D4C9F95005C40D8 /* Build configuration list for PBXProject "Panda Electric" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B6CB6FD1D4C9F95005C40D8;
+			productRefGroup = 3B6CB7071D4C9F95005C40D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B6CB7051D4C9F95005C40D8 /* Panda Electric */,
+				3B6CB7161D4C9F95005C40D8 /* Panda ElectricTests */,
+				3B6CB7211D4C9F95005C40D8 /* Panda ElectricUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B6CB7041D4C9F95005C40D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6CB70E1D4C9F95005C40D8 /* Assets.xcassets in Resources */,
+				3B6CB7111D4C9F95005C40D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB7151D4C9F95005C40D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB7201D4C9F95005C40D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B6CB7021D4C9F95005C40D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6CB70C1D4C9F95005C40D8 /* ViewController.swift in Sources */,
+				3B6CB70A1D4C9F95005C40D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB7131D4C9F95005C40D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6CB71C1D4C9F95005C40D8 /* Panda_ElectricTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB71E1D4C9F95005C40D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6CB7271D4C9F95005C40D8 /* Panda_ElectricUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B6CB7191D4C9F95005C40D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6CB7051D4C9F95005C40D8 /* Panda Electric */;
+			targetProxy = 3B6CB7181D4C9F95005C40D8 /* PBXContainerItemProxy */;
+		};
+		3B6CB7241D4C9F95005C40D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6CB7051D4C9F95005C40D8 /* Panda Electric */;
+			targetProxy = 3B6CB7231D4C9F95005C40D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B6CB70F1D4C9F95005C40D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B6CB7101D4C9F95005C40D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B6CB7291D4C9F95005C40D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B6CB72A1D4C9F95005C40D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3B6CB72C1D4C9F95005C40D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda Electric/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B6CB72D1D4C9F95005C40D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda Electric/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3B6CB72F1D4C9F95005C40D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda ElectricTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panda Electric.app/Contents/MacOS/Panda Electric";
+			};
+			name = Debug;
+		};
+		3B6CB7301D4C9F95005C40D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda ElectricTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panda Electric.app/Contents/MacOS/Panda Electric";
+			};
+			name = Release;
+		};
+		3B6CB7321D4C9F95005C40D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda ElectricUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Panda Electric";
+			};
+			name = Debug;
+		};
+		3B6CB7331D4C9F95005C40D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda ElectricUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Panda Electric";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B6CB7011D4C9F95005C40D8 /* Build configuration list for PBXProject "Panda Electric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6CB7291D4C9F95005C40D8 /* Debug */,
+				3B6CB72A1D4C9F95005C40D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B6CB72B1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6CB72C1D4C9F95005C40D8 /* Debug */,
+				3B6CB72D1D4C9F95005C40D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B6CB72E1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6CB72F1D4C9F95005C40D8 /* Debug */,
+				3B6CB7301D4C9F95005C40D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B6CB7311D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6CB7321D4C9F95005C40D8 /* Debug */,
+				3B6CB7331D4C9F95005C40D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B6CB6FE1D4C9F95005C40D8 /* Project object */;
+}
