@@ -17,7 +17,6 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         socket.onConnect = {
             let channel = self.socket.channel("playground:main", payload: ["user": "spartacus"])
             channel.on("new:msg", callback: { message in

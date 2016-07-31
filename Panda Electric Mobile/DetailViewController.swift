@@ -7,25 +7,44 @@
 //
 
 import UIKit
+import Birdsong
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
-    var detailItem: AnyObject? {
+    var socket: Socket? {
         didSet {
-            // Update the view.
+            self.configureSocket()
+        }
+    }
+    var channel: Channel?
+    var topic: String? {
+        didSet {
             self.configureView()
         }
     }
 
     func configureView() {
-        // Update the user interface for the detail item.
-        if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-            }
+        if let topic = self.topic {
+            title = topic
+        }
+    }
+    
+    private func configureSocket() {
+        guard topic != nil else {
+            return
+        }
+        
+        if let socket = self.socket {
+            let channelIdentifier = "playground:\(topic!)"
+            let channel = socket.channel(channelIdentifier, payload: ["user": "phone client"])
+            
+            channel.on("new:msg", callback: { message in
+                print(message)
+            })
+            
+            channel.join().receive("ok", callback: { payload in
+                print("Successfully joined: \(channel.topic)")
+            })
         }
     }
 
@@ -33,6 +52,18 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+    }
+    
+    private func sendMessage(message: String) {
+        if let channel = self.channel {
+            channel.send("new:msg", payload: ["body": "Hello!"])
+                .receive("ok", callback: { response in
+                    print("Sent a message!")
+                })
+                .receive("error", callback: { reason in
+                    print("Message didn't send: \(reason)")
+                })
+        }
     }
 
     override func didReceiveMemoryWarning() {

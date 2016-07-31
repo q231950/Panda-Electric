@@ -17,6 +17,8 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        objects.append("main")
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
@@ -28,37 +30,7 @@ class MasterViewController: UITableViewController {
         }
         
         socket.onConnect = {
-            let channel = self.socket.channel("playground:main", payload: ["user": "spartacus"])
-            channel.on("new:msg", callback: { message in
-                //                self.displayMessage(message)
-                print(message)
-            })
-            
-            channel.join().receive("ok", callback: { payload in
-                print("Successfully joined: \(channel.topic)")
-            })
-            
-            channel.send("new:msg", payload: ["body": "Hello!"])
-                .receive("ok", callback: { response in
-                    print("Sent a message!")
-                })
-                .receive("error", callback: { reason in
-                    print("Message didn't send: \(reason)")
-                })
-            
-            // Presence support.
-            channel.presence.onStateChange = { newState in
-                // newState = dict where key = unique ID, value = array of metas.
-                print("New presence state: \(newState)")
-            }
-            
-            channel.presence.onJoin = { id, meta in
-                print("Join: user with id \(id) with meta entry: \(meta)")
-            }
-            
-            channel.presence.onLeave = { id, meta in
-                print("Leave: user with id \(id) with meta entry: \(meta)")
-            }
+            print("Socket connected")
         }
         socket.connect()
     }
@@ -84,9 +56,9 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
+                controller.topic = objects[indexPath.row] as? String
+                controller.socket = socket
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -106,8 +78,11 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        if let object = objects[indexPath.row] as? NSDate {
+            cell.textLabel!.text = object.description
+        } else if let object = objects[indexPath.row] as? String {
+            cell.textLabel!.text = object
+        }
         return cell
     }
 
