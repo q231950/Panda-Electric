@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "66D6DE68F56515E6D85883697C4936C8"
-               BuildableName = "Pods_Pandas_Panda_Electric_Mobile.framework"
-               BlueprintName = "Pods-Pandas-Panda Electric Mobile"
+               BlueprintIdentifier = "060B7B58FEF71A8814B3D20DF9D2087B"
+               BuildableName = "Panda.framework"
+               BlueprintName = "Panda-OSX"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "66D6DE68F56515E6D85883697C4936C8"
-            BuildableName = "Pods_Pandas_Panda_Electric_Mobile.framework"
-            BlueprintName = "Pods-Pandas-Panda Electric Mobile"
+            BlueprintIdentifier = "060B7B58FEF71A8814B3D20DF9D2087B"
+            BuildableName = "Panda.framework"
+            BlueprintName = "Panda-OSX"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -7,70 +7,39 @@
 //
 
 import UIKit
-import Birdsong
+import Panda
 
-class DetailViewController: UIViewController {
-
-    var socket: Socket? {
+class DetailViewController: UIViewController, UITextFieldDelegate {
+    
+    var socketHandler: SocketHandler? {
         didSet {
-            self.configureSocket()
-        }
-    }
-    var channel: Channel?
-    var topic: String? {
-        didSet {
-            self.configureView()
-        }
-    }
-
-    func configureView() {
-        if let topic = self.topic {
-            title = topic
+            socketHandler?.messageHandler = { (message: String, position: Int) -> Void in
+                self.handleMessage(message, atPosition: position)
+            }
         }
     }
     
-    private func configureSocket() {
-        guard topic != nil else {
-            return
-        }
-        
-        if let socket = self.socket {
-            let channelIdentifier = "playground:\(topic!)"
-            let channel = socket.channel(channelIdentifier, payload: ["user": "phone client"])
-            
-            channel.on("new:msg", callback: { message in
-                print(message)
-            })
-            
-            channel.join().receive("ok", callback: { payload in
-                print("Successfully joined: \(channel.topic)")
-            })
-        }
-    }
-
+    @IBOutlet var receivedMessageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.configureView()
+        title = socketHandler?.topic as String?
     }
     
-    private func sendMessage(message: String) {
-        if let channel = self.channel {
-            channel.send("new:msg", payload: ["body": "Hello!"])
-                .receive("ok", callback: { response in
-                    print("Sent a message!")
-                })
-                .receive("error", callback: { reason in
-                    print("Message didn't send: \(reason)")
-                })
+    private func handleMessage(message: String, atPosition position: Int) {
+        if let receivedMessageLabel = self.receivedMessageLabel {
+            receivedMessageLabel.text = message + " \(position)"
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        textField.text = string
+        if let socketHandler = self.socketHandler {
+            socketHandler.sendMessage(string)
+        }
+        return false
     }
-
-
+    
+    
 }
 

@@ -1,0 +1,6 @@
+framework module Panda {
+  umbrella header "Panda-OSX-umbrella.h"
+
+  export *
+  module * { export * }
+}

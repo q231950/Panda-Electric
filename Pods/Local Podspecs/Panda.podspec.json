@@ -1,0 +1,28 @@
+{
+  "name": "Panda",
+  "version": "0.1.0",
+  "summary": "A short description of Panda.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Panda",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Martin Kim Dung-Pham": "kim@elbedev.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Panda.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.10"
+  },
+  "source_files": "Panda/Classes/**/*",
+  "dependencies": {
+    "Birdsong": [
+
+    ]
+  }
+}

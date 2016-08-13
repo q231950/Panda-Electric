@@ -3,7 +3,8 @@
 
 abstract_target 'Pandas' do
   use_frameworks!
-  pod 'Birdsong', :git => 'https://github.com/sjrmanning/Birdsong.git'
+  pod 'Birdsong', git: 'https://github.com/sjrmanning/Birdsong.git'
+  pod 'Panda', path: '../Panda'
 
   target 'Panda Electric' do
     project 'Panda Electric.xcodeproj'

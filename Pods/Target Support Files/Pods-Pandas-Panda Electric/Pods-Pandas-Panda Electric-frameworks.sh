@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Birdsong-OSX/Birdsong.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Panda-OSX/Panda.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Starscream-OSX/Starscream.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Birdsong-OSX/Birdsong.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Panda-OSX/Panda.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Starscream-OSX/Starscream.framework"
 fi

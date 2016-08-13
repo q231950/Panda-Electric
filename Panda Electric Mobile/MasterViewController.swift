@@ -8,12 +8,14 @@
 
 import UIKit
 import Birdsong
+import Panda
 
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
     let socket = Socket(url: NSURL(string: "http://localhost:4000/socket/websocket")!)
+//    let socket = Socket(url: NSURL(string: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,8 +59,8 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.topic = objects[indexPath.row] as? String
-                controller.socket = socket
+                let topic = objects[indexPath.row] as! String
+                controller.socketHandler = SocketHandler(user: "phone", topic:topic, socket: socket)
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
