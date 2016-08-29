@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		01ADAB192C7BDD41078430F4F6B50CDE /* Birdsong-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B1321D5423DD6194B3235A61C944C /* Birdsong-OSX-dummy.m */; };
+		035D88451A59BE664C441BCFDEFE7724 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7260302A2086F3DE09CDC39F315C55 /* Cocoa.framework */; };
 		0438A81A66D857790619B436B8862EDB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7260302A2086F3DE09CDC39F315C55 /* Cocoa.framework */; };
 		066755C868960006E2F8A72FA9145C9E /* Birdsong-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E0CC9D23C89CA0F629EB6FF6AC67E7 /* Birdsong-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		06DC7AF5B00E10E28945A868AFBA0C3C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7260302A2086F3DE09CDC39F315C55 /* Cocoa.framework */; };
-		0EF765E72EBC23E109D49BE48834BE4D /* Pods-Panda ElectricTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F9B6B5236327EF77159E1CF654C2DA /* Pods-Panda ElectricTests-dummy.m */; };
+		0EF765E72EBC23E109D49BE48834BE4D /* Pods-Panda ElectricTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAE397363F561DB10F1312B35703639 /* Pods-Panda ElectricTests-dummy.m */; };
 		12CF867ADEAFF7FE65490CDD3D906AB8 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1FA6D57A342967010E072245287FAE /* SSLSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		14B90DF4769DEDCE5366897DCE388F9E /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0BC156E39A9E35D19ABC5EEDB9EC429 /* Starscream.framework */; };
 		15B5C0C2FC1EE5ADCE76FA2B71FF7ADF /* Birdsong-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4ED01E1DEA95485D05BE978F6CE01AC /* Birdsong-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,37 +19,37 @@
 		177D1BB01C2551A3968A1E2DE48072BC /* Birdsong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD77D532BFE1AC5A041A09852BC3190F /* Birdsong.framework */; };
 		2146A41C94CE6D9C454543AB1B9969F9 /* Panda-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F19E2654A669C825BBADEDF0E0989D5D /* Panda-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FB4E90E489075FFE239E3985A2E7A8A /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1330221A635D1362E9CEB7DD4916D17 /* Push.swift */; };
-		3D26822AB47DEE0C59B7025721C28901 /* Pods-Pandas-Panda Electric Mobile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A8353BD7D756C5C8EBEAAD91F8D9FAD /* Pods-Pandas-Panda Electric Mobile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40079CF20063864AF487C0C49EF82083 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0BC156E39A9E35D19ABC5EEDB9EC429 /* Starscream.framework */; };
-		40DF85C63209CB7F29B2E60038AFDCC2 /* Pods-Panda ElectricTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C49F3964A962837A076669B70092E93 /* Pods-Panda ElectricTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DF85C63209CB7F29B2E60038AFDCC2 /* Pods-Panda ElectricTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB3BBCE761E74B7C66F6E82E7FE5423 /* Pods-Panda ElectricTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43F7CA88E133D91A9CFD2D6BA810CD57 /* Birdsong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD77D532BFE1AC5A041A09852BC3190F /* Birdsong.framework */; };
 		453678475DFA90799D762BAAFC5657D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7260302A2086F3DE09CDC39F315C55 /* Cocoa.framework */; };
 		4CED0D0A40BA809C9C16FFD647FA6DB6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7260302A2086F3DE09CDC39F315C55 /* Cocoa.framework */; };
 		4FEFF0838495E91D33E8E851A3A77B97 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ECE6D4489FFE2828296D48490BBC52 /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		50FBB61EFEBD3ED85FC5A79ED91651C8 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0BC156E39A9E35D19ABC5EEDB9EC429 /* Starscream.framework */; };
+		562166C045326ECA9838A7A6B7249375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DC5D017F3B54ACC761BAE27F980A3F /* Foundation.framework */; };
 		57FEC53126959F3B7CF5A79E0217D816 /* Starscream-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7594AF08B48A2C74C3AE2E7DF28640C /* Starscream-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5805550F800EC1874B216D839D78CB3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DC5D017F3B54ACC761BAE27F980A3F /* Foundation.framework */; };
 		5AE0ACB2B12C0F14FCE8964A8910172D /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ECE6D4489FFE2828296D48490BBC52 /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		65A75ABD2738E8869D4F38D0F1F1028A /* Starscream-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E062669A4E54B384AD62DB2B69D0FAC /* Starscream-OSX-dummy.m */; };
 		661009E8F9C8D29B629C347B8AAE56CE /* Starscream-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36220879807DF1034E99BE900EB68E0E /* Starscream-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A2F961F34A9AC3D0FBC3FD7BC4D011A /* Pods-Pandas-Panda Electric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF16801FACCACB2788552CD19AABD366 /* Pods-Pandas-Panda Electric-dummy.m */; };
 		6F6EE5E96E119610C7ACDCF0AD40BD96 /* Birdsong-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4801184DB656E474265B6AAB9839A535 /* Birdsong-iOS-dummy.m */; };
-		70FFE9771CF825C6A9A1A71A1545400D /* Pods-Pandas-Panda Electric-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5AD6A95DE327FB8665DDBBC5CF23983 /* Pods-Pandas-Panda Electric-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		720EC6EB9541C1BEFA321F9697341CD7 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B7F87C330DFFCAB1A6FEE318EA27C1 /* Socket.swift */; };
 		7B1830F3EFF7A391375FCC3A2E1F8D9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7260302A2086F3DE09CDC39F315C55 /* Cocoa.framework */; };
-		7F5919D28FE4FBC147C19023C6ED03E8 /* Pods-Panda ElectricUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A3A11C0F1177B3D6B304F38B803ACA /* Pods-Panda ElectricUITests-dummy.m */; };
+		7F5919D28FE4FBC147C19023C6ED03E8 /* Pods-Panda ElectricUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9996D28B2B7DE1C54B9F9688CA22C372 /* Pods-Panda ElectricUITests-dummy.m */; };
+		7F754310BD2C77AE5EFFC6FC94BD8C5A /* Pods-Panda-Panda Electric-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A026D3EC77F9780B741BCB474B0EF3B3 /* Pods-Panda-Panda Electric-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F8D6BBF7E3B7D003CC687DCBB740BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DC5D017F3B54ACC761BAE27F980A3F /* Foundation.framework */; };
 		8A350440079082AEF017D12743E2712A /* SocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9983F195D0EBD8CC6667E60B7B0691AA /* SocketHandler.swift */; };
 		9B926400339F55B4498240AF941EE830 /* Starscream-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E12CAFBBB29FCF32DFAE29E7BA0249 /* Starscream-iOS-dummy.m */; };
 		9BC8AF6177AB9D12BCD7C5619488B28E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DC5D017F3B54ACC761BAE27F980A3F /* Foundation.framework */; };
 		9E8FC201A1D7CFC6595D77DAEA115BA8 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B7F87C330DFFCAB1A6FEE318EA27C1 /* Socket.swift */; };
+		9F0457D0F8FF19F0EE5ADE4E4A293498 /* Pods-Panda-Panda Electric Mobile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A3B1F71CD9AC980BDF0C99FA0AF7ED /* Pods-Panda-Panda Electric Mobile-dummy.m */; };
 		A46702B871660E8E7238601D785B8140 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F4F258A8615F33104789C6C371486 /* Channel.swift */; };
 		A80F33A051338607CF03DC14CBC60E6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7260302A2086F3DE09CDC39F315C55 /* Cocoa.framework */; };
 		AA1DE0D9C75796E33E8B87420B48E33C /* Presence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533DB64A6CEDCEE34F55FC307D47BB16 /* Presence.swift */; };
-		AF69488CD877D1B39FAD65397AB60136 /* Pods-Panda ElectricUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BD95FE1DC7EFF654775F71386B88F12 /* Pods-Panda ElectricUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF69488CD877D1B39FAD65397AB60136 /* Pods-Panda ElectricUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1C7214CB85C12C65273ABF03AD92F6 /* Pods-Panda ElectricUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFBA16936D885FC499C0EE9819B2B64B /* Panda-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A405DF2356D89BC2F6FF45CCC565CB /* Panda-iOS-dummy.m */; };
+		B6F1CD3524B50EBCEDB3679B75285909 /* Pods-Panda-Panda Electric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB348EE6246D015BBF87EDEA17AD41DA /* Pods-Panda-Panda Electric-dummy.m */; };
 		B8F792805FFB6FB50D3462E362D1A65D /* Panda-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87CF1F3F99501D1113147CBC74F522E7 /* Panda-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDD1DA55F4147302EEC3D7171C52CAA9 /* Pods-Pandas-Panda Electric Mobile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B521037BD90F6C7300310399827B29F /* Pods-Pandas-Panda Electric Mobile-dummy.m */; };
+		CF881E75E049623D88F2FF8D0EFECF65 /* Pods-Panda-Panda Electric Mobile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F90B5D43A3E65C58B8CF7C3A8CC011 /* Pods-Panda-Panda Electric Mobile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D04BC2DCE91E74887AE7078E0311BAF7 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1FA6D57A342967010E072245287FAE /* SSLSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D5DC9FD90EAF16432EC66B9C3022A6A9 /* Panda-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9604A286A5856481110F9BC5E4D794D1 /* Panda-OSX-dummy.m */; };
 		E5D77C4EBBFD0E45AD3C7A8EE7F389ED /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C493627EC463953108767194C76489 /* Response.swift */; };
@@ -69,6 +69,13 @@
 			remoteGlobalIDString = 88302DA9D881B4BEB65F0BEA630BE2D7;
 			remoteInfo = "Starscream-iOS";
 		};
+		1C7E03068C4954F4064FE00F3C426DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 060B7B58FEF71A8814B3D20DF9D2087B;
+			remoteInfo = "Panda-OSX";
+		};
 		29F9AD0403B3E915407D130896D5C080 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -76,19 +83,26 @@
 			remoteGlobalIDString = 571A83EE50CA1CAD6908C2365B26A628;
 			remoteInfo = "Starscream-OSX";
 		};
-		4286A2A473C897BCBC68F7F58B5A9AC1 /* PBXContainerItemProxy */ = {
+		2FBB325BF74048E30B9ECF1639995C72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 060B7B58FEF71A8814B3D20DF9D2087B;
-			remoteInfo = "Panda-OSX";
+			remoteGlobalIDString = 88302DA9D881B4BEB65F0BEA630BE2D7;
+			remoteInfo = "Starscream-iOS";
 		};
-		801B0C36915507FB87E08AB1DBF3CC1A /* PBXContainerItemProxy */ = {
+		3928D4F85396AEE650DF560E904F6191 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 581BEA68852C18BAC57C5DE3C41EA61C;
-			remoteInfo = "Birdsong-OSX";
+			remoteGlobalIDString = 898CCE0D98B95877EA0B1F2EF785B23C;
+			remoteInfo = "Panda-iOS";
+		};
+		80A3A264EB0D87715A2AC0CCC6F69C17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 571A83EE50CA1CAD6908C2365B26A628;
+			remoteInfo = "Starscream-OSX";
 		};
 		8F8F064D5D83B899C53002E790A6BF75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -97,26 +111,12 @@
 			remoteGlobalIDString = 571A83EE50CA1CAD6908C2365B26A628;
 			remoteInfo = "Starscream-OSX";
 		};
-		A91D5B0F9BF808A4D053C44070C62445 /* PBXContainerItemProxy */ = {
+		AC592CE6822496FE56EBA5D9E0254B60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 88302DA9D881B4BEB65F0BEA630BE2D7;
-			remoteInfo = "Starscream-iOS";
-		};
-		AB92325C5FFA5766C621A39C271AE5D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 898CCE0D98B95877EA0B1F2EF785B23C;
-			remoteInfo = "Panda-iOS";
-		};
-		AEDE9367256DCCDAEDA0F1EF932EB3E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 571A83EE50CA1CAD6908C2365B26A628;
-			remoteInfo = "Starscream-OSX";
+			remoteGlobalIDString = 581BEA68852C18BAC57C5DE3C41EA61C;
+			remoteInfo = "Birdsong-OSX";
 		};
 		BA6E52D01B49AEE0A628C69F62CF9F8F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -132,14 +132,14 @@
 			remoteGlobalIDString = 88302DA9D881B4BEB65F0BEA630BE2D7;
 			remoteInfo = "Starscream-iOS";
 		};
-		DC570FD77F7CF2ED6C62066C9F106236 /* PBXContainerItemProxy */ = {
+		D6D5984BA29F705B6C00576FB0E86DAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D6C6E2FA149C6543F39302F31C224D1;
 			remoteInfo = "Birdsong-iOS";
 		};
-		F89705C998B7EEEAF22986BF89A47079 /* PBXContainerItemProxy */ = {
+		DC570FD77F7CF2ED6C62066C9F106236 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -149,105 +149,105 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		035B43134210F25614BF54B34145722E /* Birdsong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Birdsong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B196ABE8FE313650BB1FD6E687B138C /* Pods-Pandas-Panda Electric-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pandas-Panda Electric-acknowledgements.plist"; sourceTree = "<group>"; };
-		0BD95FE1DC7EFF654775F71386B88F12 /* Pods-Panda ElectricUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Panda ElectricUITests-umbrella.h"; sourceTree = "<group>"; };
-		0F5252E5130F707B531518C60B86A5AE /* Pods-Pandas-Panda Electric Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pandas-Panda Electric Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		00ACD905C65221682EB61A5BF6780ED5 /* Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1C7214CB85C12C65273ABF03AD92F6 /* Pods-Panda ElectricUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Panda ElectricUITests-umbrella.h"; sourceTree = "<group>"; };
+		0B6AB35BD59F11D9F1B28D7AA5DA5F98 /* Pods-Panda ElectricUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda ElectricUITests-resources.sh"; sourceTree = "<group>"; };
+		0E42AA18F5330824D72F9B14A9BA2556 /* Pods-Panda-Panda Electric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda-Panda Electric.release.xcconfig"; sourceTree = "<group>"; };
 		10E12CAFBBB29FCF32DFAE29E7BA0249 /* Starscream-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Starscream-iOS-dummy.m"; path = "../Starscream-iOS/Starscream-iOS-dummy.m"; sourceTree = "<group>"; };
 		1C3F94707A03C269FD4FBAF41AF61F00 /* Birdsong-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Birdsong-OSX-prefix.pch"; sourceTree = "<group>"; };
-		2001B79371B89442C8E1929177AF1EEB /* Pods-Pandas-Panda Electric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pandas-Panda Electric.debug.xcconfig"; sourceTree = "<group>"; };
 		21DD21A17D867252C270426136383233 /* Panda-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Panda-OSX.xcconfig"; sourceTree = "<group>"; };
+		2285A065FEC97CB0763DE5F47804AC62 /* Birdsong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Birdsong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B7F87C330DFFCAB1A6FEE318EA27C1 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Source/Socket.swift; sourceTree = "<group>"; };
-		2C6F00FA8C7D3EB1C7BB9671E4AD4043 /* Pods-Pandas-Panda Electric Mobile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pandas-Panda Electric Mobile.modulemap"; sourceTree = "<group>"; };
+		25A73EDE4A737279BD147DC0DA3D9B3F /* Birdsong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Birdsong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B73142348B447156E293FABEFE2E18 /* Pods-Panda ElectricUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda ElectricUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2C69C66057AA33766B1C43E1875C9004 /* Pods_Panda_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E062669A4E54B384AD62DB2B69D0FAC /* Starscream-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-OSX-dummy.m"; sourceTree = "<group>"; };
 		2EF48188AB0BE583429A1745AC5ACAD5 /* Panda-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Panda-iOS-prefix.pch"; path = "../Panda-iOS/Panda-iOS-prefix.pch"; sourceTree = "<group>"; };
-		307A7827DAD644E915033C697821F78B /* Pods-Pandas-Panda Electric-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pandas-Panda Electric-frameworks.sh"; sourceTree = "<group>"; };
-		33BD2F674EB4385D7C132BCB3C1F83CC /* Pods-Pandas-Panda Electric Mobile-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pandas-Panda Electric Mobile-frameworks.sh"; sourceTree = "<group>"; };
-		34CE10380DF34A0E95F81FE9DC25C7EE /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F060E337995D0E6D40FCEA96F4A558B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315E9EC80A9A0D1C42AFE5E7B5AA3927 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36220879807DF1034E99BE900EB68E0E /* Starscream-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-OSX-umbrella.h"; sourceTree = "<group>"; };
-		365F328978662935D34FECFDBD6B9910 /* Pods-Pandas-Panda Electric Mobile-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pandas-Panda Electric Mobile-acknowledgements.markdown"; sourceTree = "<group>"; };
-		38A466A777B5B46CF63D45450B3AFC48 /* Pods-Panda ElectricUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda ElectricUITests-frameworks.sh"; sourceTree = "<group>"; };
 		38EACC099F65CD57001D91987B67C2DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BB394BFFF571CAF2B43CA497B2AC322 /* Pods-Panda ElectricUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda ElectricUITests-resources.sh"; sourceTree = "<group>"; };
-		3C49F3964A962837A076669B70092E93 /* Pods-Panda ElectricTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Panda ElectricTests-umbrella.h"; sourceTree = "<group>"; };
+		3AB3BBCE761E74B7C66F6E82E7FE5423 /* Pods-Panda ElectricTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Panda ElectricTests-umbrella.h"; sourceTree = "<group>"; };
 		3F20BC0B4EF0ECB281275E11C4D26E05 /* Starscream-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Starscream-iOS.modulemap"; path = "../Starscream-iOS/Starscream-iOS.modulemap"; sourceTree = "<group>"; };
-		43F9B6B5236327EF77159E1CF654C2DA /* Pods-Panda ElectricTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Panda ElectricTests-dummy.m"; sourceTree = "<group>"; };
 		463A305DCDB4B5364B51C8C1FB5F642F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4801184DB656E474265B6AAB9839A535 /* Birdsong-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Birdsong-iOS-dummy.m"; path = "../Birdsong-iOS/Birdsong-iOS-dummy.m"; sourceTree = "<group>"; };
+		4A70B163001CBACDD13CDC423712F993 /* Pods-Panda-Panda Electric-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda-Panda Electric-resources.sh"; sourceTree = "<group>"; };
 		4B256A8E5A1DAB02DCE4F82494E80481 /* Starscream-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Starscream-iOS-prefix.pch"; path = "../Starscream-iOS/Starscream-iOS-prefix.pch"; sourceTree = "<group>"; };
-		4EC0E2514349C0B2E64105350D3F9D07 /* Pods-Panda ElectricTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Panda ElectricTests.modulemap"; sourceTree = "<group>"; };
 		50D6070FC5A8EE735EE112A03CBB1C99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Panda-iOS/Info.plist"; sourceTree = "<group>"; };
 		533DB64A6CEDCEE34F55FC307D47BB16 /* Presence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presence.swift; path = Source/Presence.swift; sourceTree = "<group>"; };
+		557D248A99206206169BFE3FFBFA2124 /* Pods-Panda ElectricUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Panda ElectricUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		578F4F258A8615F33104789C6C371486 /* Channel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = Source/Channel.swift; sourceTree = "<group>"; };
-		5A8353BD7D756C5C8EBEAAD91F8D9FAD /* Pods-Pandas-Panda Electric Mobile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pandas-Panda Electric Mobile-umbrella.h"; sourceTree = "<group>"; };
+		57DC87385C82342E74F34D4B568A283E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C9535644066A7252529B3FAB70B027A /* Panda-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Panda-OSX-prefix.pch"; sourceTree = "<group>"; };
+		5CB87CA98A9F1618324DF8E73A63BE1F /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2B0B708198B196D4D3A7108F458F4C /* Starscream-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Starscream-iOS.xcconfig"; path = "../Starscream-iOS/Starscream-iOS.xcconfig"; sourceTree = "<group>"; };
-		645E2D8C05D1F84D3C4CA5BF31028E54 /* Pods-Panda ElectricUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Panda ElectricUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		67C55A1AD37B606E1D89F8537EB2709E /* Pods-Pandas-Panda Electric-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pandas-Panda Electric-resources.sh"; sourceTree = "<group>"; };
+		65D255C8C219F5A18E5C98E9280FA1D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674F8B8B5E39C4CA23BB9170942102E7 /* Pods-Panda-Panda Electric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda-Panda Electric.debug.xcconfig"; sourceTree = "<group>"; };
 		69E0CC9D23C89CA0F629EB6FF6AC67E7 /* Birdsong-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Birdsong-iOS-umbrella.h"; path = "../Birdsong-iOS/Birdsong-iOS-umbrella.h"; sourceTree = "<group>"; };
-		6C54320330EA61552CC0BC75DBBBCC2E /* Pods_Panda_ElectricUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_ElectricUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B02D9A67246259322A05C60301B315A /* Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC1DAA560C754D2794B45D8B990060F /* Pods-Panda ElectricTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Panda ElectricTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6E1FA6D57A342967010E072245287FAE /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SSLSecurity.swift; sourceTree = "<group>"; };
-		6F3DB13AC7829FB4BA3104CF4442279C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		702D58727A85A2C06E310AFEF05F31B8 /* Pods-Panda ElectricTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda ElectricTests.release.xcconfig"; sourceTree = "<group>"; };
-		724DEFE27FE976892CE512122A717AF2 /* Pods_Panda_ElectricTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_ElectricTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FAE397363F561DB10F1312B35703639 /* Pods-Panda ElectricTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Panda ElectricTests-dummy.m"; sourceTree = "<group>"; };
+		74756461961C72A453F82AE3F9D81F5B /* Pods-Panda ElectricUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda ElectricUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7485BDA25F8DB31D12B15F0B39E7AB2D /* Pods-Panda-Panda Electric Mobile-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda-Panda Electric Mobile-resources.sh"; sourceTree = "<group>"; };
 		769FDE5D5C012E020180D1915D0ABAA2 /* Birdsong-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Birdsong-iOS.modulemap"; path = "../Birdsong-iOS/Birdsong-iOS.modulemap"; sourceTree = "<group>"; };
 		76A79165AC2F663C87DC5AEFB94399FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Starscream-iOS/Info.plist"; sourceTree = "<group>"; };
-		79308BB3C71FE1719945CDFAB85F0508 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A6F457938A6ADAEEE928A34ECC2951B /* Pods-Panda ElectricTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda ElectricTests-frameworks.sh"; sourceTree = "<group>"; };
-		7DF116F6CA1EF943B94AF45F50471841 /* Pods-Panda ElectricUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda ElectricUITests.release.xcconfig"; sourceTree = "<group>"; };
-		802430ED7078C41735383996083A3DB4 /* Pods-Pandas-Panda Electric Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pandas-Panda Electric Mobile.debug.xcconfig"; sourceTree = "<group>"; };
-		851810174F83155ACFE89E980154BE8E /* Pods-Panda ElectricTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Panda ElectricTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7742014828CEB7D60364CC8FD03C5FD0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794B531A9923F134EEE23225D0FF5055 /* Pods-Panda-Panda Electric-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Panda-Panda Electric-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7A02971506DB4EF511170478EA23DC0F /* Pods-Panda ElectricTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Panda ElectricTests.modulemap"; sourceTree = "<group>"; };
+		805DAA65F1343BB9424F0CFCE7ECE4CD /* Pods-Panda-Panda Electric Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda-Panda Electric Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		81A3B1F71CD9AC980BDF0C99FA0AF7ED /* Pods-Panda-Panda Electric Mobile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Panda-Panda Electric Mobile-dummy.m"; sourceTree = "<group>"; };
+		82C5A32B41F184C9FF3758C69B13AADB /* Pods-Panda-Panda Electric.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Panda-Panda Electric.modulemap"; sourceTree = "<group>"; };
 		87CF1F3F99501D1113147CBC74F522E7 /* Panda-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Panda-OSX-umbrella.h"; sourceTree = "<group>"; };
 		88F42693ECF2E9349617A75316F2EB36 /* Birdsong-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Birdsong-iOS.xcconfig"; path = "../Birdsong-iOS/Birdsong-iOS.xcconfig"; sourceTree = "<group>"; };
-		8A5AF48282CA5FA6976A08C224744A22 /* Pods-Pandas-Panda Electric.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pandas-Panda Electric.modulemap"; sourceTree = "<group>"; };
-		8B521037BD90F6C7300310399827B29F /* Pods-Pandas-Panda Electric Mobile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pandas-Panda Electric Mobile-dummy.m"; sourceTree = "<group>"; };
+		8B50A72BC95003E0204B06DD9E38EFE6 /* Pods-Panda-Panda Electric-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Panda-Panda Electric-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93D5698A0F154217D618C3677D53E5B5 /* Pods-Panda-Panda Electric Mobile-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Panda-Panda Electric Mobile-acknowledgements.markdown"; sourceTree = "<group>"; };
 		95313557D7AC9880F20E7998C9FC57A5 /* Panda-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Panda-OSX.modulemap"; sourceTree = "<group>"; };
 		9604A286A5856481110F9BC5E4D794D1 /* Panda-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Panda-OSX-dummy.m"; sourceTree = "<group>"; };
-		96A3A11C0F1177B3D6B304F38B803ACA /* Pods-Panda ElectricUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Panda ElectricUITests-dummy.m"; sourceTree = "<group>"; };
 		9983F195D0EBD8CC6667E60B7B0691AA /* SocketHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SocketHandler.swift; sourceTree = "<group>"; };
+		9996D28B2B7DE1C54B9F9688CA22C372 /* Pods-Panda ElectricUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Panda ElectricUITests-dummy.m"; sourceTree = "<group>"; };
+		99F90B5D43A3E65C58B8CF7C3A8CC011 /* Pods-Panda-Panda Electric Mobile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Panda-Panda Electric Mobile-umbrella.h"; sourceTree = "<group>"; };
+		9F7CE7C4BEC3FB496293DAEA9AFA3309 /* Pods-Panda-Panda Electric Mobile-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Panda-Panda Electric Mobile-acknowledgements.plist"; sourceTree = "<group>"; };
+		A026D3EC77F9780B741BCB474B0EF3B3 /* Pods-Panda-Panda Electric-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Panda-Panda Electric-umbrella.h"; sourceTree = "<group>"; };
+		A0B38499E45D195D72F0289BEDFB2B23 /* Pods-Panda-Panda Electric Mobile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Panda-Panda Electric Mobile.modulemap"; sourceTree = "<group>"; };
+		A0FF213F02C3E46CFFAD5410696E5FD4 /* Pods-Panda-Panda Electric-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda-Panda Electric-frameworks.sh"; sourceTree = "<group>"; };
 		A25483F8E41396A2763ABFA1F1E20470 /* Birdsong-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Birdsong-OSX.xcconfig"; sourceTree = "<group>"; };
 		A2AA6D4173E6F5AC1458C341EEA8083D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3EABECFBC740962B0F789ED912E1656 /* Pods-Panda ElectricTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda ElectricTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7594AF08B48A2C74C3AE2E7DF28640C /* Starscream-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Starscream-iOS-umbrella.h"; path = "../Starscream-iOS/Starscream-iOS-umbrella.h"; sourceTree = "<group>"; };
-		A984F9E306FCD2D8D54218FFF3DE7AE4 /* Birdsong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Birdsong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB22BB229B13AF0F0D8B9B91934E21E4 /* Pods-Panda ElectricUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Panda ElectricUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A9D004BAC1F8ECFDD410D3026C349D68 /* Pods-Panda ElectricTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Panda ElectricTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ABF04009F84AC12363395B84C701C552 /* Pods-Panda ElectricTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda ElectricTests-frameworks.sh"; sourceTree = "<group>"; };
+		ACAFC44DA9AC1DC697964E6954B6D835 /* Pods-Panda ElectricUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Panda ElectricUITests.modulemap"; sourceTree = "<group>"; };
 		AF750297F17A9F116FD4D11AE0478E95 /* Panda-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Panda-iOS.modulemap"; path = "../Panda-iOS/Panda-iOS.modulemap"; sourceTree = "<group>"; };
 		B4ED01E1DEA95485D05BE978F6CE01AC /* Birdsong-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Birdsong-OSX-umbrella.h"; sourceTree = "<group>"; };
 		B8A405DF2356D89BC2F6FF45CCC565CB /* Panda-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Panda-iOS-dummy.m"; path = "../Panda-iOS/Panda-iOS-dummy.m"; sourceTree = "<group>"; };
-		BCDCE8279CA310F0A673FC9F8514557E /* Pods-Pandas-Panda Electric-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pandas-Panda Electric-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB8E5969BF2AA30FB1D8B88F02EBF216 /* Pods_Panda_Panda_Electric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Panda_Electric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD77D532BFE1AC5A041A09852BC3190F /* Birdsong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Birdsong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BECFC74231CE0F6D2BA5F722D0BD6FA9 /* Pods-Panda ElectricTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Panda ElectricTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BF16801FACCACB2788552CD19AABD366 /* Pods-Pandas-Panda Electric-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pandas-Panda Electric-dummy.m"; sourceTree = "<group>"; };
+		BE8AEC3AE2456B78058A2A0B019EBB46 /* Pods-Panda-Panda Electric Mobile-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda-Panda Electric Mobile-frameworks.sh"; sourceTree = "<group>"; };
 		BF3BC312E785B99A2C7BBE813430B632 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Birdsong-iOS/Info.plist"; sourceTree = "<group>"; };
+		C0A77C45FD87082AF30A836268EF17D5 /* Pods-Panda-Panda Electric Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda-Panda Electric Mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		C0BC156E39A9E35D19ABC5EEDB9EC429 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1330221A635D1362E9CEB7DD4916D17 /* Push.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Push.swift; path = Source/Push.swift; sourceTree = "<group>"; };
-		C31EDF086A67C7A7FBE826E33CED2D9A /* Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C546D5CB921AF9D64DF7143CEC69102D /* Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C57084644B1D1825D1DA6F0F3723FB3D /* Pods-Panda ElectricTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda ElectricTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7D8A99047F06B9B0587A4881C2A0F02 /* Starscream-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Starscream-OSX.xcconfig"; sourceTree = "<group>"; };
-		C823BD472509B1B7FD188DEB9526D2D4 /* Pods-Pandas-Panda Electric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pandas-Panda Electric.release.xcconfig"; sourceTree = "<group>"; };
 		C8C493627EC463953108767194C76489 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		C9ECE6D4489FFE2828296D48490BBC52 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
 		CA3B1321D5423DD6194B3235A61C944C /* Birdsong-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Birdsong-OSX-dummy.m"; sourceTree = "<group>"; };
 		CA9D184F07AB32B2192D1A03C1C624E8 /* Birdsong-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Birdsong-iOS-prefix.pch"; path = "../Birdsong-iOS/Birdsong-iOS-prefix.pch"; sourceTree = "<group>"; };
+		CAAA6991A4A74625AFB0C5D925B951D9 /* Pods-Panda ElectricTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda ElectricTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB348EE6246D015BBF87EDEA17AD41DA /* Pods-Panda-Panda Electric-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Panda-Panda Electric-dummy.m"; sourceTree = "<group>"; };
 		CC3066AA90CF61ECEBE510BB1AE40B49 /* Starscream-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-OSX-prefix.pch"; sourceTree = "<group>"; };
-		CC4FE5E3E640E7C2AB5BC763EF27EA70 /* Pods_Pandas_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pandas_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD72941073314E9DC9B48FCB4F07875 /* Panda-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Panda-iOS.xcconfig"; path = "../Panda-iOS/Panda-iOS.xcconfig"; sourceTree = "<group>"; };
-		CEA3768357363E2E787956A3930EF103 /* Pods-Panda ElectricTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda ElectricTests-resources.sh"; sourceTree = "<group>"; };
-		CF749209C4AA59402AE68DC874B1D012 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF53C9F83B682EE8BE9962C5D5260F98 /* Pods_Panda_ElectricTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_ElectricTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B081170596D63A734DD571AB6558DB /* Pods-Panda ElectricUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda ElectricUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D44D6F036841A4F6EA6D51CCC552B6A4 /* Pods-Panda ElectricUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Panda ElectricUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DB7104067E88CCE9D4182FCB056B8CA1 /* Starscream-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Starscream-OSX.modulemap"; sourceTree = "<group>"; };
-		DD89AD84FD2F2892ACCC21F240ADF506 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB667E619AC8EC1E0D74733CFE65177 /* Birdsong-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Birdsong-OSX.modulemap"; sourceTree = "<group>"; };
+		DEBC1BDB4920132E5674E72711EA2D4A /* Pods_Panda_ElectricUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_ElectricUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7260302A2086F3DE09CDC39F315C55 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		E0A7ACD9FDAB41B494C83A7C53637025 /* Pods-Panda ElectricUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Panda ElectricUITests.modulemap"; sourceTree = "<group>"; };
-		E5AD6A95DE327FB8665DDBBC5CF23983 /* Pods-Pandas-Panda Electric-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pandas-Panda Electric-umbrella.h"; sourceTree = "<group>"; };
+		F0E0863D3AE55BD363292EEF203B75EF /* Pods-Panda ElectricTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Panda ElectricTests-resources.sh"; sourceTree = "<group>"; };
 		F19E2654A669C825BBADEDF0E0989D5D /* Panda-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Panda-iOS-umbrella.h"; path = "../Panda-iOS/Panda-iOS-umbrella.h"; sourceTree = "<group>"; };
-		F2FB19A596B28F649A842766A8CE9A4D /* Pods-Panda ElectricUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Panda ElectricUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F405BA3187F926F50635E2095EAAA77F /* Pods_Pandas_Panda_Electric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pandas_Panda_Electric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7D1ABD160BD827CAF4E35FBE52A208B /* Pods-Pandas-Panda Electric Mobile-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pandas-Panda Electric Mobile-acknowledgements.plist"; sourceTree = "<group>"; };
 		F7DC5D017F3B54ACC761BAE27F980A3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FCDEC422152882CC0A842529E2543137 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDB8D004F2E66DB7798ACCB0C90D34C0 /* Pods-Pandas-Panda Electric Mobile-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pandas-Panda Electric Mobile-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,27 +286,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6425487B058B63A633988787F71BE53A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5805550F800EC1874B216D839D78CB3D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6F6B19AE316B1C120EA53E6C0DFF84D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06DC7AF5B00E10E28945A868AFBA0C3C /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		784EDAF1998A2056F1AECBFA7E1F2119 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ED0216107C9400289F7CEF035F057A4B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7DF6F9FBCF970D4C99EC526EE16A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035D88451A59BE664C441BCFDEFE7724 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +309,14 @@
 				43F7CA88E133D91A9CFD2D6BA810CD57 /* Birdsong.framework in Frameworks */,
 				4CED0D0A40BA809C9C16FFD647FA6DB6 /* Cocoa.framework in Frameworks */,
 				50FBB61EFEBD3ED85FC5A79ED91651C8 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25A208A78A4BECBE75FF38C82219BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				562166C045326ECA9838A7A6B7249375 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +340,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006FD449DCB9B3B77EFD4A61E6CDB025 /* Pods-Panda ElectricTests */ = {
+			isa = PBXGroup;
+			children = (
+				57DC87385C82342E74F34D4B568A283E /* Info.plist */,
+				7A02971506DB4EF511170478EA23DC0F /* Pods-Panda ElectricTests.modulemap */,
+				A9D004BAC1F8ECFDD410D3026C349D68 /* Pods-Panda ElectricTests-acknowledgements.markdown */,
+				6DC1DAA560C754D2794B45D8B990060F /* Pods-Panda ElectricTests-acknowledgements.plist */,
+				6FAE397363F561DB10F1312B35703639 /* Pods-Panda ElectricTests-dummy.m */,
+				ABF04009F84AC12363395B84C701C552 /* Pods-Panda ElectricTests-frameworks.sh */,
+				F0E0863D3AE55BD363292EEF203B75EF /* Pods-Panda ElectricTests-resources.sh */,
+				3AB3BBCE761E74B7C66F6E82E7FE5423 /* Pods-Panda ElectricTests-umbrella.h */,
+				A3EABECFBC740962B0F789ED912E1656 /* Pods-Panda ElectricTests.debug.xcconfig */,
+				CAAA6991A4A74625AFB0C5D925B951D9 /* Pods-Panda ElectricTests.release.xcconfig */,
+			);
+			name = "Pods-Panda ElectricTests";
+			path = "Target Support Files/Pods-Panda ElectricTests";
+			sourceTree = "<group>";
+		};
 		03B57E10D12C5FD81A2C031FF88F6815 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,76 +418,30 @@
 			path = "../Target Support Files/Birdsong-OSX";
 			sourceTree = "<group>";
 		};
+		15EBB8EBAEFAC9FCD6C5EEDE6D827DDF /* Pods-Panda-Panda Electric */ = {
+			isa = PBXGroup;
+			children = (
+				2F060E337995D0E6D40FCEA96F4A558B /* Info.plist */,
+				82C5A32B41F184C9FF3758C69B13AADB /* Pods-Panda-Panda Electric.modulemap */,
+				794B531A9923F134EEE23225D0FF5055 /* Pods-Panda-Panda Electric-acknowledgements.markdown */,
+				8B50A72BC95003E0204B06DD9E38EFE6 /* Pods-Panda-Panda Electric-acknowledgements.plist */,
+				CB348EE6246D015BBF87EDEA17AD41DA /* Pods-Panda-Panda Electric-dummy.m */,
+				A0FF213F02C3E46CFFAD5410696E5FD4 /* Pods-Panda-Panda Electric-frameworks.sh */,
+				4A70B163001CBACDD13CDC423712F993 /* Pods-Panda-Panda Electric-resources.sh */,
+				A026D3EC77F9780B741BCB474B0EF3B3 /* Pods-Panda-Panda Electric-umbrella.h */,
+				674F8B8B5E39C4CA23BB9170942102E7 /* Pods-Panda-Panda Electric.debug.xcconfig */,
+				0E42AA18F5330824D72F9B14A9BA2556 /* Pods-Panda-Panda Electric.release.xcconfig */,
+			);
+			name = "Pods-Panda-Panda Electric";
+			path = "Target Support Files/Pods-Panda-Panda Electric";
+			sourceTree = "<group>";
+		};
 		1E8ED0BFA81171217716A80094D773A4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				F7DC5D017F3B54ACC761BAE27F980A3F /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		21A4D6F1463D0E55E7994E0700E55503 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				928C49829B4AC4A8E36F21A0D260A677 /* Pods-Panda ElectricTests */,
-				B1A2BF777F04BE86B45FF837C0C2E80C /* Pods-Panda ElectricUITests */,
-				4670EC713A502EC6E6D0588A4228CD2A /* Pods-Pandas-Panda Electric */,
-				398C6B43031FF804764E41FCD460195E /* Pods-Pandas-Panda Electric Mobile */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2FB00C8A3919F8BDF9F09A78272AFB0C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A984F9E306FCD2D8D54218FFF3DE7AE4 /* Birdsong.framework */,
-				035B43134210F25614BF54B34145722E /* Birdsong.framework */,
-				C31EDF086A67C7A7FBE826E33CED2D9A /* Panda.framework */,
-				C546D5CB921AF9D64DF7143CEC69102D /* Panda.framework */,
-				724DEFE27FE976892CE512122A717AF2 /* Pods_Panda_ElectricTests.framework */,
-				6C54320330EA61552CC0BC75DBBBCC2E /* Pods_Panda_ElectricUITests.framework */,
-				F405BA3187F926F50635E2095EAAA77F /* Pods_Pandas_Panda_Electric.framework */,
-				CC4FE5E3E640E7C2AB5BC763EF27EA70 /* Pods_Pandas_Panda_Electric_Mobile.framework */,
-				DD89AD84FD2F2892ACCC21F240ADF506 /* Starscream.framework */,
-				34CE10380DF34A0E95F81FE9DC25C7EE /* Starscream.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		398C6B43031FF804764E41FCD460195E /* Pods-Pandas-Panda Electric Mobile */ = {
-			isa = PBXGroup;
-			children = (
-				79308BB3C71FE1719945CDFAB85F0508 /* Info.plist */,
-				2C6F00FA8C7D3EB1C7BB9671E4AD4043 /* Pods-Pandas-Panda Electric Mobile.modulemap */,
-				365F328978662935D34FECFDBD6B9910 /* Pods-Pandas-Panda Electric Mobile-acknowledgements.markdown */,
-				F7D1ABD160BD827CAF4E35FBE52A208B /* Pods-Pandas-Panda Electric Mobile-acknowledgements.plist */,
-				8B521037BD90F6C7300310399827B29F /* Pods-Pandas-Panda Electric Mobile-dummy.m */,
-				33BD2F674EB4385D7C132BCB3C1F83CC /* Pods-Pandas-Panda Electric Mobile-frameworks.sh */,
-				FDB8D004F2E66DB7798ACCB0C90D34C0 /* Pods-Pandas-Panda Electric Mobile-resources.sh */,
-				5A8353BD7D756C5C8EBEAAD91F8D9FAD /* Pods-Pandas-Panda Electric Mobile-umbrella.h */,
-				802430ED7078C41735383996083A3DB4 /* Pods-Pandas-Panda Electric Mobile.debug.xcconfig */,
-				0F5252E5130F707B531518C60B86A5AE /* Pods-Pandas-Panda Electric Mobile.release.xcconfig */,
-			);
-			name = "Pods-Pandas-Panda Electric Mobile";
-			path = "Target Support Files/Pods-Pandas-Panda Electric Mobile";
-			sourceTree = "<group>";
-		};
-		4670EC713A502EC6E6D0588A4228CD2A /* Pods-Pandas-Panda Electric */ = {
-			isa = PBXGroup;
-			children = (
-				CF749209C4AA59402AE68DC874B1D012 /* Info.plist */,
-				8A5AF48282CA5FA6976A08C224744A22 /* Pods-Pandas-Panda Electric.modulemap */,
-				BCDCE8279CA310F0A673FC9F8514557E /* Pods-Pandas-Panda Electric-acknowledgements.markdown */,
-				0B196ABE8FE313650BB1FD6E687B138C /* Pods-Pandas-Panda Electric-acknowledgements.plist */,
-				BF16801FACCACB2788552CD19AABD366 /* Pods-Pandas-Panda Electric-dummy.m */,
-				307A7827DAD644E915033C697821F78B /* Pods-Pandas-Panda Electric-frameworks.sh */,
-				67C55A1AD37B606E1D89F8537EB2709E /* Pods-Pandas-Panda Electric-resources.sh */,
-				E5AD6A95DE327FB8665DDBBC5CF23983 /* Pods-Pandas-Panda Electric-umbrella.h */,
-				2001B79371B89442C8E1929177AF1EEB /* Pods-Pandas-Panda Electric.debug.xcconfig */,
-				C823BD472509B1B7FD188DEB9526D2D4 /* Pods-Pandas-Panda Electric.release.xcconfig */,
-			);
-			name = "Pods-Pandas-Panda Electric";
-			path = "Target Support Files/Pods-Pandas-Panda Electric";
 			sourceTree = "<group>";
 		};
 		4AAEA9F7FAEB7D3B69040D875636BF3A /* Pods */ = {
@@ -498,27 +470,26 @@
 				F3866AA0C6DE6FA8A8110E5C2E443326 /* Development Pods */,
 				A8A2A56DFF7FF258A797A34383736547 /* Frameworks */,
 				4AAEA9F7FAEB7D3B69040D875636BF3A /* Pods */,
-				2FB00C8A3919F8BDF9F09A78272AFB0C /* Products */,
-				21A4D6F1463D0E55E7994E0700E55503 /* Targets Support Files */,
+				894F56020533FD95079F4EDC40DE0673 /* Products */,
+				E83D4097A7CC6BF429C0B135BFAF6F5A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		928C49829B4AC4A8E36F21A0D260A677 /* Pods-Panda ElectricTests */ = {
+		894F56020533FD95079F4EDC40DE0673 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCDEC422152882CC0A842529E2543137 /* Info.plist */,
-				4EC0E2514349C0B2E64105350D3F9D07 /* Pods-Panda ElectricTests.modulemap */,
-				851810174F83155ACFE89E980154BE8E /* Pods-Panda ElectricTests-acknowledgements.markdown */,
-				BECFC74231CE0F6D2BA5F722D0BD6FA9 /* Pods-Panda ElectricTests-acknowledgements.plist */,
-				43F9B6B5236327EF77159E1CF654C2DA /* Pods-Panda ElectricTests-dummy.m */,
-				7A6F457938A6ADAEEE928A34ECC2951B /* Pods-Panda ElectricTests-frameworks.sh */,
-				CEA3768357363E2E787956A3930EF103 /* Pods-Panda ElectricTests-resources.sh */,
-				3C49F3964A962837A076669B70092E93 /* Pods-Panda ElectricTests-umbrella.h */,
-				C57084644B1D1825D1DA6F0F3723FB3D /* Pods-Panda ElectricTests.debug.xcconfig */,
-				702D58727A85A2C06E310AFEF05F31B8 /* Pods-Panda ElectricTests.release.xcconfig */,
+				2285A065FEC97CB0763DE5F47804AC62 /* Birdsong.framework */,
+				25A73EDE4A737279BD147DC0DA3D9B3F /* Birdsong.framework */,
+				6B02D9A67246259322A05C60301B315A /* Panda.framework */,
+				00ACD905C65221682EB61A5BF6780ED5 /* Panda.framework */,
+				CF53C9F83B682EE8BE9962C5D5260F98 /* Pods_Panda_ElectricTests.framework */,
+				DEBC1BDB4920132E5674E72711EA2D4A /* Pods_Panda_ElectricUITests.framework */,
+				BB8E5969BF2AA30FB1D8B88F02EBF216 /* Pods_Panda_Panda_Electric.framework */,
+				2C69C66057AA33766B1C43E1875C9004 /* Pods_Panda_Panda_Electric_Mobile.framework */,
+				315E9EC80A9A0D1C42AFE5E7B5AA3927 /* Starscream.framework */,
+				5CB87CA98A9F1618324DF8E73A63BE1F /* Starscream.framework */,
 			);
-			name = "Pods-Panda ElectricTests";
-			path = "Target Support Files/Pods-Panda ElectricTests";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A8A2A56DFF7FF258A797A34383736547 /* Frameworks */ = {
@@ -530,24 +501,6 @@
 				BC5C01272A356C63F2CF22D7934A8D9B /* OS X */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B1A2BF777F04BE86B45FF837C0C2E80C /* Pods-Panda ElectricUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6F3DB13AC7829FB4BA3104CF4442279C /* Info.plist */,
-				E0A7ACD9FDAB41B494C83A7C53637025 /* Pods-Panda ElectricUITests.modulemap */,
-				AB22BB229B13AF0F0D8B9B91934E21E4 /* Pods-Panda ElectricUITests-acknowledgements.markdown */,
-				645E2D8C05D1F84D3C4CA5BF31028E54 /* Pods-Panda ElectricUITests-acknowledgements.plist */,
-				96A3A11C0F1177B3D6B304F38B803ACA /* Pods-Panda ElectricUITests-dummy.m */,
-				38A466A777B5B46CF63D45450B3AFC48 /* Pods-Panda ElectricUITests-frameworks.sh */,
-				3BB394BFFF571CAF2B43CA497B2AC322 /* Pods-Panda ElectricUITests-resources.sh */,
-				0BD95FE1DC7EFF654775F71386B88F12 /* Pods-Panda ElectricUITests-umbrella.h */,
-				F2FB19A596B28F649A842766A8CE9A4D /* Pods-Panda ElectricUITests.debug.xcconfig */,
-				7DF116F6CA1EF943B94AF45F50471841 /* Pods-Panda ElectricUITests.release.xcconfig */,
-			);
-			name = "Pods-Panda ElectricUITests";
-			path = "Target Support Files/Pods-Panda ElectricUITests";
 			sourceTree = "<group>";
 		};
 		B9A6CCBE6EA73EBC8C5EC340F8041BDE /* Starscream */ = {
@@ -574,6 +527,53 @@
 				9983F195D0EBD8CC6667E60B7B0691AA /* SocketHandler.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		D3C38A2BDF6C813DF39553AADC45783D /* Pods-Panda-Panda Electric Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				65D255C8C219F5A18E5C98E9280FA1D5 /* Info.plist */,
+				A0B38499E45D195D72F0289BEDFB2B23 /* Pods-Panda-Panda Electric Mobile.modulemap */,
+				93D5698A0F154217D618C3677D53E5B5 /* Pods-Panda-Panda Electric Mobile-acknowledgements.markdown */,
+				9F7CE7C4BEC3FB496293DAEA9AFA3309 /* Pods-Panda-Panda Electric Mobile-acknowledgements.plist */,
+				81A3B1F71CD9AC980BDF0C99FA0AF7ED /* Pods-Panda-Panda Electric Mobile-dummy.m */,
+				BE8AEC3AE2456B78058A2A0B019EBB46 /* Pods-Panda-Panda Electric Mobile-frameworks.sh */,
+				7485BDA25F8DB31D12B15F0B39E7AB2D /* Pods-Panda-Panda Electric Mobile-resources.sh */,
+				99F90B5D43A3E65C58B8CF7C3A8CC011 /* Pods-Panda-Panda Electric Mobile-umbrella.h */,
+				C0A77C45FD87082AF30A836268EF17D5 /* Pods-Panda-Panda Electric Mobile.debug.xcconfig */,
+				805DAA65F1343BB9424F0CFCE7ECE4CD /* Pods-Panda-Panda Electric Mobile.release.xcconfig */,
+			);
+			name = "Pods-Panda-Panda Electric Mobile";
+			path = "Target Support Files/Pods-Panda-Panda Electric Mobile";
+			sourceTree = "<group>";
+		};
+		E83D4097A7CC6BF429C0B135BFAF6F5A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				006FD449DCB9B3B77EFD4A61E6CDB025 /* Pods-Panda ElectricTests */,
+				EF207E137575D6F03B288D074152FDBB /* Pods-Panda ElectricUITests */,
+				15EBB8EBAEFAC9FCD6C5EEDE6D827DDF /* Pods-Panda-Panda Electric */,
+				D3C38A2BDF6C813DF39553AADC45783D /* Pods-Panda-Panda Electric Mobile */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EF207E137575D6F03B288D074152FDBB /* Pods-Panda ElectricUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7742014828CEB7D60364CC8FD03C5FD0 /* Info.plist */,
+				ACAFC44DA9AC1DC697964E6954B6D835 /* Pods-Panda ElectricUITests.modulemap */,
+				557D248A99206206169BFE3FFBFA2124 /* Pods-Panda ElectricUITests-acknowledgements.markdown */,
+				D44D6F036841A4F6EA6D51CCC552B6A4 /* Pods-Panda ElectricUITests-acknowledgements.plist */,
+				9996D28B2B7DE1C54B9F9688CA22C372 /* Pods-Panda ElectricUITests-dummy.m */,
+				D0B081170596D63A734DD571AB6558DB /* Pods-Panda ElectricUITests-frameworks.sh */,
+				0B6AB35BD59F11D9F1B28D7AA5DA5F98 /* Pods-Panda ElectricUITests-resources.sh */,
+				0A1C7214CB85C12C65273ABF03AD92F6 /* Pods-Panda ElectricUITests-umbrella.h */,
+				74756461961C72A453F82AE3F9D81F5B /* Pods-Panda ElectricUITests.debug.xcconfig */,
+				25B73142348B447156E293FABEFE2E18 /* Pods-Panda ElectricUITests.release.xcconfig */,
+			);
+			name = "Pods-Panda ElectricUITests";
+			path = "Target Support Files/Pods-Panda ElectricUITests";
 			sourceTree = "<group>";
 		};
 		F3866AA0C6DE6FA8A8110E5C2E443326 /* Development Pods */ = {
@@ -608,14 +608,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		101540F09DC8280DF91F94921BE57885 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70FFE9771CF825C6A9A1A71A1545400D /* Pods-Pandas-Panda Electric-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		11CACF0C3BD7CC37EFDFB9C2EEDD9D37 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -640,11 +632,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3671401AF10F17E0B14A6757E3449484 /* Headers */ = {
+		72983827F2681D7E4E04B2E71795D150 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D26822AB47DEE0C59B7025721C28901 /* Pods-Pandas-Panda Electric Mobile-umbrella.h in Headers */,
+				7F754310BD2C77AE5EFFC6FC94BD8C5A /* Pods-Panda-Panda Electric-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +680,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1079CA388EA658243CECAA5846EE342 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF881E75E049623D88F2FF8D0EFECF65 /* Pods-Panda-Panda Electric Mobile-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -707,7 +707,7 @@
 			);
 			name = "Panda-OSX";
 			productName = "Panda-OSX";
-			productReference = C546D5CB921AF9D64DF7143CEC69102D /* Panda.framework */;
+			productReference = 00ACD905C65221682EB61A5BF6780ED5 /* Panda.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		571A83EE50CA1CAD6908C2365B26A628 /* Starscream-OSX */ = {
@@ -724,7 +724,7 @@
 			);
 			name = "Starscream-OSX";
 			productName = "Starscream-OSX";
-			productReference = DD89AD84FD2F2892ACCC21F240ADF506 /* Starscream.framework */;
+			productReference = 315E9EC80A9A0D1C42AFE5E7B5AA3927 /* Starscream.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		581BEA68852C18BAC57C5DE3C41EA61C /* Birdsong-OSX */ = {
@@ -742,47 +742,7 @@
 			);
 			name = "Birdsong-OSX";
 			productName = "Birdsong-OSX";
-			productReference = A984F9E306FCD2D8D54218FFF3DE7AE4 /* Birdsong.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6224DAD888FD9ED344B23FEAE4CCADEC /* Pods-Pandas-Panda Electric */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C5323E4025623D297CA44DAFE6B24CC /* Build configuration list for PBXNativeTarget "Pods-Pandas-Panda Electric" */;
-			buildPhases = (
-				7F8F174C6DFD453969A5AA1BD8BAC449 /* Sources */,
-				6F6B19AE316B1C120EA53E6C0DFF84D3 /* Frameworks */,
-				101540F09DC8280DF91F94921BE57885 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				568DFBBFE00788FD4484A4B9BEF0651D /* PBXTargetDependency */,
-				52CD9B241F718A1FCBA6E02D10FF2440 /* PBXTargetDependency */,
-				124D6FD5C4835F76970DB6EDA594F9C9 /* PBXTargetDependency */,
-			);
-			name = "Pods-Pandas-Panda Electric";
-			productName = "Pods-Pandas-Panda Electric";
-			productReference = F405BA3187F926F50635E2095EAAA77F /* Pods_Pandas_Panda_Electric.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		66D6DE68F56515E6D85883697C4936C8 /* Pods-Pandas-Panda Electric Mobile */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C311A51561447726417843FDF400309 /* Build configuration list for PBXNativeTarget "Pods-Pandas-Panda Electric Mobile" */;
-			buildPhases = (
-				D133054C45E867AF73FA49A5EF6FA551 /* Sources */,
-				6425487B058B63A633988787F71BE53A /* Frameworks */,
-				3671401AF10F17E0B14A6757E3449484 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E6328234D05EBEE8C3FA00C378E5C45A /* PBXTargetDependency */,
-				0455A73537C6E0A0AFF74ABC8E6AD5CE /* PBXTargetDependency */,
-				308474CC51803BC4222D5F224AC006EB /* PBXTargetDependency */,
-			);
-			name = "Pods-Pandas-Panda Electric Mobile";
-			productName = "Pods-Pandas-Panda Electric Mobile";
-			productReference = CC4FE5E3E640E7C2AB5BC763EF27EA70 /* Pods_Pandas_Panda_Electric_Mobile.framework */;
+			productReference = 2285A065FEC97CB0763DE5F47804AC62 /* Birdsong.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88302DA9D881B4BEB65F0BEA630BE2D7 /* Starscream-iOS */ = {
@@ -799,7 +759,7 @@
 			);
 			name = "Starscream-iOS";
 			productName = "Starscream-iOS";
-			productReference = 34CE10380DF34A0E95F81FE9DC25C7EE /* Starscream.framework */;
+			productReference = 5CB87CA98A9F1618324DF8E73A63BE1F /* Starscream.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		898CCE0D98B95877EA0B1F2EF785B23C /* Panda-iOS */ = {
@@ -818,7 +778,27 @@
 			);
 			name = "Panda-iOS";
 			productName = "Panda-iOS";
-			productReference = C31EDF086A67C7A7FBE826E33CED2D9A /* Panda.framework */;
+			productReference = 6B02D9A67246259322A05C60301B315A /* Panda.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8ACECD24E8A83FCBB6B3B8CB8501AC23 /* Pods-Panda-Panda Electric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3FDAA8EFCC24A593433FF586693433 /* Build configuration list for PBXNativeTarget "Pods-Panda-Panda Electric" */;
+			buildPhases = (
+				FE263FE7C16D1A29FC489687510E04CD /* Sources */,
+				8E7DF6F9FBCF970D4C99EC526EE16A98 /* Frameworks */,
+				72983827F2681D7E4E04B2E71795D150 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82E2955327CBCE0C447102FEFB649AB2 /* PBXTargetDependency */,
+				FD312D2C6CF92E9E02C26379BDF1F72D /* PBXTargetDependency */,
+				D02AA1DCF4CA61CAE1C897FAE4374563 /* PBXTargetDependency */,
+			);
+			name = "Pods-Panda-Panda Electric";
+			productName = "Pods-Panda-Panda Electric";
+			productReference = BB8E5969BF2AA30FB1D8B88F02EBF216 /* Pods_Panda_Panda_Electric.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8D6C6E2FA149C6543F39302F31C224D1 /* Birdsong-iOS */ = {
@@ -836,7 +816,27 @@
 			);
 			name = "Birdsong-iOS";
 			productName = "Birdsong-iOS";
-			productReference = 035B43134210F25614BF54B34145722E /* Birdsong.framework */;
+			productReference = 25A73EDE4A737279BD147DC0DA3D9B3F /* Birdsong.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3C2482A26C7C2685EB272B6CFC0D4D7 /* Pods-Panda-Panda Electric Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90BF35374D7C0F4E38D7D6DF4563BA1 /* Build configuration list for PBXNativeTarget "Pods-Panda-Panda Electric Mobile" */;
+			buildPhases = (
+				9FDE03654123D45EAC087218007B5A73 /* Sources */,
+				C25A208A78A4BECBE75FF38C82219BEF /* Frameworks */,
+				F1079CA388EA658243CECAA5846EE342 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				160A7D882CE0572C77DE7A4926374096 /* PBXTargetDependency */,
+				CADB2B64D731180C4053B5DD06614046 /* PBXTargetDependency */,
+				EA13F45E707B40C2EE51377EDCF62002 /* PBXTargetDependency */,
+			);
+			name = "Pods-Panda-Panda Electric Mobile";
+			productName = "Pods-Panda-Panda Electric Mobile";
+			productReference = 2C69C66057AA33766B1C43E1875C9004 /* Pods_Panda_Panda_Electric_Mobile.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C183384A7F802F9FA05004F75ED13012 /* Pods-Panda ElectricTests */ = {
@@ -853,7 +853,7 @@
 			);
 			name = "Pods-Panda ElectricTests";
 			productName = "Pods-Panda ElectricTests";
-			productReference = 724DEFE27FE976892CE512122A717AF2 /* Pods_Panda_ElectricTests.framework */;
+			productReference = CF53C9F83B682EE8BE9962C5D5260F98 /* Pods_Panda_ElectricTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C1F250A0C2B446A243B7F313887B13F0 /* Pods-Panda ElectricUITests */ = {
@@ -870,7 +870,7 @@
 			);
 			name = "Pods-Panda ElectricUITests";
 			productName = "Pods-Panda ElectricUITests";
-			productReference = 6C54320330EA61552CC0BC75DBBBCC2E /* Pods_Panda_ElectricUITests.framework */;
+			productReference = DEBC1BDB4920132E5674E72711EA2D4A /* Pods_Panda_ElectricUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -890,7 +890,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 2FB00C8A3919F8BDF9F09A78272AFB0C /* Products */;
+			productRefGroup = 894F56020533FD95079F4EDC40DE0673 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -900,8 +900,8 @@
 				060B7B58FEF71A8814B3D20DF9D2087B /* Panda-OSX */,
 				C183384A7F802F9FA05004F75ED13012 /* Pods-Panda ElectricTests */,
 				C1F250A0C2B446A243B7F313887B13F0 /* Pods-Panda ElectricUITests */,
-				6224DAD888FD9ED344B23FEAE4CCADEC /* Pods-Pandas-Panda Electric */,
-				66D6DE68F56515E6D85883697C4936C8 /* Pods-Pandas-Panda Electric Mobile */,
+				8ACECD24E8A83FCBB6B3B8CB8501AC23 /* Pods-Panda-Panda Electric */,
+				A3C2482A26C7C2685EB272B6CFC0D4D7 /* Pods-Panda-Panda Electric Mobile */,
 				88302DA9D881B4BEB65F0BEA630BE2D7 /* Starscream-iOS */,
 				571A83EE50CA1CAD6908C2365B26A628 /* Starscream-OSX */,
 			);
@@ -928,14 +928,6 @@
 			files = (
 				D5DC9FD90EAF16432EC66B9C3022A6A9 /* Panda-OSX-dummy.m in Sources */,
 				8A350440079082AEF017D12743E2712A /* SocketHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F8F174C6DFD453969A5AA1BD8BAC449 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A2F961F34A9AC3D0FBC3FD7BC4D011A /* Pods-Pandas-Panda Electric-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,6 +963,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FDE03654123D45EAC087218007B5A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0457D0F8FF19F0EE5ADE4E4A293498 /* Pods-Panda-Panda Electric Mobile-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE80285261CEC26F3A3529645DD042C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -987,14 +987,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D133054C45E867AF73FA49A5EF6FA551 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BDD1DA55F4147302EEC3D7171C52CAA9 /* Pods-Pandas-Panda Electric Mobile-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EBD7DD660216CCE78E259375D7F50D03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1005,50 +997,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE263FE7C16D1A29FC489687510E04CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F1CD3524B50EBCEDB3679B75285909 /* Pods-Panda-Panda Electric-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0455A73537C6E0A0AFF74ABC8E6AD5CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Panda-iOS";
-			target = 898CCE0D98B95877EA0B1F2EF785B23C /* Panda-iOS */;
-			targetProxy = AB92325C5FFA5766C621A39C271AE5D1 /* PBXContainerItemProxy */;
-		};
 		1174AE520820C3B7C414B1E6EB72CB70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Starscream-iOS";
 			target = 88302DA9D881B4BEB65F0BEA630BE2D7 /* Starscream-iOS */;
 			targetProxy = C06234A00DBC27CE1FC0A723876AFB22 /* PBXContainerItemProxy */;
 		};
-		124D6FD5C4835F76970DB6EDA594F9C9 /* PBXTargetDependency */ = {
+		160A7D882CE0572C77DE7A4926374096 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Starscream-OSX";
-			target = 571A83EE50CA1CAD6908C2365B26A628 /* Starscream-OSX */;
-			targetProxy = AEDE9367256DCCDAEDA0F1EF932EB3E5 /* PBXContainerItemProxy */;
-		};
-		308474CC51803BC4222D5F224AC006EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Starscream-iOS";
-			target = 88302DA9D881B4BEB65F0BEA630BE2D7 /* Starscream-iOS */;
-			targetProxy = A91D5B0F9BF808A4D053C44070C62445 /* PBXContainerItemProxy */;
-		};
-		52CD9B241F718A1FCBA6E02D10FF2440 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Panda-OSX";
-			target = 060B7B58FEF71A8814B3D20DF9D2087B /* Panda-OSX */;
-			targetProxy = 4286A2A473C897BCBC68F7F58B5A9AC1 /* PBXContainerItemProxy */;
+			name = "Birdsong-iOS";
+			target = 8D6C6E2FA149C6543F39302F31C224D1 /* Birdsong-iOS */;
+			targetProxy = D6D5984BA29F705B6C00576FB0E86DAD /* PBXContainerItemProxy */;
 		};
 		54F6DBC836E0C620EE193420712FEC27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Starscream-OSX";
 			target = 571A83EE50CA1CAD6908C2365B26A628 /* Starscream-OSX */;
 			targetProxy = 29F9AD0403B3E915407D130896D5C080 /* PBXContainerItemProxy */;
-		};
-		568DFBBFE00788FD4484A4B9BEF0651D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Birdsong-OSX";
-			target = 581BEA68852C18BAC57C5DE3C41EA61C /* Birdsong-OSX */;
-			targetProxy = 801B0C36915507FB87E08AB1DBF3CC1A /* PBXContainerItemProxy */;
 		};
 		6BD8BB0F10A48DADE4B1F50D7CF3D939 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1062,6 +1038,12 @@
 			target = 8D6C6E2FA149C6543F39302F31C224D1 /* Birdsong-iOS */;
 			targetProxy = DC570FD77F7CF2ED6C62066C9F106236 /* PBXContainerItemProxy */;
 		};
+		82E2955327CBCE0C447102FEFB649AB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Birdsong-OSX";
+			target = 581BEA68852C18BAC57C5DE3C41EA61C /* Birdsong-OSX */;
+			targetProxy = AC592CE6822496FE56EBA5D9E0254B60 /* PBXContainerItemProxy */;
+		};
 		97DC3EEF87E75758B898843CA33B253D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Starscream-iOS";
@@ -1074,18 +1056,36 @@
 			target = 581BEA68852C18BAC57C5DE3C41EA61C /* Birdsong-OSX */;
 			targetProxy = BA6E52D01B49AEE0A628C69F62CF9F8F /* PBXContainerItemProxy */;
 		};
-		E6328234D05EBEE8C3FA00C378E5C45A /* PBXTargetDependency */ = {
+		CADB2B64D731180C4053B5DD06614046 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Birdsong-iOS";
-			target = 8D6C6E2FA149C6543F39302F31C224D1 /* Birdsong-iOS */;
-			targetProxy = F89705C998B7EEEAF22986BF89A47079 /* PBXContainerItemProxy */;
+			name = "Panda-iOS";
+			target = 898CCE0D98B95877EA0B1F2EF785B23C /* Panda-iOS */;
+			targetProxy = 3928D4F85396AEE650DF560E904F6191 /* PBXContainerItemProxy */;
+		};
+		D02AA1DCF4CA61CAE1C897FAE4374563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Starscream-OSX";
+			target = 571A83EE50CA1CAD6908C2365B26A628 /* Starscream-OSX */;
+			targetProxy = 80A3A264EB0D87715A2AC0CCC6F69C17 /* PBXContainerItemProxy */;
+		};
+		EA13F45E707B40C2EE51377EDCF62002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Starscream-iOS";
+			target = 88302DA9D881B4BEB65F0BEA630BE2D7 /* Starscream-iOS */;
+			targetProxy = 2FBB325BF74048E30B9ECF1639995C72 /* PBXContainerItemProxy */;
+		};
+		FD312D2C6CF92E9E02C26379BDF1F72D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Panda-OSX";
+			target = 060B7B58FEF71A8814B3D20DF9D2087B /* Panda-OSX */;
+			targetProxy = 1C7E03068C4954F4064FE00F3C426DBE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		08EF7EB44A1EDAEB87C53EB0D11B0E6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C57084644B1D1825D1DA6F0F3723FB3D /* Pods-Panda ElectricTests.debug.xcconfig */;
+			baseConfigurationReference = A3EABECFBC740962B0F789ED912E1656 /* Pods-Panda ElectricTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1218,7 +1218,7 @@
 		};
 		304917302A9E2B70866BFC6A104C4FE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 702D58727A85A2C06E310AFEF05F31B8 /* Pods-Panda ElectricTests.release.xcconfig */;
+			baseConfigurationReference = CAAA6991A4A74625AFB0C5D925B951D9 /* Pods-Panda ElectricTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1280,9 +1280,9 @@
 			};
 			name = Debug;
 		};
-		42FF8097E703FC3FB97A8AD5AD02D228 /* Release */ = {
+		679A2CF06BF0C19BAC6A8FD24FBFD84C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C823BD472509B1B7FD188DEB9526D2D4 /* Pods-Pandas-Panda Electric.release.xcconfig */;
+			baseConfigurationReference = 0E42AA18F5330824D72F9B14A9BA2556 /* Pods-Panda-Panda Electric.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1295,53 +1295,20 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Pandas-Panda Electric/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Panda-Panda Electric/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pandas-Panda Electric/Pods-Pandas-Panda Electric.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Pandas_Panda_Electric;
+				PRODUCT_NAME = Pods_Panda_Panda_Electric;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		521B91D973AF84F8D59EA0E60604FC87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F5252E5130F707B531518C60B86A5AE /* Pods-Pandas-Panda Electric Mobile.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Pandas-Panda Electric Mobile/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pandas-Panda Electric Mobile/Pods-Pandas-Panda Electric Mobile.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Pandas_Panda_Electric_Mobile;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1376,9 +1343,42 @@
 			};
 			name = Release;
 		};
+		7E1C31EF1ADE48B3A00DA8FD37E8399C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805DAA65F1343BB9424F0CFCE7ECE4CD /* Pods-Panda-Panda Electric Mobile.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Panda-Panda Electric Mobile/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Panda_Panda_Electric_Mobile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8347FD56AB9F1B2118900CB9AABDFDF8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DF116F6CA1EF943B94AF45F50471841 /* Pods-Panda ElectricUITests.release.xcconfig */;
+			baseConfigurationReference = 25B73142348B447156E293FABEFE2E18 /* Pods-Panda ElectricUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1409,6 +1409,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		9390D5BD38E616BF3145052F440DC14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674F8B8B5E39C4CA23BB9170942102E7 /* Pods-Panda-Panda Electric.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Panda-Panda Electric/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Panda_Panda_Electric;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		95EBD00B6AFB311AC11CA637C52C7451 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1498,6 +1533,40 @@
 			};
 			name = Debug;
 		};
+		AEB06D11A75BC9A5F2D834FC0F79F615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A77C45FD87082AF30A836268EF17D5 /* Pods-Panda-Panda Electric Mobile.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Panda-Panda Electric Mobile/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Panda_Panda_Electric_Mobile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		BE68ADBEAAEEFD0FE018FC391EA729B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A25483F8E41396A2763ABFA1F1E20470 /* Birdsong-OSX.xcconfig */;
@@ -1561,7 +1630,7 @@
 		};
 		D2B2D37E193E344D77DE578784EC2F3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2FB19A596B28F649A842766A8CE9A4D /* Pods-Panda ElectricUITests.debug.xcconfig */;
+			baseConfigurationReference = 74756461961C72A453F82AE3F9D81F5B /* Pods-Panda ElectricUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1624,40 +1693,6 @@
 			};
 			name = Debug;
 		};
-		DCB64CF2994E7B4E08E5686F233C19A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 802430ED7078C41735383996083A3DB4 /* Pods-Pandas-Panda Electric Mobile.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Pandas-Panda Electric Mobile/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pandas-Panda Electric Mobile/Pods-Pandas-Panda Electric Mobile.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Pandas_Panda_Electric_Mobile;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E400A2966C73A28E6C5C63F99F391C08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1698,41 +1733,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		E8062CADF0CCACFE65ADF19C9958EFEE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2001B79371B89442C8E1929177AF1EEB /* Pods-Pandas-Panda Electric.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Pandas-Panda Electric/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pandas-Panda Electric/Pods-Pandas-Panda Electric.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Pandas_Panda_Electric;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1818,24 +1818,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C5323E4025623D297CA44DAFE6B24CC /* Build configuration list for PBXNativeTarget "Pods-Pandas-Panda Electric" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E8062CADF0CCACFE65ADF19C9958EFEE /* Debug */,
-				42FF8097E703FC3FB97A8AD5AD02D228 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5C311A51561447726417843FDF400309 /* Build configuration list for PBXNativeTarget "Pods-Pandas-Panda Electric Mobile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DCB64CF2994E7B4E08E5686F233C19A2 /* Debug */,
-				521B91D973AF84F8D59EA0E60604FC87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7FFFD02B42A90DDB68114EDCD397E27A /* Build configuration list for PBXNativeTarget "Panda-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1845,11 +1827,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		8E3FDAA8EFCC24A593433FF586693433 /* Build configuration list for PBXNativeTarget "Pods-Panda-Panda Electric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9390D5BD38E616BF3145052F440DC14B /* Debug */,
+				679A2CF06BF0C19BAC6A8FD24FBFD84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A642E44F50993A10BADD567064585F5D /* Build configuration list for PBXNativeTarget "Starscream-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D30B3F94AAAF9C18414E4623C646BF25 /* Debug */,
 				26F5952F992DCFB5D94BD9BCCF4E213B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90BF35374D7C0F4E38D7D6DF4563BA1 /* Build configuration list for PBXNativeTarget "Pods-Panda-Panda Electric Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEB06D11A75BC9A5F2D834FC0F79F615 /* Debug */,
+				7E1C31EF1ADE48B3A00DA8FD37E8399C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

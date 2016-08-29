@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134EC48685F6189ACEA797F9 /* Pods_Panda_Panda_Electric_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461320F2C36DEEF54CDB3E49 /* Pods_Panda_Panda_Electric_Mobile.framework */; };
 		3B6CB7411D4CAAA9005C40D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7401D4CAAA9005C40D8 /* AppDelegate.swift */; };
 		3B6CB7431D4CAAA9005C40D8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7421D4CAAA9005C40D8 /* MasterViewController.swift */; };
 		3B6CB7451D4CAAA9005C40D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7441D4CAAA9005C40D8 /* DetailViewController.swift */; };
@@ -15,8 +16,6 @@
 		3B6CB74D1D4CAAA9005C40D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB74B1D4CAAA9005C40D8 /* LaunchScreen.storyboard */; };
 		3B6CB7581D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7571D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift */; };
 		3B6CB7631D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */; };
-		3F6C000DF72BE6F48914FF85 /* Pods_Panda_Electric_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBB020C22EF819DADB39189 /* Pods_Panda_Electric_Mobile.framework */; };
-		FE1F1F52B8D99CDF0B309C79 /* Pods_Pandas_Panda_Electric_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82755F9E463367C954ADF3E9 /* Pods_Pandas_Panda_Electric_Mobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +52,13 @@
 		3B6CB75E1D4CAAAA005C40D8 /* Panda Electric MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda Electric MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_Electric_MobileUITests.swift; sourceTree = "<group>"; };
 		3B6CB7641D4CAAAA005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		461320F2C36DEEF54CDB3E49 /* Pods_Panda_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBB020C22EF819DADB39189 /* Pods_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		784A818E71732C57BDFEDABD /* Pods-Panda Electric Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric Mobile/Pods-Panda Electric Mobile.release.xcconfig"; sourceTree = "<group>"; };
 		82755F9E463367C954ADF3E9 /* Pods_Pandas_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pandas_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D476A156729D6D8422EB9DD5 /* Pods-Panda-Panda Electric Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda-Panda Electric Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile.release.xcconfig"; sourceTree = "<group>"; };
 		DEB12B5A02D3F705BEEF7E20 /* Pods-Panda Electric Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric Mobile/Pods-Panda Electric Mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		F95FBA379B6266CFC95125E3 /* Pods-Panda-Panda Electric Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda-Panda Electric Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6C000DF72BE6F48914FF85 /* Pods_Panda_Electric_Mobile.framework in Frameworks */,
-				FE1F1F52B8D99CDF0B309C79 /* Pods_Pandas_Panda_Electric_Mobile.framework in Frameworks */,
+				134EC48685F6189ACEA797F9 /* Pods_Panda_Panda_Electric_Mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +146,7 @@
 			children = (
 				4BBB020C22EF819DADB39189 /* Pods_Panda_Electric_Mobile.framework */,
 				82755F9E463367C954ADF3E9 /* Pods_Pandas_Panda_Electric_Mobile.framework */,
+				461320F2C36DEEF54CDB3E49 /* Pods_Panda_Panda_Electric_Mobile.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,6 +158,8 @@
 				784A818E71732C57BDFEDABD /* Pods-Panda Electric Mobile.release.xcconfig */,
 				1B509D07F3F783BA36046F0C /* Pods-Pandas-Panda Electric Mobile.debug.xcconfig */,
 				092997EF7A7A55858CF41B22 /* Pods-Pandas-Panda Electric Mobile.release.xcconfig */,
+				F95FBA379B6266CFC95125E3 /* Pods-Panda-Panda Electric Mobile.debug.xcconfig */,
+				D476A156729D6D8422EB9DD5 /* Pods-Panda-Panda Electric Mobile.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -318,7 +322,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pandas-Panda Electric Mobile/Pods-Pandas-Panda Electric Mobile-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A3DDABFFE859844C75CB1DA /* [CP] Embed Pods Frameworks */ = {
@@ -333,7 +337,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pandas-Panda Electric Mobile/Pods-Pandas-Panda Electric Mobile-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -487,7 +491,7 @@
 		};
 		3B6CB7681D4CAAAA005C40D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B509D07F3F783BA36046F0C /* Pods-Pandas-Panda Electric Mobile.debug.xcconfig */;
+			baseConfigurationReference = F95FBA379B6266CFC95125E3 /* Pods-Panda-Panda Electric Mobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -500,7 +504,7 @@
 		};
 		3B6CB7691D4CAAAA005C40D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 092997EF7A7A55858CF41B22 /* Pods-Pandas-Panda Electric Mobile.release.xcconfig */;
+			baseConfigurationReference = D476A156729D6D8422EB9DD5 /* Pods-Panda-Panda Electric Mobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

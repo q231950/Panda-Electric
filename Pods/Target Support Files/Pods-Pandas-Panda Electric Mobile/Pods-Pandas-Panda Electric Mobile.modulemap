@@ -1,6 +1,0 @@
-framework module Pods_Pandas_Panda_Electric_Mobile {
-  umbrella header "Pods-Pandas-Panda Electric Mobile-umbrella.h"
-
-  export *
-  module * { export * }
-}

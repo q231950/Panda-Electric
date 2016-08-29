@@ -34,12 +34,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Pandas-Panda Electric Mobile.xcscheme</key>
+		<key>Pods-Panda-Panda Electric Mobile.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Pandas-Panda Electric.xcscheme</key>
+		<key>Pods-Panda-Panda Electric.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,16 +72,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6224DAD888FD9ED344B23FEAE4CCADEC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>66D6DE68F56515E6D85883697C4936C8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>88302DA9D881B4BEB65F0BEA630BE2D7</key>
 		<dict>
 			<key>primary</key>
@@ -92,7 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8ACECD24E8A83FCBB6B3B8CB8501AC23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8D6C6E2FA149C6543F39302F31C224D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3C2482A26C7C2685EB272B6CFC0D4D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
