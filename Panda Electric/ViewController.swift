@@ -14,8 +14,8 @@ class ViewController: NSViewController {
 
     @IBOutlet var inputField: NSTextField!
     @IBOutlet var messageLabel: NSTextField!
-    let socket = Socket(url: NSURL(string: "http://localhost:4000/socket/websocket")!)
-//    let socket = Socket(url: NSURL(string: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")!)
+//    let socket = Socket(url: NSURL(string: "http://localhost:4000/socket/websocket")!)
+    let socket = Socket(url: NSURL(string: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")!)
     var socketHandler: SocketHandler? {
         didSet {
             socketHandler?.messageHandler = { (message: String, position: Int) -> Void in

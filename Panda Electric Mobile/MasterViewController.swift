@@ -14,8 +14,8 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
-    let socket = Socket(url: NSURL(string: "http://localhost:4000/socket/websocket")!)
-//    let socket = Socket(url: NSURL(string: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")!)
+//    let socket = Socket(url: NSURL(string: "http://localhost:4000/socket/websocket")!)
+    let socket = Socket(url: NSURL(string: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
