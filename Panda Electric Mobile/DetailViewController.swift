@@ -11,7 +11,7 @@ import Panda
 
 class DetailViewController: UIViewController, UITextFieldDelegate {
     
-    let backgroundImageView = UIImageView()
+    let fibonacciPickerView = FibonacciPickerView()
     var socketHandler: SocketHandler? {
         didSet {
             socketHandler?.messageHandler = { (message: String, position: Int) -> Void in
@@ -25,7 +25,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = socketHandler?.topic as String?
-        setupBackgroundImageView()
+        setupPickerView()
     }
     
     private func handleMessage(message: String, atPosition position: Int) {
@@ -44,15 +44,14 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Setup
     
-    func setupBackgroundImageView() {
-        backgroundImageView.image = UIImage(named: "Background")
-        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
-        view.insertSubview(backgroundImageView, atIndex: 0)
+    func setupPickerView() {
+        fibonacciPickerView.translatesAutoresizingMaskIntoConstraints = false
+        view.insertSubview(fibonacciPickerView, atIndex: 0)
         NSLayoutConstraint.activateConstraints([
-            backgroundImageView.topAnchor.constraintEqualToAnchor(view.topAnchor),
-            backgroundImageView.leftAnchor.constraintEqualToAnchor(view.leftAnchor),
-            backgroundImageView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor),
-            backgroundImageView.rightAnchor.constraintEqualToAnchor(view.rightAnchor)])
+            fibonacciPickerView.topAnchor.constraintEqualToAnchor(view.topAnchor),
+            fibonacciPickerView.leftAnchor.constraintEqualToAnchor(view.leftAnchor),
+            fibonacciPickerView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor),
+            fibonacciPickerView.rightAnchor.constraintEqualToAnchor(view.rightAnchor)])
     }
     
     
