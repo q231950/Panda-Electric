@@ -17,6 +17,8 @@
 		3B6CB7581D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7571D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift */; };
 		3B6CB7631D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */; };
 		3B8C1D701D7AAE7F00500B43 /* FibonacciPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */; };
+		3BDF2DE81D7C361300CFC1BB /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */; };
+		3BDF2DEA1D7C70D100CFC1BB /* FibonacciNumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_Electric_MobileUITests.swift; sourceTree = "<group>"; };
 		3B6CB7641D4CAAAA005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciPickerView.swift; sourceTree = "<group>"; };
+		3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
+		3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciNumberButton.swift; sourceTree = "<group>"; };
 		461320F2C36DEEF54CDB3E49 /* Pods_Panda_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBB020C22EF819DADB39189 /* Pods_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		784A818E71732C57BDFEDABD /* Pods-Panda Electric Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric Mobile/Pods-Panda Electric Mobile.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				3B6CB7421D4CAAA9005C40D8 /* MasterViewController.swift */,
 				3B6CB7441D4CAAA9005C40D8 /* DetailViewController.swift */,
 				3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */,
+				3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */,
+				3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */,
 				3B6CB7461D4CAAA9005C40D8 /* Main.storyboard */,
 				3B6CB7491D4CAAA9005C40D8 /* Assets.xcassets */,
 				3B6CB74B1D4CAAA9005C40D8 /* LaunchScreen.storyboard */,
@@ -350,8 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDF2DE81D7C361300CFC1BB /* FibonacciSequence.swift in Sources */,
 				3B6CB7451D4CAAA9005C40D8 /* DetailViewController.swift in Sources */,
 				3B8C1D701D7AAE7F00500B43 /* FibonacciPickerView.swift in Sources */,
+				3BDF2DEA1D7C70D100CFC1BB /* FibonacciNumberButton.swift in Sources */,
 				3B6CB7431D4CAAA9005C40D8 /* MasterViewController.swift in Sources */,
 				3B6CB7411D4CAAA9005C40D8 /* AppDelegate.swift in Sources */,
 			);
