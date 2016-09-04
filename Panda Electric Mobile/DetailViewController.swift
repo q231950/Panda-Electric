@@ -38,6 +38,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = socketHandler?.topic as String?
+        view.backgroundColor = UIColor.darkGrayColor()
         setupPickerView()
     }
     

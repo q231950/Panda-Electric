@@ -34,7 +34,8 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     
     private func setupScrollView() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.backgroundColor = UIColor.purpleColor().colorWithAlphaComponent(0.3)
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
         scrollView.delegate = self
         scrollView.clipsToBounds = false
         addSubview(scrollView)
@@ -104,25 +105,21 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     /// MARK: Snapping
     
     private func closestTargetContentOffsetForOffset(offset: CGPoint) -> CGFloat {
-        let elementHeight = scrollView.frame.size.height / CGFloat(sequence.numbers.count) + spacing
-        print("frame.height/numbers.count = \(elementHeight) ")
-        print("offset.y % elementHeight = =\(offset.y % elementHeight)")
+        let elementHeight = stackView.arrangedSubviews[0].frame.size.height + spacing
         
-        return offset.y
+        let newOffset:CGFloat
+        if (offset.y % elementHeight) > elementHeight/2 {
+            newOffset = offset.y + (elementHeight - (offset.y % elementHeight))
+        } else {
+            newOffset = offset.y - (offset.y % elementHeight)
+        }
+        
+        return newOffset
     }
     
     /// MARK: UIScrollViewDelegate
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
-        print("scrollViewDidScroll: \(scrollView.contentOffset)")
-    }
-    
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         targetContentOffset.memory.y = closestTargetContentOffsetForOffset(targetContentOffset.memory)
-        print("scrollViewWillEndDragging velocity: \(velocity) targetContentOffset: \(targetContentOffset.memory.x),\(targetContentOffset.memory.y)")
-    }
-    
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        print("scrollViewDidEndDecelerating \(scrollView.contentOffset)")
     }
 }

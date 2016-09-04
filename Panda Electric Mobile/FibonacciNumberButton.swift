@@ -15,7 +15,6 @@ class FibonacciNumberButton: UIButton {
         self.fibonacciNumber = fibonacciNumber
         super.init(frame: CGRectZero)
         self.setTitle("\(fibonacciNumber.value)", forState: .Normal)
-        self.backgroundColor = UIColor.cyanColor().colorWithAlphaComponent(0.2)
     }
     
     required init?(coder aDecoder: NSCoder) {
