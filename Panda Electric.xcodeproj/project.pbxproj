@@ -181,12 +181,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB72B1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric" */;
 			buildPhases = (
+				A535D4E775D35B96222B3317 /* [CP] Check Pods Manifest.lock */,
 				3D806333C817227002597715 /* [CP] Check Pods Manifest.lock */,
 				3B6CB7021D4C9F95005C40D8 /* Sources */,
 				3B6CB7031D4C9F95005C40D8 /* Frameworks */,
 				3B6CB7041D4C9F95005C40D8 /* Resources */,
 				EF729FA7650A2F97C139F265 /* [CP] Embed Pods Frameworks */,
 				719D16F07C044787A7F36D82 /* [CP] Copy Pods Resources */,
+				93A3D803CEA6A2A50CF57573 /* 📦 Embed Pods Frameworks */,
+				2DB4E7F87D288926BB0B9B7C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,12 +204,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB72E1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricTests" */;
 			buildPhases = (
+				2367188F5E492DDCD60D0CB6 /* [CP] Check Pods Manifest.lock */,
 				5BCD8B085D7E53820A491239 /* [CP] Check Pods Manifest.lock */,
 				3B6CB7131D4C9F95005C40D8 /* Sources */,
 				3B6CB7141D4C9F95005C40D8 /* Frameworks */,
 				3B6CB7151D4C9F95005C40D8 /* Resources */,
 				6CDAA6C9E7416B8B99495329 /* [CP] Embed Pods Frameworks */,
 				9848321D85063DBC94709095 /* [CP] Copy Pods Resources */,
+				65A40718984E0FF672A598FF /* 📦 Embed Pods Frameworks */,
+				75EC1A92776E587E773D7DE4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,11 +228,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB7311D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricUITests" */;
 			buildPhases = (
+				71233390CAAD58FFA8AFE033 /* [CP] Check Pods Manifest.lock */,
 				6DA57A37643FC7BE4FE8488D /* [CP] Check Pods Manifest.lock */,
 				3B6CB71E1D4C9F95005C40D8 /* Sources */,
 				3B6CB71F1D4C9F95005C40D8 /* Frameworks */,
 				3B6CB7201D4C9F95005C40D8 /* Resources */,
 				44FE4AC6DE293523D4F466A4 /* [CP] Copy Pods Resources */,
+				7B15609AB9897CDD5FB52092 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +316,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2367188F5E492DDCD60D0CB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2DB4E7F87D288926BB0B9B7C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3D806333C817227002597715 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +391,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		65A40718984E0FF672A598FF /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6CDAA6C9E7416B8B99495329 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +436,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		71233390CAAD58FFA8AFE033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		719D16F07C044787A7F36D82 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,6 +466,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		75EC1A92776E587E773D7DE4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B15609AB9897CDD5FB52092 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A3D803CEA6A2A50CF57573 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9848321D85063DBC94709095 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +524,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A535D4E775D35B96222B3317 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EF729FA7650A2F97C139F265 /* [CP] Embed Pods Frameworks */ = {

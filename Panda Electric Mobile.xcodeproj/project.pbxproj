@@ -180,12 +180,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB7671D4CAAAA005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric Mobile" */;
 			buildPhases = (
+				FCB51F9B047BB9C594713C21 /* [CP] Check Pods Manifest.lock */,
 				1D40E03572990333279FFA4E /* [CP] Check Pods Manifest.lock */,
 				3B6CB7391D4CAAA9005C40D8 /* Sources */,
 				3B6CB73A1D4CAAA9005C40D8 /* Frameworks */,
 				3B6CB73B1D4CAAA9005C40D8 /* Resources */,
 				5A3DDABFFE859844C75CB1DA /* [CP] Embed Pods Frameworks */,
 				28BD5D6DDF64BA43DDA0C24A /* [CP] Copy Pods Resources */,
+				49923011DFF0A79D91DFF041 /* 📦 Embed Pods Frameworks */,
+				5B8C6C1FD7993C201BCBAD87 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,6 +337,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		49923011DFF0A79D91DFF041 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5A3DDABFFE859844C75CB1DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,6 +365,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B8C6C1FD7993C201BCBAD87 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCB51F9B047BB9C594713C21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -14,6 +14,7 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     let backgroundImageView = UIImageView(image: UIImage(named: "Background")!)
     let myMaskView = UIView()
     let spacing:CGFloat = 10
+    let margin: CGFloat = 40
     let sequence: FibonacciSequence
     var stackView:UIStackView!
     
@@ -24,6 +25,10 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
         setupScrollView()
         setupScrollContentView()
         setupMaskView()
+        stackView.arrangedSubviews.forEach { (v: UIView) in
+            bringSubviewToFront(v)
+        }
+//        bringSubviewToFront(stackView)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -50,7 +55,7 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(contentView)
         NSLayoutConstraint.activateConstraints([
-            contentView.heightAnchor.constraintEqualToAnchor(stackView.arrangedSubviews[0].heightAnchor, multiplier: 2*CGFloat(sequence.numbers.count)-1, constant: 2*spacing*CGFloat(sequence.numbers.count-1)),
+            contentView.heightAnchor.constraintEqualToAnchor(stackView.arrangedSubviews[0].heightAnchor, multiplier: 2 * CGFloat(sequence.numbers.count)-1, constant: 2 * spacing * CGFloat(sequence.numbers.count-1)),
             contentView.topAnchor.constraintEqualToAnchor(scrollView.topAnchor),
             contentView.bottomAnchor.constraintEqualToAnchor(scrollView.bottomAnchor),
             contentView.leadingAnchor.constraintEqualToAnchor(scrollView.leadingAnchor),
@@ -83,10 +88,13 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     private func setupNumberButtonsForSequence(sequence: FibonacciSequence) {
         var buttons = [UIView]()
         sequence.numbers.forEach { (number: FibonacciNumber) in
-            buttons.append(FibonacciNumberButton(fibonacciNumber: number))
+            let button = FibonacciNumberButton(fibonacciNumber: number)
+            button.addTarget(self, action: #selector(FibonacciPickerView.selectFibonacciNumber), forControlEvents: .TouchUpInside)
+            buttons.append(button)
         }
         
         let stackView = UIStackView(arrangedSubviews: buttons)
+        stackView.backgroundColor = UIColor.orangeColor().colorWithAlphaComponent(0.3)
         stackView.alignment = .Center
         stackView.axis = .Vertical
         stackView.distribution = .FillEqually
@@ -95,11 +103,17 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
         addSubview(stackView)
         
         NSLayoutConstraint.activateConstraints([
-            stackView.topAnchor.constraintEqualToAnchor(topAnchor, constant: 40),
+            stackView.topAnchor.constraintEqualToAnchor(topAnchor, constant: margin),
             stackView.leftAnchor.constraintEqualToAnchor(leftAnchor),
-            stackView.bottomAnchor.constraintEqualToAnchor(bottomAnchor, constant: -40),
+            stackView.bottomAnchor.constraintEqualToAnchor(bottomAnchor, constant: -margin),
             stackView.rightAnchor.constraintEqualToAnchor(rightAnchor)])
         self.stackView = stackView
+    }
+    
+    /// MARK: Actions
+    
+    func selectFibonacciNumber(button: FibonacciNumberButton) {
+        print("pressed \(button.fibonacciNumber.value)")
     }
     
     /// MARK: Snapping
