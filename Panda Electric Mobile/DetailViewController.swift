@@ -52,7 +52,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         textField.text = string
         if let socketHandler = self.socketHandler {
-            socketHandler.sendMessage(string)
+            socketHandler.sendMessage(message: string)
         }
         return false
     }
