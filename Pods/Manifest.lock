@@ -7,7 +7,7 @@ PODS:
 
 DEPENDENCIES:
   - Birdsong (from `https://github.com/q231950/Birdsong.git`, branch `swift3`)
-  - Panda (from `../Panda`)
+  - Panda (from `https://github.com/q231950/Panda.git`)
   - Starscream (from `https://github.com/daltoniam/Starscream.git`, branch `swift3`)
 
 EXTERNAL SOURCES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :branch: swift3
     :git: https://github.com/q231950/Birdsong.git
   Panda:
-    :path: "../Panda"
+    :git: https://github.com/q231950/Panda.git
   Starscream:
     :branch: swift3
     :git: https://github.com/daltoniam/Starscream.git
@@ -24,6 +24,9 @@ CHECKOUT OPTIONS:
   Birdsong:
     :commit: b771f3452c77fd3f979f87b29f18b9ffe6d279ce
     :git: https://github.com/q231950/Birdsong.git
+  Panda:
+    :commit: 2e8f5ccb845671b3373459d6f57c120d324954d9
+    :git: https://github.com/q231950/Panda.git
   Starscream:
     :commit: b1472f2a99a747ffda35c43ac4eb58b73c59722a
     :git: https://github.com/daltoniam/Starscream.git
@@ -33,6 +36,6 @@ SPEC CHECKSUMS:
   Panda: 5c137c0dbf8cb1453d99f81c3118d28498d37e8b
   Starscream: d662732354b40dd19ed1ece3e3c44c80b536b83c
 
-PODFILE CHECKSUM: aa7625572bf915e0e4ee154b543e1f4aab7cb093
+PODFILE CHECKSUM: f8c9de52cd2e2520c9ad7b63b45ff99543721267
 
 COCOAPODS: 1.0.1

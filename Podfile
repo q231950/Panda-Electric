@@ -5,7 +5,7 @@ abstract_target 'Panda' do
   use_frameworks!
   pod 'Birdsong', git: 'https://github.com/q231950/Birdsong.git', branch: 'swift3'
   pod 'Starscream', git: 'https://github.com/daltoniam/Starscream.git', branch: 'swift3'
-  pod 'Panda', path: '../Panda'
+  pod 'Panda', git: 'https://github.com/q231950/Panda.git'
 
   target 'Panda Electric' do
     project 'Panda Electric.xcodeproj'
