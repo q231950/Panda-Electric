@@ -24,7 +24,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                                                                                         FibonacciNumber(index:11, value:144),
                                                                                         FibonacciNumber(index:12, value:233),
                                                                                         FibonacciNumber(index:13, value:377),
-                                                                                        FibonacciNumber(index:14, value:610),].reverse()))
+                                                                                        FibonacciNumber(index:14, value:610),].reversed()))
     var socketHandler: SocketHandler? {
         didSet {
             socketHandler?.messageHandler = { (message: String, position: Int) -> Void in
@@ -38,17 +38,18 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = socketHandler?.topic as String?
-        view.backgroundColor = UIColor.darkGrayColor()
+        view.backgroundColor = UIColor.darkGray
         setupPickerView()
     }
     
-    private func handleMessage(message: String, atPosition position: Int) {
+    fileprivate func handleMessage(_ message: String, atPosition position: Int) {
+        print("message: \(message)")
         if let receivedMessageLabel = self.receivedMessageLabel {
             receivedMessageLabel.text = message + " \(position)"
         }
     }
 
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         textField.text = string
         if let socketHandler = self.socketHandler {
             socketHandler.sendMessage(string)
@@ -60,12 +61,12 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     
     func setupPickerView() {
         fibonacciPickerView.translatesAutoresizingMaskIntoConstraints = false
-        view.insertSubview(fibonacciPickerView, atIndex: 0)
-        NSLayoutConstraint.activateConstraints([
-            fibonacciPickerView.topAnchor.constraintEqualToAnchor(topLayoutGuide.bottomAnchor),
-            fibonacciPickerView.leftAnchor.constraintEqualToAnchor(view.leftAnchor),
-            fibonacciPickerView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor),
-            fibonacciPickerView.rightAnchor.constraintEqualToAnchor(view.rightAnchor)])
+        view.insertSubview(fibonacciPickerView, at: 0)
+        NSLayoutConstraint.activate([
+            fibonacciPickerView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor),
+            fibonacciPickerView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            fibonacciPickerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            fibonacciPickerView.rightAnchor.constraint(equalTo: view.rightAnchor)])
     }
     
     

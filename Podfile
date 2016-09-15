@@ -3,7 +3,8 @@
 
 abstract_target 'Panda' do
   use_frameworks!
-  pod 'Birdsong', git: 'https://github.com/sjrmanning/Birdsong.git'
+  pod 'Birdsong', git: 'https://github.com/q231950/Birdsong.git', branch: 'swift3'
+  pod 'Starscream', git: 'https://github.com/daltoniam/Starscream.git', branch: 'swift3'
   pod 'Panda', path: '../Panda'
 
   target 'Panda Electric' do
@@ -31,5 +32,14 @@ abstract_target 'Panda' do
       workspace 'Panda Electric Mobile.xcworkspace'
 
       # Pods for Panda Electric Mobile
+  end
+
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        puts "[post install] " << target.name << ":" << config.name << " updates SWIFT_VERSION to 3.0"
+        config.build_settings['SWIFT_VERSION'] = '3.0'
+      end
+    end
   end
 end

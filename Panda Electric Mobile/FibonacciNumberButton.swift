@@ -13,8 +13,8 @@ class FibonacciNumberButton: UIButton {
     
     init(fibonacciNumber: FibonacciNumber) {
         self.fibonacciNumber = fibonacciNumber
-        super.init(frame: CGRectZero)
-        self.setTitle("\(fibonacciNumber.value)", forState: .Normal)
+        super.init(frame: CGRect.zero)
+        self.setTitle("\(fibonacciNumber.value)", for: UIControlState())
     }
     
     required init?(coder aDecoder: NSCoder) {

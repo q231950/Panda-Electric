@@ -20,13 +20,13 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     
     init (sequence: FibonacciSequence) {
         self.sequence = sequence
-        super.init(frame: CGRectZero)
+        super.init(frame: CGRect.zero)
         setupNumberButtonsForSequence(sequence)
         setupScrollView()
         setupScrollContentView()
         setupMaskView()
         stackView.arrangedSubviews.forEach { (v: UIView) in
-            bringSubviewToFront(v)
+            bringSubview(toFront: v)
         }
 //        bringSubviewToFront(stackView)
     }
@@ -37,95 +37,95 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     
     /// MARK: Setup
     
-    private func setupScrollView() {
+    fileprivate func setupScrollView() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.delegate = self
         scrollView.clipsToBounds = false
         addSubview(scrollView)
-        NSLayoutConstraint.activateConstraints([
-            scrollView.topAnchor.constraintEqualToAnchor(stackView.topAnchor),
-            scrollView.leftAnchor.constraintEqualToAnchor(stackView.leftAnchor),
-            scrollView.bottomAnchor.constraintEqualToAnchor(stackView.bottomAnchor),
-            scrollView.rightAnchor.constraintEqualToAnchor(stackView.rightAnchor)])
+        NSLayoutConstraint.activate([
+            scrollView.topAnchor.constraint(equalTo: stackView.topAnchor),
+            scrollView.leftAnchor.constraint(equalTo: stackView.leftAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor),
+            scrollView.rightAnchor.constraint(equalTo: stackView.rightAnchor)])
     }
     
-    private func setupScrollContentView() {
+    fileprivate func setupScrollContentView() {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(contentView)
-        NSLayoutConstraint.activateConstraints([
-            contentView.heightAnchor.constraintEqualToAnchor(stackView.arrangedSubviews[0].heightAnchor, multiplier: 2 * CGFloat(sequence.numbers.count)-1, constant: 2 * spacing * CGFloat(sequence.numbers.count-1)),
-            contentView.topAnchor.constraintEqualToAnchor(scrollView.topAnchor),
-            contentView.bottomAnchor.constraintEqualToAnchor(scrollView.bottomAnchor),
-            contentView.leadingAnchor.constraintEqualToAnchor(scrollView.leadingAnchor),
-            contentView.trailingAnchor.constraintEqualToAnchor(scrollView.trailingAnchor),
-            contentView.widthAnchor.constraintEqualToAnchor(scrollView.widthAnchor),])
+        NSLayoutConstraint.activate([
+            contentView.heightAnchor.constraint(equalTo: stackView.arrangedSubviews[0].heightAnchor, multiplier: 2 * CGFloat(sequence.numbers.count)-1, constant: 2 * spacing * CGFloat(sequence.numbers.count-1)),
+            contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),])
     }
     
-    private func setupBackgroundImageView() {
+    fileprivate func setupBackgroundImageView() {
         addSubview(backgroundImageView)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint.activateConstraints([
-            backgroundImageView.centerYAnchor.constraintEqualToAnchor(centerYAnchor, constant: 30),
-            backgroundImageView.centerXAnchor.constraintEqualToAnchor(centerXAnchor),])
+        NSLayoutConstraint.activate([
+            backgroundImageView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 30),
+            backgroundImageView.centerXAnchor.constraint(equalTo: centerXAnchor),])
     }
     
-    private func setupMaskView() {
-        myMaskView.userInteractionEnabled = false
-        myMaskView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+    fileprivate func setupMaskView() {
+        myMaskView.isUserInteractionEnabled = false
+        myMaskView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         myMaskView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(myMaskView)
-        NSLayoutConstraint.activateConstraints([
-            myMaskView.centerXAnchor.constraintEqualToAnchor(contentView.centerXAnchor),
-            myMaskView.centerYAnchor.constraintEqualToAnchor(contentView.centerYAnchor, constant: 0),
-            myMaskView.widthAnchor.constraintEqualToAnchor(contentView.widthAnchor),
-            myMaskView.heightAnchor.constraintEqualToAnchor(stackView.arrangedSubviews[0].heightAnchor, constant: spacing),])
+        NSLayoutConstraint.activate([
+            myMaskView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            myMaskView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor, constant: 0),
+            myMaskView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
+            myMaskView.heightAnchor.constraint(equalTo: stackView.arrangedSubviews[0].heightAnchor, constant: spacing),])
 
     }
     
-    private func setupNumberButtonsForSequence(sequence: FibonacciSequence) {
+    fileprivate func setupNumberButtonsForSequence(_ sequence: FibonacciSequence) {
         var buttons = [UIView]()
         sequence.numbers.forEach { (number: FibonacciNumber) in
             let button = FibonacciNumberButton(fibonacciNumber: number)
-            button.addTarget(self, action: #selector(FibonacciPickerView.selectFibonacciNumber), forControlEvents: .TouchUpInside)
+            button.addTarget(self, action: #selector(FibonacciPickerView.selectFibonacciNumber), for: .touchUpInside)
             buttons.append(button)
         }
         
         let stackView = UIStackView(arrangedSubviews: buttons)
-        stackView.backgroundColor = UIColor.orangeColor().colorWithAlphaComponent(0.3)
-        stackView.alignment = .Center
-        stackView.axis = .Vertical
-        stackView.distribution = .FillEqually
+        stackView.backgroundColor = UIColor.orange.withAlphaComponent(0.3)
+        stackView.alignment = .center
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
         stackView.spacing = spacing
         stackView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stackView)
         
-        NSLayoutConstraint.activateConstraints([
-            stackView.topAnchor.constraintEqualToAnchor(topAnchor, constant: margin),
-            stackView.leftAnchor.constraintEqualToAnchor(leftAnchor),
-            stackView.bottomAnchor.constraintEqualToAnchor(bottomAnchor, constant: -margin),
-            stackView.rightAnchor.constraintEqualToAnchor(rightAnchor)])
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: topAnchor, constant: margin),
+            stackView.leftAnchor.constraint(equalTo: leftAnchor),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -margin),
+            stackView.rightAnchor.constraint(equalTo: rightAnchor)])
         self.stackView = stackView
     }
     
     /// MARK: Actions
     
-    func selectFibonacciNumber(button: FibonacciNumberButton) {
+    func selectFibonacciNumber(_ button: FibonacciNumberButton) {
         print("pressed \(button.fibonacciNumber.value)")
     }
     
     /// MARK: Snapping
     
-    private func closestTargetContentOffsetForOffset(offset: CGPoint) -> CGFloat {
+    fileprivate func closestTargetContentOffsetForOffset(_ offset: CGPoint) -> CGFloat {
         let elementHeight = stackView.arrangedSubviews[0].frame.size.height + spacing
         
         let newOffset:CGFloat
-        if (offset.y % elementHeight) > elementHeight/2 {
-            newOffset = offset.y + (elementHeight - (offset.y % elementHeight))
+        if (offset.y.truncatingRemainder(dividingBy: elementHeight)) > elementHeight/2 {
+            newOffset = offset.y + (elementHeight - (offset.y.truncatingRemainder(dividingBy: elementHeight)))
         } else {
-            newOffset = offset.y - (offset.y % elementHeight)
+            newOffset = offset.y - (offset.y.truncatingRemainder(dividingBy: elementHeight))
         }
         
         return newOffset
@@ -133,7 +133,7 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     
     /// MARK: UIScrollViewDelegate
     
-    func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        targetContentOffset.memory.y = closestTargetContentOffsetForOffset(targetContentOffset.memory)
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        targetContentOffset.pointee.y = closestTargetContentOffsetForOffset(targetContentOffset.pointee)
     }
 }
