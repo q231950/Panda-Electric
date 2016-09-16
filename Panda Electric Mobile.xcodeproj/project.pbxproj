@@ -17,6 +17,7 @@
 		3B6CB7581D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7571D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift */; };
 		3B6CB7631D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */; };
 		3B8C1D701D7AAE7F00500B43 /* FibonacciPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */; };
+		3BC559711D8C89D400213420 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC559701D8C89D400213420 /* GameplayKit.framework */; };
 		3BDF2DE81D7C361300CFC1BB /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */; };
 		3BDF2DEA1D7C70D100CFC1BB /* FibonacciNumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_Electric_MobileUITests.swift; sourceTree = "<group>"; };
 		3B6CB7641D4CAAAA005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciPickerView.swift; sourceTree = "<group>"; };
+		3BC559701D8C89D400213420 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
 		3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
 		3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciNumberButton.swift; sourceTree = "<group>"; };
 		461320F2C36DEEF54CDB3E49 /* Pods_Panda_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC559711D8C89D400213420 /* GameplayKit.framework in Frameworks */,
 				134EC48685F6189ACEA797F9 /* Pods_Panda_Panda_Electric_Mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +156,7 @@
 		699C29B9832A2FA4CC29E84E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BC559701D8C89D400213420 /* GameplayKit.framework */,
 				4BBB020C22EF819DADB39189 /* Pods_Panda_Electric_Mobile.framework */,
 				82755F9E463367C954ADF3E9 /* Pods_Pandas_Panda_Electric_Mobile.framework */,
 				461320F2C36DEEF54CDB3E49 /* Pods_Panda_Panda_Electric_Mobile.framework */,
