@@ -7,16 +7,15 @@
 //
 
 import UIKit
-import Birdsong
 import Panda
 
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
-    let socket = Socket(url: "http://localhost:4000/socket/websocket")
-//    let socket = Socket(url: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")
-
+    fileprivate let connection = PandaConnection(url: "http://localhost:4000/socket/websocket")
+//    fileprivate let connection = PandaConnection(url: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,21 +29,11 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
-        
-        socket.onConnect = {
-            print("Socket connected")
-        }
-        socket.connect()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func insertNewObject(_ sender: AnyObject) {
@@ -59,8 +48,8 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                let topic = objects[(indexPath as NSIndexPath).row] as! String
-                controller.socketHandler = SocketHandler(user: "phone", topic:topic, socket: socket)
+                controller.topic = objects[(indexPath as NSIndexPath).row] as? String
+                controller.connection = connection
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
