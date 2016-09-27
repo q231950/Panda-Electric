@@ -1,682 +1,1455 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		134EC48685F6189ACEA797F9 /* Pods_Panda_Panda_Electric_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461320F2C36DEEF54CDB3E49 /* Pods_Panda_Panda_Electric_Mobile.framework */; };
-		3B6CB7411D4CAAA9005C40D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7401D4CAAA9005C40D8 /* AppDelegate.swift */; };
-		3B6CB7431D4CAAA9005C40D8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7421D4CAAA9005C40D8 /* MasterViewController.swift */; };
-		3B6CB7451D4CAAA9005C40D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7441D4CAAA9005C40D8 /* DetailViewController.swift */; };
-		3B6CB7481D4CAAA9005C40D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB7461D4CAAA9005C40D8 /* Main.storyboard */; };
-		3B6CB74A1D4CAAA9005C40D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB7491D4CAAA9005C40D8 /* Assets.xcassets */; };
-		3B6CB74D1D4CAAA9005C40D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB74B1D4CAAA9005C40D8 /* LaunchScreen.storyboard */; };
-		3B6CB7581D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7571D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift */; };
-		3B6CB7631D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */; };
-		3B8C1D701D7AAE7F00500B43 /* FibonacciPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */; };
-		3BDF2DE81D7C361300CFC1BB /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */; };
-		3BDF2DEA1D7C70D100CFC1BB /* FibonacciNumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3B6CB7541D4CAAA9005C40D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B6CB7351D4CAAA9005C40D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B6CB73C1D4CAAA9005C40D8;
-			remoteInfo = "Panda Electric Mobile";
-		};
-		3B6CB75F1D4CAAAA005C40D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B6CB7351D4CAAA9005C40D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B6CB73C1D4CAAA9005C40D8;
-			remoteInfo = "Panda Electric Mobile";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		092997EF7A7A55858CF41B22 /* Pods-Pandas-Panda Electric Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandas-Panda Electric Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pandas-Panda Electric Mobile/Pods-Pandas-Panda Electric Mobile.release.xcconfig"; sourceTree = "<group>"; };
-		1B509D07F3F783BA36046F0C /* Pods-Pandas-Panda Electric Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandas-Panda Electric Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pandas-Panda Electric Mobile/Pods-Pandas-Panda Electric Mobile.debug.xcconfig"; sourceTree = "<group>"; };
-		3B6CB73D1D4CAAA9005C40D8 /* Panda Electric Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Panda Electric Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B6CB7401D4CAAA9005C40D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B6CB7421D4CAAA9005C40D8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		3B6CB7441D4CAAA9005C40D8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		3B6CB7471D4CAAA9005C40D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B6CB7491D4CAAA9005C40D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B6CB74C1D4CAAA9005C40D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3B6CB74E1D4CAAA9005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B6CB7531D4CAAA9005C40D8 /* Panda Electric MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda Electric MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B6CB7571D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_Electric_MobileTests.swift; sourceTree = "<group>"; };
-		3B6CB7591D4CAAA9005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B6CB75E1D4CAAAA005C40D8 /* Panda Electric MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda Electric MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_Electric_MobileUITests.swift; sourceTree = "<group>"; };
-		3B6CB7641D4CAAAA005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciPickerView.swift; sourceTree = "<group>"; };
-		3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
-		3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciNumberButton.swift; sourceTree = "<group>"; };
-		461320F2C36DEEF54CDB3E49 /* Pods_Panda_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BBB020C22EF819DADB39189 /* Pods_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		784A818E71732C57BDFEDABD /* Pods-Panda Electric Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric Mobile/Pods-Panda Electric Mobile.release.xcconfig"; sourceTree = "<group>"; };
-		82755F9E463367C954ADF3E9 /* Pods_Pandas_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pandas_Panda_Electric_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D476A156729D6D8422EB9DD5 /* Pods-Panda-Panda Electric Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda-Panda Electric Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile.release.xcconfig"; sourceTree = "<group>"; };
-		DEB12B5A02D3F705BEEF7E20 /* Pods-Panda Electric Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric Mobile/Pods-Panda Electric Mobile.debug.xcconfig"; sourceTree = "<group>"; };
-		F95FBA379B6266CFC95125E3 /* Pods-Panda-Panda Electric Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda-Panda Electric Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile.debug.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		3B6CB73A1D4CAAA9005C40D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				134EC48685F6189ACEA797F9 /* Pods_Panda_Panda_Electric_Mobile.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B6CB7501D4CAAA9005C40D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B6CB75B1D4CAAA9005C40D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		3B6CB7341D4CAAA9005C40D8 = {
-			isa = PBXGroup;
-			children = (
-				3B6CB73F1D4CAAA9005C40D8 /* Panda Electric Mobile */,
-				3B6CB7561D4CAAA9005C40D8 /* Panda Electric MobileTests */,
-				3B6CB7611D4CAAAA005C40D8 /* Panda Electric MobileUITests */,
-				3B6CB73E1D4CAAA9005C40D8 /* Products */,
-				87C9DA0D5E9BB50E2282ECE9 /* Pods */,
-				699C29B9832A2FA4CC29E84E /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		3B6CB73E1D4CAAA9005C40D8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3B6CB73D1D4CAAA9005C40D8 /* Panda Electric Mobile.app */,
-				3B6CB7531D4CAAA9005C40D8 /* Panda Electric MobileTests.xctest */,
-				3B6CB75E1D4CAAAA005C40D8 /* Panda Electric MobileUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3B6CB73F1D4CAAA9005C40D8 /* Panda Electric Mobile */ = {
-			isa = PBXGroup;
-			children = (
-				3B6CB7401D4CAAA9005C40D8 /* AppDelegate.swift */,
-				3B6CB7421D4CAAA9005C40D8 /* MasterViewController.swift */,
-				3B6CB7441D4CAAA9005C40D8 /* DetailViewController.swift */,
-				3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */,
-				3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */,
-				3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */,
-				3B6CB7461D4CAAA9005C40D8 /* Main.storyboard */,
-				3B6CB7491D4CAAA9005C40D8 /* Assets.xcassets */,
-				3B6CB74B1D4CAAA9005C40D8 /* LaunchScreen.storyboard */,
-				3B6CB74E1D4CAAA9005C40D8 /* Info.plist */,
-			);
-			path = "Panda Electric Mobile";
-			sourceTree = "<group>";
-		};
-		3B6CB7561D4CAAA9005C40D8 /* Panda Electric MobileTests */ = {
-			isa = PBXGroup;
-			children = (
-				3B6CB7571D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift */,
-				3B6CB7591D4CAAA9005C40D8 /* Info.plist */,
-			);
-			path = "Panda Electric MobileTests";
-			sourceTree = "<group>";
-		};
-		3B6CB7611D4CAAAA005C40D8 /* Panda Electric MobileUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */,
-				3B6CB7641D4CAAAA005C40D8 /* Info.plist */,
-			);
-			path = "Panda Electric MobileUITests";
-			sourceTree = "<group>";
-		};
-		699C29B9832A2FA4CC29E84E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4BBB020C22EF819DADB39189 /* Pods_Panda_Electric_Mobile.framework */,
-				82755F9E463367C954ADF3E9 /* Pods_Pandas_Panda_Electric_Mobile.framework */,
-				461320F2C36DEEF54CDB3E49 /* Pods_Panda_Panda_Electric_Mobile.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		87C9DA0D5E9BB50E2282ECE9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DEB12B5A02D3F705BEEF7E20 /* Pods-Panda Electric Mobile.debug.xcconfig */,
-				784A818E71732C57BDFEDABD /* Pods-Panda Electric Mobile.release.xcconfig */,
-				1B509D07F3F783BA36046F0C /* Pods-Pandas-Panda Electric Mobile.debug.xcconfig */,
-				092997EF7A7A55858CF41B22 /* Pods-Pandas-Panda Electric Mobile.release.xcconfig */,
-				F95FBA379B6266CFC95125E3 /* Pods-Panda-Panda Electric Mobile.debug.xcconfig */,
-				D476A156729D6D8422EB9DD5 /* Pods-Panda-Panda Electric Mobile.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		3B6CB73C1D4CAAA9005C40D8 /* Panda Electric Mobile */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B6CB7671D4CAAAA005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric Mobile" */;
-			buildPhases = (
-				FCB51F9B047BB9C594713C21 /* [CP] Check Pods Manifest.lock */,
-				1D40E03572990333279FFA4E /* [CP] Check Pods Manifest.lock */,
-				3B6CB7391D4CAAA9005C40D8 /* Sources */,
-				3B6CB73A1D4CAAA9005C40D8 /* Frameworks */,
-				3B6CB73B1D4CAAA9005C40D8 /* Resources */,
-				5A3DDABFFE859844C75CB1DA /* [CP] Embed Pods Frameworks */,
-				28BD5D6DDF64BA43DDA0C24A /* [CP] Copy Pods Resources */,
-				49923011DFF0A79D91DFF041 /* 📦 Embed Pods Frameworks */,
-				5B8C6C1FD7993C201BCBAD87 /* 📦 Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Panda Electric Mobile";
-			productName = "Panda Electric Mobile";
-			productReference = 3B6CB73D1D4CAAA9005C40D8 /* Panda Electric Mobile.app */;
-			productType = "com.apple.product-type.application";
-		};
-		3B6CB7521D4CAAA9005C40D8 /* Panda Electric MobileTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B6CB76A1D4CAAAA005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric MobileTests" */;
-			buildPhases = (
-				3B6CB74F1D4CAAA9005C40D8 /* Sources */,
-				3B6CB7501D4CAAA9005C40D8 /* Frameworks */,
-				3B6CB7511D4CAAA9005C40D8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3B6CB7551D4CAAA9005C40D8 /* PBXTargetDependency */,
-			);
-			name = "Panda Electric MobileTests";
-			productName = "Panda Electric MobileTests";
-			productReference = 3B6CB7531D4CAAA9005C40D8 /* Panda Electric MobileTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3B6CB75D1D4CAAA9005C40D8 /* Panda Electric MobileUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B6CB76D1D4CAAAA005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric MobileUITests" */;
-			buildPhases = (
-				3B6CB75A1D4CAAA9005C40D8 /* Sources */,
-				3B6CB75B1D4CAAA9005C40D8 /* Frameworks */,
-				3B6CB75C1D4CAAA9005C40D8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3B6CB7601D4CAAAA005C40D8 /* PBXTargetDependency */,
-			);
-			name = "Panda Electric MobileUITests";
-			productName = "Panda Electric MobileUITests";
-			productReference = 3B6CB75E1D4CAAAA005C40D8 /* Panda Electric MobileUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		3B6CB7351D4CAAA9005C40D8 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = elbedev.com;
-				TargetAttributes = {
-					3B6CB73C1D4CAAA9005C40D8 = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = X29V4JPQ55;
-						LastSwiftMigration = 0800;
-					};
-					3B6CB7521D4CAAA9005C40D8 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = 3B6CB73C1D4CAAA9005C40D8;
-					};
-					3B6CB75D1D4CAAA9005C40D8 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = 3B6CB73C1D4CAAA9005C40D8;
-					};
-				};
-			};
-			buildConfigurationList = 3B6CB7381D4CAAA9005C40D8 /* Build configuration list for PBXProject "Panda Electric Mobile" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 3B6CB7341D4CAAA9005C40D8;
-			productRefGroup = 3B6CB73E1D4CAAA9005C40D8 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				3B6CB73C1D4CAAA9005C40D8 /* Panda Electric Mobile */,
-				3B6CB7521D4CAAA9005C40D8 /* Panda Electric MobileTests */,
-				3B6CB75D1D4CAAA9005C40D8 /* Panda Electric MobileUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		3B6CB73B1D4CAAA9005C40D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B6CB74D1D4CAAA9005C40D8 /* LaunchScreen.storyboard in Resources */,
-				3B6CB74A1D4CAAA9005C40D8 /* Assets.xcassets in Resources */,
-				3B6CB7481D4CAAA9005C40D8 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B6CB7511D4CAAA9005C40D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B6CB75C1D4CAAA9005C40D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1D40E03572990333279FFA4E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		28BD5D6DDF64BA43DDA0C24A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		49923011DFF0A79D91DFF041 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5A3DDABFFE859844C75CB1DA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B8C6C1FD7993C201BCBAD87 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FCB51F9B047BB9C594713C21 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		3B6CB7391D4CAAA9005C40D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BDF2DE81D7C361300CFC1BB /* FibonacciSequence.swift in Sources */,
-				3B6CB7451D4CAAA9005C40D8 /* DetailViewController.swift in Sources */,
-				3B8C1D701D7AAE7F00500B43 /* FibonacciPickerView.swift in Sources */,
-				3BDF2DEA1D7C70D100CFC1BB /* FibonacciNumberButton.swift in Sources */,
-				3B6CB7431D4CAAA9005C40D8 /* MasterViewController.swift in Sources */,
-				3B6CB7411D4CAAA9005C40D8 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B6CB74F1D4CAAA9005C40D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B6CB7581D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B6CB75A1D4CAAA9005C40D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B6CB7631D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3B6CB7551D4CAAA9005C40D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3B6CB73C1D4CAAA9005C40D8 /* Panda Electric Mobile */;
-			targetProxy = 3B6CB7541D4CAAA9005C40D8 /* PBXContainerItemProxy */;
-		};
-		3B6CB7601D4CAAAA005C40D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3B6CB73C1D4CAAA9005C40D8 /* Panda Electric Mobile */;
-			targetProxy = 3B6CB75F1D4CAAAA005C40D8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3B6CB7461D4CAAA9005C40D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B6CB7471D4CAAA9005C40D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3B6CB74B1D4CAAA9005C40D8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B6CB74C1D4CAAA9005C40D8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		3B6CB7651D4CAAAA005C40D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3B6CB7661D4CAAAA005C40D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3B6CB7681D4CAAAA005C40D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F95FBA379B6266CFC95125E3 /* Pods-Panda-Panda Electric Mobile.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "Panda Electric Mobile/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric-Mobile";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		3B6CB7691D4CAAAA005C40D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D476A156729D6D8422EB9DD5 /* Pods-Panda-Panda Electric Mobile.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "Panda Electric Mobile/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric-Mobile";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		3B6CB76B1D4CAAAA005C40D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Panda Electric MobileTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric-MobileTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panda Electric Mobile.app/Panda Electric Mobile";
-			};
-			name = Debug;
-		};
-		3B6CB76C1D4CAAAA005C40D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Panda Electric MobileTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric-MobileTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panda Electric Mobile.app/Panda Electric Mobile";
-			};
-			name = Release;
-		};
-		3B6CB76E1D4CAAAA005C40D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Panda Electric MobileUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric-MobileUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Panda Electric Mobile";
-			};
-			name = Debug;
-		};
-		3B6CB76F1D4CAAAA005C40D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Panda Electric MobileUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric-MobileUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Panda Electric Mobile";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		3B6CB7381D4CAAA9005C40D8 /* Build configuration list for PBXProject "Panda Electric Mobile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B6CB7651D4CAAAA005C40D8 /* Debug */,
-				3B6CB7661D4CAAAA005C40D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B6CB7671D4CAAAA005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric Mobile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B6CB7681D4CAAAA005C40D8 /* Debug */,
-				3B6CB7691D4CAAAA005C40D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B6CB76A1D4CAAAA005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric MobileTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B6CB76B1D4CAAAA005C40D8 /* Debug */,
-				3B6CB76C1D4CAAAA005C40D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B6CB76D1D4CAAAA005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric MobileUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B6CB76E1D4CAAAA005C40D8 /* Debug */,
-				3B6CB76F1D4CAAAA005C40D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 3B6CB7351D4CAAA9005C40D8 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>092997EF7A7A55858CF41B22</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Pandas-Panda Electric Mobile.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Pandas-Panda Electric Mobile/Pods-Pandas-Panda Electric Mobile.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>134EC48685F6189ACEA797F9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>461320F2C36DEEF54CDB3E49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1B509D07F3F783BA36046F0C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Pandas-Panda Electric Mobile.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Pandas-Panda Electric Mobile/Pods-Pandas-Panda Electric Mobile.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1D40E03572990333279FFA4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>28BD5D6DDF64BA43DDA0C24A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB7341D4CAAA9005C40D8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B6CB73F1D4CAAA9005C40D8</string>
+				<string>3B6CB7561D4CAAA9005C40D8</string>
+				<string>3B6CB7611D4CAAAA005C40D8</string>
+				<string>3B6CB73E1D4CAAA9005C40D8</string>
+				<string>87C9DA0D5E9BB50E2282ECE9</string>
+				<string>699C29B9832A2FA4CC29E84E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7351D4CAAA9005C40D8</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0800</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>elbedev.com</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>3B6CB73C1D4CAAA9005C40D8</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>DevelopmentTeam</key>
+						<string>X29V4JPQ55</string>
+						<key>LastSwiftMigration</key>
+						<string>0800</string>
+					</dict>
+					<key>3B6CB7521D4CAAA9005C40D8</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>LastSwiftMigration</key>
+						<string>0800</string>
+						<key>TestTargetID</key>
+						<string>3B6CB73C1D4CAAA9005C40D8</string>
+					</dict>
+					<key>3B6CB75D1D4CAAA9005C40D8</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>LastSwiftMigration</key>
+						<string>0800</string>
+						<key>TestTargetID</key>
+						<string>3B6CB73C1D4CAAA9005C40D8</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>3B6CB7381D4CAAA9005C40D8</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>3B6CB7341D4CAAA9005C40D8</string>
+			<key>productRefGroup</key>
+			<string>3B6CB73E1D4CAAA9005C40D8</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>3B6CB73C1D4CAAA9005C40D8</string>
+				<string>3B6CB7521D4CAAA9005C40D8</string>
+				<string>3B6CB75D1D4CAAA9005C40D8</string>
+			</array>
+		</dict>
+		<key>3B6CB7381D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3B6CB7651D4CAAAA005C40D8</string>
+				<string>3B6CB7661D4CAAAA005C40D8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3B6CB7391D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3BDF2DE81D7C361300CFC1BB</string>
+				<string>3B6CB7451D4CAAA9005C40D8</string>
+				<string>3B8C1D701D7AAE7F00500B43</string>
+				<string>3BDF2DEA1D7C70D100CFC1BB</string>
+				<string>3B6CB7431D4CAAA9005C40D8</string>
+				<string>3B6CB7411D4CAAA9005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB73A1D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>134EC48685F6189ACEA797F9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB73B1D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B6CB74D1D4CAAA9005C40D8</string>
+				<string>3B6CB74A1D4CAAA9005C40D8</string>
+				<string>3B6CB7481D4CAAA9005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB73C1D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3B6CB7671D4CAAAA005C40D8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>61DEE1399B7A10AEB8F20BC8</string>
+				<string>FCB51F9B047BB9C594713C21</string>
+				<string>1D40E03572990333279FFA4E</string>
+				<string>3B6CB7391D4CAAA9005C40D8</string>
+				<string>3B6CB73A1D4CAAA9005C40D8</string>
+				<string>3B6CB73B1D4CAAA9005C40D8</string>
+				<string>5A3DDABFFE859844C75CB1DA</string>
+				<string>28BD5D6DDF64BA43DDA0C24A</string>
+				<string>49923011DFF0A79D91DFF041</string>
+				<string>5B8C6C1FD7993C201BCBAD87</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Panda Electric Mobile</string>
+			<key>productName</key>
+			<string>Panda Electric Mobile</string>
+			<key>productReference</key>
+			<string>3B6CB73D1D4CAAA9005C40D8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>3B6CB73D1D4CAAA9005C40D8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Panda Electric Mobile.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3B6CB73E1D4CAAA9005C40D8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B6CB73D1D4CAAA9005C40D8</string>
+				<string>3B6CB7531D4CAAA9005C40D8</string>
+				<string>3B6CB75E1D4CAAAA005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB73F1D4CAAA9005C40D8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B6CB7401D4CAAA9005C40D8</string>
+				<string>3B6CB7421D4CAAA9005C40D8</string>
+				<string>3B6CB7441D4CAAA9005C40D8</string>
+				<string>3B8C1D6F1D7AAE7F00500B43</string>
+				<string>3BDF2DE71D7C361300CFC1BB</string>
+				<string>3BDF2DE91D7C70D100CFC1BB</string>
+				<string>3B6CB7461D4CAAA9005C40D8</string>
+				<string>3B6CB7491D4CAAA9005C40D8</string>
+				<string>3B6CB74B1D4CAAA9005C40D8</string>
+				<string>3B6CB74E1D4CAAA9005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Panda Electric Mobile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7401D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7411D4CAAA9005C40D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B6CB7401D4CAAA9005C40D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B6CB7421D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MasterViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7431D4CAAA9005C40D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B6CB7421D4CAAA9005C40D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B6CB7441D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>DetailViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7451D4CAAA9005C40D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B6CB7441D4CAAA9005C40D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B6CB7461D4CAAA9005C40D8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B6CB7471D4CAAA9005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7471D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7481D4CAAA9005C40D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B6CB7461D4CAAA9005C40D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B6CB7491D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB74A1D4CAAA9005C40D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B6CB7491D4CAAA9005C40D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B6CB74B1D4CAAA9005C40D8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B6CB74C1D4CAAA9005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB74C1D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB74D1D4CAAA9005C40D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B6CB74B1D4CAAA9005C40D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B6CB74E1D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB74F1D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B6CB7581D4CAAA9005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB7501D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB7511D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB7521D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3B6CB76A1D4CAAAA005C40D8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3B6CB74F1D4CAAA9005C40D8</string>
+				<string>3B6CB7501D4CAAA9005C40D8</string>
+				<string>3B6CB7511D4CAAA9005C40D8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3B6CB7551D4CAAA9005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Panda Electric MobileTests</string>
+			<key>productName</key>
+			<string>Panda Electric MobileTests</string>
+			<key>productReference</key>
+			<string>3B6CB7531D4CAAA9005C40D8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>3B6CB7531D4CAAA9005C40D8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Panda Electric MobileTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3B6CB7541D4CAAA9005C40D8</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>3B6CB7351D4CAAA9005C40D8</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>3B6CB73C1D4CAAA9005C40D8</string>
+			<key>remoteInfo</key>
+			<string>Panda Electric Mobile</string>
+		</dict>
+		<key>3B6CB7551D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>3B6CB73C1D4CAAA9005C40D8</string>
+			<key>targetProxy</key>
+			<string>3B6CB7541D4CAAA9005C40D8</string>
+		</dict>
+		<key>3B6CB7561D4CAAA9005C40D8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B6CB7571D4CAAA9005C40D8</string>
+				<string>3B6CB7591D4CAAA9005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Panda Electric MobileTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7571D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Panda_Electric_MobileTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7581D4CAAA9005C40D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B6CB7571D4CAAA9005C40D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B6CB7591D4CAAA9005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB75A1D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B6CB7631D4CAAAA005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB75B1D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB75C1D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B6CB75D1D4CAAA9005C40D8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3B6CB76D1D4CAAAA005C40D8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3B6CB75A1D4CAAA9005C40D8</string>
+				<string>3B6CB75B1D4CAAA9005C40D8</string>
+				<string>3B6CB75C1D4CAAA9005C40D8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3B6CB7601D4CAAAA005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Panda Electric MobileUITests</string>
+			<key>productName</key>
+			<string>Panda Electric MobileUITests</string>
+			<key>productReference</key>
+			<string>3B6CB75E1D4CAAAA005C40D8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>3B6CB75E1D4CAAAA005C40D8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Panda Electric MobileUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3B6CB75F1D4CAAAA005C40D8</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>3B6CB7351D4CAAA9005C40D8</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>3B6CB73C1D4CAAA9005C40D8</string>
+			<key>remoteInfo</key>
+			<string>Panda Electric Mobile</string>
+		</dict>
+		<key>3B6CB7601D4CAAAA005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>3B6CB73C1D4CAAA9005C40D8</string>
+			<key>targetProxy</key>
+			<string>3B6CB75F1D4CAAAA005C40D8</string>
+		</dict>
+		<key>3B6CB7611D4CAAAA005C40D8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B6CB7621D4CAAAA005C40D8</string>
+				<string>3B6CB7641D4CAAAA005C40D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Panda Electric MobileUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7621D4CAAAA005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Panda_Electric_MobileUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7631D4CAAAA005C40D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B6CB7621D4CAAAA005C40D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B6CB7641D4CAAAA005C40D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B6CB7651D4CAAAA005C40D8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3B6CB7661D4CAAAA005C40D8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Owholemodule</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3B6CB7671D4CAAAA005C40D8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3B6CB7681D4CAAAA005C40D8</string>
+				<string>3B6CB7691D4CAAAA005C40D8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3B6CB7681D4CAAAA005C40D8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F95FBA379B6266CFC95125E3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Panda Electric Mobile/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.elbedev.Panda-Electric-Mobile</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3B6CB7691D4CAAAA005C40D8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D476A156729D6D8422EB9DD5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Panda Electric Mobile/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.elbedev.Panda-Electric-Mobile</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3B6CB76A1D4CAAAA005C40D8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3B6CB76B1D4CAAAA005C40D8</string>
+				<string>3B6CB76C1D4CAAAA005C40D8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3B6CB76B1D4CAAAA005C40D8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Panda Electric MobileTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.elbedev.Panda-Electric-MobileTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Panda Electric Mobile.app/Panda Electric Mobile</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3B6CB76C1D4CAAAA005C40D8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Panda Electric MobileTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.elbedev.Panda-Electric-MobileTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Panda Electric Mobile.app/Panda Electric Mobile</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3B6CB76D1D4CAAAA005C40D8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3B6CB76E1D4CAAAA005C40D8</string>
+				<string>3B6CB76F1D4CAAAA005C40D8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3B6CB76E1D4CAAAA005C40D8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>Panda Electric MobileUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.elbedev.Panda-Electric-MobileUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>Panda Electric Mobile</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3B6CB76F1D4CAAAA005C40D8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>Panda Electric MobileUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.elbedev.Panda-Electric-MobileUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>Panda Electric Mobile</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3B8C1D6F1D7AAE7F00500B43</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>FibonacciPickerView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8C1D701D7AAE7F00500B43</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8C1D6F1D7AAE7F00500B43</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BDF2DE71D7C361300CFC1BB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>FibonacciSequence.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BDF2DE81D7C361300CFC1BB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BDF2DE71D7C361300CFC1BB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BDF2DE91D7C70D100CFC1BB</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>FibonacciNumberButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BDF2DEA1D7C70D100CFC1BB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BDF2DE91D7C70D100CFC1BB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>461320F2C36DEEF54CDB3E49</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_Panda_Panda_Electric_Mobile.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>49923011DFF0A79D91DFF041</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>4BBB020C22EF819DADB39189</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_Panda_Electric_Mobile.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5A3DDABFFE859844C75CB1DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>5B8C6C1FD7993C201BCBAD87</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>61DEE1399B7A10AEB8F20BC8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>699C29B9832A2FA4CC29E84E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4BBB020C22EF819DADB39189</string>
+				<string>82755F9E463367C954ADF3E9</string>
+				<string>461320F2C36DEEF54CDB3E49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>784A818E71732C57BDFEDABD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Panda Electric Mobile.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Panda Electric Mobile/Pods-Panda Electric Mobile.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82755F9E463367C954ADF3E9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_Pandas_Panda_Electric_Mobile.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>87C9DA0D5E9BB50E2282ECE9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DEB12B5A02D3F705BEEF7E20</string>
+				<string>784A818E71732C57BDFEDABD</string>
+				<string>1B509D07F3F783BA36046F0C</string>
+				<string>092997EF7A7A55858CF41B22</string>
+				<string>F95FBA379B6266CFC95125E3</string>
+				<string>D476A156729D6D8422EB9DD5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D476A156729D6D8422EB9DD5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Panda-Panda Electric Mobile.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEB12B5A02D3F705BEEF7E20</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Panda Electric Mobile.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Panda Electric Mobile/Pods-Panda Electric Mobile.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F95FBA379B6266CFC95125E3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Panda-Panda Electric Mobile.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Panda-Panda Electric Mobile/Pods-Panda-Panda Electric Mobile.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FCB51F9B047BB9C594713C21</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>3B6CB7351D4CAAA9005C40D8</string>
+</dict>
+</plist>
