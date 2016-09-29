@@ -1,1756 +1,872 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>04FD9486AF2DD9A95995812E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1FA6B77A1F457FCB3BB2E131</string>
-				<string>964294233A3500784D9FEF85</string>
-				<string>7312525C16C8780588FE751D</string>
-				<string>268E34376069DADCB5962FB3</string>
-				<string>05A3BCF9BBFBAD5A2B597121</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>05A3BCF9BBFBAD5A2B597121</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Panda_Panda_Electric.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0E3D1656464D2EC6D974CA53</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Panda ElectricUITests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CF452973C4DB707252C73B3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7312525C16C8780588FE751D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1EA026917383D676BD75760A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Panda-Panda Electric.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1FA6B77A1F457FCB3BB2E131</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Panda_Electric.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>2367188F5E492DDCD60D0CB6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>268E34376069DADCB5962FB3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Pandas_Panda_Electric.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>2BC421475781FBD22E4243D9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Pandas-Panda Electric.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Pandas-Panda Electric/Pods-Pandas-Panda Electric.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2DB4E7F87D288926BB0B9B7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>35DF9740CC8C8FE4D1B5FCAF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Panda-Panda Electric.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>38C925C4F893E2B793F8B8F8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB6FD1D4C9F95005C40D8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B6CB7081D4C9F95005C40D8</string>
-				<string>3B6CB71A1D4C9F95005C40D8</string>
-				<string>3B6CB7251D4C9F95005C40D8</string>
-				<string>3B6CB7071D4C9F95005C40D8</string>
-				<string>5DD194CE7FECB3E4816DFA26</string>
-				<string>04FD9486AF2DD9A95995812E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB6FE1D4C9F95005C40D8</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>elbedev.com</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>3B6CB7051D4C9F95005C40D8</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-					</dict>
-					<key>3B6CB7161D4C9F95005C40D8</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>3B6CB7051D4C9F95005C40D8</string>
-					</dict>
-					<key>3B6CB7211D4C9F95005C40D8</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>3B6CB7051D4C9F95005C40D8</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>3B6CB7011D4C9F95005C40D8</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>3B6CB6FD1D4C9F95005C40D8</string>
-			<key>productRefGroup</key>
-			<string>3B6CB7071D4C9F95005C40D8</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>3B6CB7051D4C9F95005C40D8</string>
-				<string>3B6CB7161D4C9F95005C40D8</string>
-				<string>3B6CB7211D4C9F95005C40D8</string>
-			</array>
-		</dict>
-		<key>3B6CB7011D4C9F95005C40D8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3B6CB7291D4C9F95005C40D8</string>
-				<string>3B6CB72A1D4C9F95005C40D8</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3B6CB7021D4C9F95005C40D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3B6CB70C1D4C9F95005C40D8</string>
-				<string>3B6CB70A1D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB7031D4C9F95005C40D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DE4835AC8545F2E02CD865F8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB7041D4C9F95005C40D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3B6CB70E1D4C9F95005C40D8</string>
-				<string>3B6CB7111D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB7051D4C9F95005C40D8</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3B6CB72B1D4C9F95005C40D8</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E00E6F67BE2EB978BF3E3C06</string>
-				<string>A535D4E775D35B96222B3317</string>
-				<string>3D806333C817227002597715</string>
-				<string>3B6CB7021D4C9F95005C40D8</string>
-				<string>3B6CB7031D4C9F95005C40D8</string>
-				<string>3B6CB7041D4C9F95005C40D8</string>
-				<string>EF729FA7650A2F97C139F265</string>
-				<string>719D16F07C044787A7F36D82</string>
-				<string>93A3D803CEA6A2A50CF57573</string>
-				<string>2DB4E7F87D288926BB0B9B7C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Panda Electric</string>
-			<key>productName</key>
-			<string>Panda Electric</string>
-			<key>productReference</key>
-			<string>3B6CB7061D4C9F95005C40D8</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>3B6CB7061D4C9F95005C40D8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Panda Electric.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3B6CB7071D4C9F95005C40D8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B6CB7061D4C9F95005C40D8</string>
-				<string>3B6CB7171D4C9F95005C40D8</string>
-				<string>3B6CB7221D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB7081D4C9F95005C40D8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B6CB7091D4C9F95005C40D8</string>
-				<string>3B6CB70B1D4C9F95005C40D8</string>
-				<string>3B6CB70D1D4C9F95005C40D8</string>
-				<string>3B6CB70F1D4C9F95005C40D8</string>
-				<string>3B6CB7121D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Panda Electric</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB7091D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB70A1D4C9F95005C40D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B6CB7091D4C9F95005C40D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B6CB70B1D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB70C1D4C9F95005C40D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B6CB70B1D4C9F95005C40D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B6CB70D1D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB70E1D4C9F95005C40D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B6CB70D1D4C9F95005C40D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B6CB70F1D4C9F95005C40D8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B6CB7101D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB7101D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB7111D4C9F95005C40D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B6CB70F1D4C9F95005C40D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B6CB7121D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB7131D4C9F95005C40D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3B6CB71C1D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB7141D4C9F95005C40D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AF7648609DC4FB073F11EE1C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB7151D4C9F95005C40D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB7161D4C9F95005C40D8</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3B6CB72E1D4C9F95005C40D8</string>
-			<key>buildPhases</key>
-			<array>
-				<string>38C925C4F893E2B793F8B8F8</string>
-				<string>2367188F5E492DDCD60D0CB6</string>
-				<string>5BCD8B085D7E53820A491239</string>
-				<string>3B6CB7131D4C9F95005C40D8</string>
-				<string>3B6CB7141D4C9F95005C40D8</string>
-				<string>3B6CB7151D4C9F95005C40D8</string>
-				<string>6CDAA6C9E7416B8B99495329</string>
-				<string>9848321D85063DBC94709095</string>
-				<string>65A40718984E0FF672A598FF</string>
-				<string>75EC1A92776E587E773D7DE4</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3B6CB7191D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Panda ElectricTests</string>
-			<key>productName</key>
-			<string>Panda ElectricTests</string>
-			<key>productReference</key>
-			<string>3B6CB7171D4C9F95005C40D8</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>3B6CB7171D4C9F95005C40D8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Panda ElectricTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3B6CB7181D4C9F95005C40D8</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3B6CB6FE1D4C9F95005C40D8</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>3B6CB7051D4C9F95005C40D8</string>
-			<key>remoteInfo</key>
-			<string>Panda Electric</string>
-		</dict>
-		<key>3B6CB7191D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>3B6CB7051D4C9F95005C40D8</string>
-			<key>targetProxy</key>
-			<string>3B6CB7181D4C9F95005C40D8</string>
-		</dict>
-		<key>3B6CB71A1D4C9F95005C40D8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B6CB71B1D4C9F95005C40D8</string>
-				<string>3B6CB71D1D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Panda ElectricTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB71B1D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Panda_ElectricTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB71C1D4C9F95005C40D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B6CB71B1D4C9F95005C40D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B6CB71D1D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB71E1D4C9F95005C40D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3B6CB7271D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB71F1D4C9F95005C40D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1CF452973C4DB707252C73B3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB7201D4C9F95005C40D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B6CB7211D4C9F95005C40D8</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3B6CB7311D4C9F95005C40D8</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8DE2EB8370C1BA35B78FA504</string>
-				<string>71233390CAAD58FFA8AFE033</string>
-				<string>6DA57A37643FC7BE4FE8488D</string>
-				<string>3B6CB71E1D4C9F95005C40D8</string>
-				<string>3B6CB71F1D4C9F95005C40D8</string>
-				<string>3B6CB7201D4C9F95005C40D8</string>
-				<string>44FE4AC6DE293523D4F466A4</string>
-				<string>7B15609AB9897CDD5FB52092</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3B6CB7241D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Panda ElectricUITests</string>
-			<key>productName</key>
-			<string>Panda ElectricUITests</string>
-			<key>productReference</key>
-			<string>3B6CB7221D4C9F95005C40D8</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>3B6CB7221D4C9F95005C40D8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Panda ElectricUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3B6CB7231D4C9F95005C40D8</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3B6CB6FE1D4C9F95005C40D8</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>3B6CB7051D4C9F95005C40D8</string>
-			<key>remoteInfo</key>
-			<string>Panda Electric</string>
-		</dict>
-		<key>3B6CB7241D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>3B6CB7051D4C9F95005C40D8</string>
-			<key>targetProxy</key>
-			<string>3B6CB7231D4C9F95005C40D8</string>
-		</dict>
-		<key>3B6CB7251D4C9F95005C40D8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B6CB7261D4C9F95005C40D8</string>
-				<string>3B6CB7281D4C9F95005C40D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Panda ElectricUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB7261D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Panda_ElectricUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB7271D4C9F95005C40D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B6CB7261D4C9F95005C40D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B6CB7281D4C9F95005C40D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B6CB7291D4C9F95005C40D8</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>-</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.11</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3B6CB72A1D4C9F95005C40D8</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>-</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.11</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3B6CB72B1D4C9F95005C40D8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3B6CB72C1D4C9F95005C40D8</string>
-				<string>3B6CB72D1D4C9F95005C40D8</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3B6CB72C1D4C9F95005C40D8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1EA026917383D676BD75760A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Panda Electric/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.elbedev.Panda-Electric</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3B6CB72D1D4C9F95005C40D8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>35DF9740CC8C8FE4D1B5FCAF</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Panda Electric/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.elbedev.Panda-Electric</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3B6CB72E1D4C9F95005C40D8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3B6CB72F1D4C9F95005C40D8</string>
-				<string>3B6CB7301D4C9F95005C40D8</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3B6CB72F1D4C9F95005C40D8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>75B25DFE3C5C2562EC32E09F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Panda ElectricTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.elbedev.Panda-ElectricTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Panda Electric.app/Contents/MacOS/Panda Electric</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3B6CB7301D4C9F95005C40D8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B7061EF3B932DCE4AC7434E8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Panda ElectricTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.elbedev.Panda-ElectricTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Panda Electric.app/Contents/MacOS/Panda Electric</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3B6CB7311D4C9F95005C40D8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3B6CB7321D4C9F95005C40D8</string>
-				<string>3B6CB7331D4C9F95005C40D8</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3B6CB7321D4C9F95005C40D8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0E3D1656464D2EC6D974CA53</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Panda ElectricUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.elbedev.Panda-ElectricUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Panda Electric</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3B6CB7331D4C9F95005C40D8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8456FF23D1E8D35D317C0F5D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Panda ElectricUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.elbedev.Panda-ElectricUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Panda Electric</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3CCB46F4AAD8AB8D24BB9672</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Pandas-Panda Electric.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Pandas-Panda Electric/Pods-Pandas-Panda Electric.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3D806333C817227002597715</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>44FE4AC6DE293523D4F466A4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>45FE0F13109E1EC7B754F807</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Panda Electric.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>53AEC92FE233781D8161380D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Panda Electric.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5BCD8B085D7E53820A491239</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>5DD194CE7FECB3E4816DFA26</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>53AEC92FE233781D8161380D</string>
-				<string>45FE0F13109E1EC7B754F807</string>
-				<string>75B25DFE3C5C2562EC32E09F</string>
-				<string>B7061EF3B932DCE4AC7434E8</string>
-				<string>0E3D1656464D2EC6D974CA53</string>
-				<string>8456FF23D1E8D35D317C0F5D</string>
-				<string>3CCB46F4AAD8AB8D24BB9672</string>
-				<string>2BC421475781FBD22E4243D9</string>
-				<string>1EA026917383D676BD75760A</string>
-				<string>35DF9740CC8C8FE4D1B5FCAF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>65A40718984E0FF672A598FF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6CDAA6C9E7416B8B99495329</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6DA57A37643FC7BE4FE8488D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>71233390CAAD58FFA8AFE033</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>719D16F07C044787A7F36D82</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>7312525C16C8780588FE751D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Panda_ElectricUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>75B25DFE3C5C2562EC32E09F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Panda ElectricTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>75EC1A92776E587E773D7DE4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>7B15609AB9897CDD5FB52092</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8456FF23D1E8D35D317C0F5D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Panda ElectricUITests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8DE2EB8370C1BA35B78FA504</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>93A3D803CEA6A2A50CF57573</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>964294233A3500784D9FEF85</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Panda_ElectricTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9848321D85063DBC94709095</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A535D4E775D35B96222B3317</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AF7648609DC4FB073F11EE1C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>964294233A3500784D9FEF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B7061EF3B932DCE4AC7434E8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Panda ElectricTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE4835AC8545F2E02CD865F8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>05A3BCF9BBFBAD5A2B597121</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E00E6F67BE2EB978BF3E3C06</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>EF729FA7650A2F97C139F265</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>3B6CB6FE1D4C9F95005C40D8</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CF452973C4DB707252C73B3 /* Pods_Panda_ElectricUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7312525C16C8780588FE751D /* Pods_Panda_ElectricUITests.framework */; };
+		3B6CB70A1D4C9F95005C40D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7091D4C9F95005C40D8 /* AppDelegate.swift */; };
+		3B6CB70C1D4C9F95005C40D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB70B1D4C9F95005C40D8 /* ViewController.swift */; };
+		3B6CB70E1D4C9F95005C40D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB70D1D4C9F95005C40D8 /* Assets.xcassets */; };
+		3B6CB7111D4C9F95005C40D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB70F1D4C9F95005C40D8 /* Main.storyboard */; };
+		3B6CB71C1D4C9F95005C40D8 /* Panda_ElectricTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB71B1D4C9F95005C40D8 /* Panda_ElectricTests.swift */; };
+		3B6CB7271D4C9F95005C40D8 /* Panda_ElectricUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7261D4C9F95005C40D8 /* Panda_ElectricUITests.swift */; };
+		AF7648609DC4FB073F11EE1C /* Pods_Panda_ElectricTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964294233A3500784D9FEF85 /* Pods_Panda_ElectricTests.framework */; };
+		DE4835AC8545F2E02CD865F8 /* Pods_Panda_Panda_Electric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A3BCF9BBFBAD5A2B597121 /* Pods_Panda_Panda_Electric.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B6CB7181D4C9F95005C40D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6CB6FE1D4C9F95005C40D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6CB7051D4C9F95005C40D8;
+			remoteInfo = "Panda Electric";
+		};
+		3B6CB7231D4C9F95005C40D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6CB6FE1D4C9F95005C40D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6CB7051D4C9F95005C40D8;
+			remoteInfo = "Panda Electric";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05A3BCF9BBFBAD5A2B597121 /* Pods_Panda_Panda_Electric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Panda_Electric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3D1656464D2EC6D974CA53 /* Pods-Panda ElectricUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda ElectricUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1EA026917383D676BD75760A /* Pods-Panda-Panda Electric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda-Panda Electric.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric.debug.xcconfig"; sourceTree = "<group>"; };
+		1FA6B77A1F457FCB3BB2E131 /* Pods_Panda_Electric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_Electric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		268E34376069DADCB5962FB3 /* Pods_Pandas_Panda_Electric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pandas_Panda_Electric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC421475781FBD22E4243D9 /* Pods-Pandas-Panda Electric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandas-Panda Electric.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pandas-Panda Electric/Pods-Pandas-Panda Electric.release.xcconfig"; sourceTree = "<group>"; };
+		35DF9740CC8C8FE4D1B5FCAF /* Pods-Panda-Panda Electric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda-Panda Electric.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric.release.xcconfig"; sourceTree = "<group>"; };
+		3B6CB7061D4C9F95005C40D8 /* Panda Electric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Panda Electric.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6CB7091D4C9F95005C40D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B6CB70B1D4C9F95005C40D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B6CB70D1D4C9F95005C40D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B6CB7101D4C9F95005C40D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B6CB7121D4C9F95005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6CB7171D4C9F95005C40D8 /* Panda ElectricTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda ElectricTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6CB71B1D4C9F95005C40D8 /* Panda_ElectricTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_ElectricTests.swift; sourceTree = "<group>"; };
+		3B6CB71D1D4C9F95005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6CB7221D4C9F95005C40D8 /* Panda ElectricUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda ElectricUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6CB7261D4C9F95005C40D8 /* Panda_ElectricUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_ElectricUITests.swift; sourceTree = "<group>"; };
+		3B6CB7281D4C9F95005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CCB46F4AAD8AB8D24BB9672 /* Pods-Pandas-Panda Electric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandas-Panda Electric.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pandas-Panda Electric/Pods-Pandas-Panda Electric.debug.xcconfig"; sourceTree = "<group>"; };
+		45FE0F13109E1EC7B754F807 /* Pods-Panda Electric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric.release.xcconfig"; sourceTree = "<group>"; };
+		53AEC92FE233781D8161380D /* Pods-Panda Electric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda Electric.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda Electric/Pods-Panda Electric.debug.xcconfig"; sourceTree = "<group>"; };
+		7312525C16C8780588FE751D /* Pods_Panda_ElectricUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_ElectricUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B25DFE3C5C2562EC32E09F /* Pods-Panda ElectricTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda ElectricTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8456FF23D1E8D35D317C0F5D /* Pods-Panda ElectricUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda ElectricUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests.release.xcconfig"; sourceTree = "<group>"; };
+		964294233A3500784D9FEF85 /* Pods_Panda_ElectricTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panda_ElectricTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7061EF3B932DCE4AC7434E8 /* Pods-Panda ElectricTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panda ElectricTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B6CB7031D4C9F95005C40D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE4835AC8545F2E02CD865F8 /* Pods_Panda_Panda_Electric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB7141D4C9F95005C40D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7648609DC4FB073F11EE1C /* Pods_Panda_ElectricTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB71F1D4C9F95005C40D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF452973C4DB707252C73B3 /* Pods_Panda_ElectricUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FD9486AF2DD9A95995812E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FA6B77A1F457FCB3BB2E131 /* Pods_Panda_Electric.framework */,
+				964294233A3500784D9FEF85 /* Pods_Panda_ElectricTests.framework */,
+				7312525C16C8780588FE751D /* Pods_Panda_ElectricUITests.framework */,
+				268E34376069DADCB5962FB3 /* Pods_Pandas_Panda_Electric.framework */,
+				05A3BCF9BBFBAD5A2B597121 /* Pods_Panda_Panda_Electric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B6CB6FD1D4C9F95005C40D8 = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7081D4C9F95005C40D8 /* Panda Electric */,
+				3B6CB71A1D4C9F95005C40D8 /* Panda ElectricTests */,
+				3B6CB7251D4C9F95005C40D8 /* Panda ElectricUITests */,
+				3B6CB7071D4C9F95005C40D8 /* Products */,
+				5DD194CE7FECB3E4816DFA26 /* Pods */,
+				04FD9486AF2DD9A95995812E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B6CB7071D4C9F95005C40D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7061D4C9F95005C40D8 /* Panda Electric.app */,
+				3B6CB7171D4C9F95005C40D8 /* Panda ElectricTests.xctest */,
+				3B6CB7221D4C9F95005C40D8 /* Panda ElectricUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B6CB7081D4C9F95005C40D8 /* Panda Electric */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7091D4C9F95005C40D8 /* AppDelegate.swift */,
+				3B6CB70B1D4C9F95005C40D8 /* ViewController.swift */,
+				3B6CB70D1D4C9F95005C40D8 /* Assets.xcassets */,
+				3B6CB70F1D4C9F95005C40D8 /* Main.storyboard */,
+				3B6CB7121D4C9F95005C40D8 /* Info.plist */,
+			);
+			path = "Panda Electric";
+			sourceTree = "<group>";
+		};
+		3B6CB71A1D4C9F95005C40D8 /* Panda ElectricTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB71B1D4C9F95005C40D8 /* Panda_ElectricTests.swift */,
+				3B6CB71D1D4C9F95005C40D8 /* Info.plist */,
+			);
+			path = "Panda ElectricTests";
+			sourceTree = "<group>";
+		};
+		3B6CB7251D4C9F95005C40D8 /* Panda ElectricUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7261D4C9F95005C40D8 /* Panda_ElectricUITests.swift */,
+				3B6CB7281D4C9F95005C40D8 /* Info.plist */,
+			);
+			path = "Panda ElectricUITests";
+			sourceTree = "<group>";
+		};
+		5DD194CE7FECB3E4816DFA26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53AEC92FE233781D8161380D /* Pods-Panda Electric.debug.xcconfig */,
+				45FE0F13109E1EC7B754F807 /* Pods-Panda Electric.release.xcconfig */,
+				75B25DFE3C5C2562EC32E09F /* Pods-Panda ElectricTests.debug.xcconfig */,
+				B7061EF3B932DCE4AC7434E8 /* Pods-Panda ElectricTests.release.xcconfig */,
+				0E3D1656464D2EC6D974CA53 /* Pods-Panda ElectricUITests.debug.xcconfig */,
+				8456FF23D1E8D35D317C0F5D /* Pods-Panda ElectricUITests.release.xcconfig */,
+				3CCB46F4AAD8AB8D24BB9672 /* Pods-Pandas-Panda Electric.debug.xcconfig */,
+				2BC421475781FBD22E4243D9 /* Pods-Pandas-Panda Electric.release.xcconfig */,
+				1EA026917383D676BD75760A /* Pods-Panda-Panda Electric.debug.xcconfig */,
+				35DF9740CC8C8FE4D1B5FCAF /* Pods-Panda-Panda Electric.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B6CB7051D4C9F95005C40D8 /* Panda Electric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6CB72B1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric" */;
+			buildPhases = (
+				E00E6F67BE2EB978BF3E3C06 /* 📦 Check Pods Manifest.lock */,
+				A535D4E775D35B96222B3317 /* [CP] Check Pods Manifest.lock */,
+				3D806333C817227002597715 /* [CP] Check Pods Manifest.lock */,
+				3B6CB7021D4C9F95005C40D8 /* Sources */,
+				3B6CB7031D4C9F95005C40D8 /* Frameworks */,
+				3B6CB7041D4C9F95005C40D8 /* Resources */,
+				EF729FA7650A2F97C139F265 /* [CP] Embed Pods Frameworks */,
+				719D16F07C044787A7F36D82 /* [CP] Copy Pods Resources */,
+				93A3D803CEA6A2A50CF57573 /* 📦 Embed Pods Frameworks */,
+				2DB4E7F87D288926BB0B9B7C /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Panda Electric";
+			productName = "Panda Electric";
+			productReference = 3B6CB7061D4C9F95005C40D8 /* Panda Electric.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B6CB7161D4C9F95005C40D8 /* Panda ElectricTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6CB72E1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricTests" */;
+			buildPhases = (
+				38C925C4F893E2B793F8B8F8 /* 📦 Check Pods Manifest.lock */,
+				2367188F5E492DDCD60D0CB6 /* [CP] Check Pods Manifest.lock */,
+				5BCD8B085D7E53820A491239 /* [CP] Check Pods Manifest.lock */,
+				3B6CB7131D4C9F95005C40D8 /* Sources */,
+				3B6CB7141D4C9F95005C40D8 /* Frameworks */,
+				3B6CB7151D4C9F95005C40D8 /* Resources */,
+				6CDAA6C9E7416B8B99495329 /* [CP] Embed Pods Frameworks */,
+				9848321D85063DBC94709095 /* [CP] Copy Pods Resources */,
+				65A40718984E0FF672A598FF /* 📦 Embed Pods Frameworks */,
+				75EC1A92776E587E773D7DE4 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B6CB7191D4C9F95005C40D8 /* PBXTargetDependency */,
+			);
+			name = "Panda ElectricTests";
+			productName = "Panda ElectricTests";
+			productReference = 3B6CB7171D4C9F95005C40D8 /* Panda ElectricTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B6CB7211D4C9F95005C40D8 /* Panda ElectricUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6CB7311D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricUITests" */;
+			buildPhases = (
+				8DE2EB8370C1BA35B78FA504 /* 📦 Check Pods Manifest.lock */,
+				71233390CAAD58FFA8AFE033 /* [CP] Check Pods Manifest.lock */,
+				6DA57A37643FC7BE4FE8488D /* [CP] Check Pods Manifest.lock */,
+				3B6CB71E1D4C9F95005C40D8 /* Sources */,
+				3B6CB71F1D4C9F95005C40D8 /* Frameworks */,
+				3B6CB7201D4C9F95005C40D8 /* Resources */,
+				44FE4AC6DE293523D4F466A4 /* [CP] Copy Pods Resources */,
+				7B15609AB9897CDD5FB52092 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B6CB7241D4C9F95005C40D8 /* PBXTargetDependency */,
+			);
+			name = "Panda ElectricUITests";
+			productName = "Panda ElectricUITests";
+			productReference = 3B6CB7221D4C9F95005C40D8 /* Panda ElectricUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B6CB6FE1D4C9F95005C40D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = elbedev.com;
+				TargetAttributes = {
+					3B6CB7051D4C9F95005C40D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3B6CB7161D4C9F95005C40D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3B6CB7051D4C9F95005C40D8;
+					};
+					3B6CB7211D4C9F95005C40D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3B6CB7051D4C9F95005C40D8;
+					};
+				};
+			};
+			buildConfigurationList = 3B6CB7011D4C9F95005C40D8 /* Build configuration list for PBXProject "Panda Electric" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B6CB6FD1D4C9F95005C40D8;
+			productRefGroup = 3B6CB7071D4C9F95005C40D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B6CB7051D4C9F95005C40D8 /* Panda Electric */,
+				3B6CB7161D4C9F95005C40D8 /* Panda ElectricTests */,
+				3B6CB7211D4C9F95005C40D8 /* Panda ElectricUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B6CB7041D4C9F95005C40D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6CB70E1D4C9F95005C40D8 /* Assets.xcassets in Resources */,
+				3B6CB7111D4C9F95005C40D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB7151D4C9F95005C40D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB7201D4C9F95005C40D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2367188F5E492DDCD60D0CB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2DB4E7F87D288926BB0B9B7C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38C925C4F893E2B793F8B8F8 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D806333C817227002597715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		44FE4AC6DE293523D4F466A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BCD8B085D7E53820A491239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65A40718984E0FF672A598FF /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CDAA6C9E7416B8B99495329 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA57A37643FC7BE4FE8488D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71233390CAAD58FFA8AFE033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		719D16F07C044787A7F36D82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75EC1A92776E587E773D7DE4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B15609AB9897CDD5FB52092 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DE2EB8370C1BA35B78FA504 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93A3D803CEA6A2A50CF57573 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9848321D85063DBC94709095 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricTests/Pods-Panda ElectricTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A535D4E775D35B96222B3317 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E00E6F67BE2EB978BF3E3C06 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF729FA7650A2F97C139F265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B6CB7021D4C9F95005C40D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6CB70C1D4C9F95005C40D8 /* ViewController.swift in Sources */,
+				3B6CB70A1D4C9F95005C40D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB7131D4C9F95005C40D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6CB71C1D4C9F95005C40D8 /* Panda_ElectricTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6CB71E1D4C9F95005C40D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6CB7271D4C9F95005C40D8 /* Panda_ElectricUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B6CB7191D4C9F95005C40D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6CB7051D4C9F95005C40D8 /* Panda Electric */;
+			targetProxy = 3B6CB7181D4C9F95005C40D8 /* PBXContainerItemProxy */;
+		};
+		3B6CB7241D4C9F95005C40D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6CB7051D4C9F95005C40D8 /* Panda Electric */;
+			targetProxy = 3B6CB7231D4C9F95005C40D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B6CB70F1D4C9F95005C40D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B6CB7101D4C9F95005C40D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B6CB7291D4C9F95005C40D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B6CB72A1D4C9F95005C40D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3B6CB72C1D4C9F95005C40D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA026917383D676BD75760A /* Pods-Panda-Panda Electric.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda Electric/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3B6CB72D1D4C9F95005C40D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DF9740CC8C8FE4D1B5FCAF /* Pods-Panda-Panda Electric.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda Electric/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-Electric";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3B6CB72F1D4C9F95005C40D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B25DFE3C5C2562EC32E09F /* Pods-Panda ElectricTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda ElectricTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panda Electric.app/Contents/MacOS/Panda Electric";
+			};
+			name = Debug;
+		};
+		3B6CB7301D4C9F95005C40D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7061EF3B932DCE4AC7434E8 /* Pods-Panda ElectricTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda ElectricTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panda Electric.app/Contents/MacOS/Panda Electric";
+			};
+			name = Release;
+		};
+		3B6CB7321D4C9F95005C40D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3D1656464D2EC6D974CA53 /* Pods-Panda ElectricUITests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda ElectricUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Panda Electric";
+			};
+			name = Debug;
+		};
+		3B6CB7331D4C9F95005C40D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8456FF23D1E8D35D317C0F5D /* Pods-Panda ElectricUITests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Panda ElectricUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Panda Electric";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B6CB7011D4C9F95005C40D8 /* Build configuration list for PBXProject "Panda Electric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6CB7291D4C9F95005C40D8 /* Debug */,
+				3B6CB72A1D4C9F95005C40D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B6CB72B1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6CB72C1D4C9F95005C40D8 /* Debug */,
+				3B6CB72D1D4C9F95005C40D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B6CB72E1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6CB72F1D4C9F95005C40D8 /* Debug */,
+				3B6CB7301D4C9F95005C40D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B6CB7311D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6CB7321D4C9F95005C40D8 /* Debug */,
+				3B6CB7331D4C9F95005C40D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B6CB6FE1D4C9F95005C40D8 /* Project object */;
+}
