@@ -25,7 +25,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                                                                                         FibonacciNumber(index:12, value:233),
                                                                                         FibonacciNumber(index:13, value:377),
                                                                                         FibonacciNumber(index:14, value:610),].reversed()))
-    var socketHandler: SocketHandler? {
+    var socketHandler: ChannelHandler? {
         didSet {
             socketHandler?.messageHandler = { (message: String, position: Int) -> Void in
                 self.handleMessage(message, atPosition: position)

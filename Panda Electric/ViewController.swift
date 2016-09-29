@@ -17,10 +17,17 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     let socket = Socket(url: "http://localhost:4000/socket/websocket")
     //    let socket = Socket(url: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")
 
-    var socketHandler: SocketHandler? {
+    var socketHandler: PlaygroundChannelHandler? {
         didSet {
             socketHandler?.messageHandler = { (message: String, position: Int) -> Void in
                 self.handleMessage(message, atPosition: position)
+            }
+        }
+    }
+    var fibonacciChannelHandler: FibonacciChannelHandler? {
+        didSet {
+            fibonacciChannelHandler?.fibonacciHandler = { (result: Int) -> Void in
+                print("handle estimation result")
             }
         }
     }
@@ -33,7 +40,8 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         socket.onConnect = {
             print("Socket connected")
             let topic = "main"
-            self.socketHandler = SocketHandler(user: "mac", topic:topic, socket: self.socket)
+            self.socketHandler = PlaygroundChannelHandler(user: "mac", socket: self.socket, channel:"playground", topic:topic)
+            self.fibonacciChannelHandler = FibonacciChannelHandler(user: "mac", socket: self.socket, channel:"session", topic:topic)
         }
         socket.connect()
     }
@@ -41,12 +49,6 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     fileprivate func handleMessage(_ message: String, atPosition position: Int) {
         if let messageLabel = self.messageLabel {
             messageLabel.stringValue = message + " \(position)"
-        }
-    }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
         }
     }
 
@@ -59,7 +61,9 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         if let socketHandler = socketHandler {
             socketHandler.sendMessage(message: inputField.stringValue)
         }
+        if let fibonacciChannelHandler = fibonacciChannelHandler {
+            fibonacciChannelHandler.sendFibonacciNumber(number: 8)
+        }
     }
-
 }
 
