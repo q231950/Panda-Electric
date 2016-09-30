@@ -14,19 +14,19 @@ class ViewController: NSViewController, NSTextFieldDelegate {
 
     @IBOutlet var inputField: NSTextField!
     @IBOutlet var messageLabel: NSTextField!
-    let socket = Socket(url: "http://localhost:4000/socket/websocket")
     //    let socket = Socket(url: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")
 
-    var playgroundChannelHandler: PlaygroundChannelHandler? {
+    var pandaConnection: PandaConnection!
+    var playgroundChannelHandler: PlaygroundChannelHandler! {
         didSet {
             playgroundChannelHandler?.messageHandler = { (message: String, position: Int) -> Void in
                 self.handleMessage(message, atPosition: position)
             }
         }
     }
-    var estimateChannelHandler: EstimateChannelHandler? {
+    var estimateChannelHandler: EstimateChannelHandler! {
         didSet {
-            estimateChannelHandler?.fibonacciHandler = { (result: Int) -> Void in
+            estimateChannelHandler?.estimateHandler = { (result: Int) -> Void in
                 print("handle estimation result")
             }
         }
@@ -37,21 +37,17 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         
         inputField.delegate = self
 
-        socket.onConnect = {
-            print("Socket connected")
-            let topic = "main"
-            let user = "mac"
-            self.playgroundChannelHandler = PlaygroundChannelHandler(user: user,
-                                                                     socket: self.socket,
-                                                                     channel:"playground",
-                                                                     topic:topic)
-            
-            self.estimateChannelHandler = EstimateChannelHandler(user: user,
-                                                                 socket: self.socket,
-                                                                 channel:"session",
-                                                                 topic:topic)
-        }
-        socket.connect()
+        let topic = "main"
+        let user = "mac"
+        playgroundChannelHandler = PlaygroundChannelHandler(user: user,
+                                                            channel:"playground",
+                                                            topic:topic)
+        
+        estimateChannelHandler = EstimateChannelHandler(user: user,
+                                                        channel:"session",
+                                                        topic:topic)
+        
+        pandaConnection = PandaConnection(url: "http://localhost:4000/socket/websocket", channelHandlers: [playgroundChannelHandler, estimateChannelHandler])
     }
     
     fileprivate func handleMessage(_ message: String, atPosition position: Int) {
