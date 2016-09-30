@@ -26,8 +26,8 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     }
     var estimateChannelHandler: EstimateChannelHandler! {
         didSet {
-            estimateChannelHandler?.estimateHandler = { (result: Int) -> Void in
-                print("handle estimation result")
+            estimateChannelHandler?.estimateHandler = { (estimate: Estimate) -> Void in
+                print("handle estimation result \(estimate)")
             }
         }
     }
@@ -66,7 +66,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             socketHandler.sendMessage(message: inputField.stringValue)
         }
         if let estimateChannelHandler = estimateChannelHandler {
-            estimateChannelHandler.sendEstimate(estimate: .fibonacci(8)) // .tshirt(.S)
+            estimateChannelHandler.sendEstimate(estimate: .tshirt(size: .S)) // //.fibonacci(8)
         }
     }
 }
