@@ -24,9 +24,9 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             }
         }
     }
-    var fibonacciChannelHandler: FibonacciChannelHandler? {
+    var estimateChannelHandler: EstimateChannelHandler? {
         didSet {
-            fibonacciChannelHandler?.fibonacciHandler = { (result: Int) -> Void in
+            estimateChannelHandler?.fibonacciHandler = { (result: Int) -> Void in
                 print("handle estimation result")
             }
         }
@@ -46,10 +46,10 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                                                                      channel:"playground",
                                                                      topic:topic)
             
-            self.fibonacciChannelHandler = FibonacciChannelHandler(user: user,
-                                                                   socket: self.socket,
-                                                                   channel:"session",
-                                                                   topic:topic)
+            self.estimateChannelHandler = EstimateChannelHandler(user: user,
+                                                                 socket: self.socket,
+                                                                 channel:"session",
+                                                                 topic:topic)
         }
         socket.connect()
     }
@@ -69,8 +69,8 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         if let socketHandler = playgroundChannelHandler {
             socketHandler.sendMessage(message: inputField.stringValue)
         }
-        if let fibonacciChannelHandler = fibonacciChannelHandler {
-            fibonacciChannelHandler.sendEstimate(estimate: .fibonacci(8)) // .tshirt(.S)
+        if let estimateChannelHandler = estimateChannelHandler {
+            estimateChannelHandler.sendEstimate(estimate: .fibonacci(8)) // .tshirt(.S)
         }
     }
 }
