@@ -17,9 +17,9 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     let socket = Socket(url: "http://localhost:4000/socket/websocket")
     //    let socket = Socket(url: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")
 
-    var socketHandler: PlaygroundChannelHandler? {
+    var playgroundChannelHandler: PlaygroundChannelHandler? {
         didSet {
-            socketHandler?.messageHandler = { (message: String, position: Int) -> Void in
+            playgroundChannelHandler?.messageHandler = { (message: String, position: Int) -> Void in
                 self.handleMessage(message, atPosition: position)
             }
         }
@@ -40,8 +40,16 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         socket.onConnect = {
             print("Socket connected")
             let topic = "main"
-            self.socketHandler = PlaygroundChannelHandler(user: "mac", socket: self.socket, channel:"playground", topic:topic)
-            self.fibonacciChannelHandler = FibonacciChannelHandler(user: "mac", socket: self.socket, channel:"session", topic:topic)
+            let user = "mac"
+            self.playgroundChannelHandler = PlaygroundChannelHandler(user: user,
+                                                                     socket: self.socket,
+                                                                     channel:"playground",
+                                                                     topic:topic)
+            
+            self.fibonacciChannelHandler = FibonacciChannelHandler(user: user,
+                                                                   socket: self.socket,
+                                                                   channel:"session",
+                                                                   topic:topic)
         }
         socket.connect()
     }
@@ -58,11 +66,11 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             return
         }
         
-        if let socketHandler = socketHandler {
+        if let socketHandler = playgroundChannelHandler {
             socketHandler.sendMessage(message: inputField.stringValue)
         }
         if let fibonacciChannelHandler = fibonacciChannelHandler {
-            fibonacciChannelHandler.sendFibonacciNumber(number: 8)
+            fibonacciChannelHandler.sendEstimate(estimate: .fibonacci(8)) // .tshirt(.S)
         }
     }
 }
