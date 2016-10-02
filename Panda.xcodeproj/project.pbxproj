@@ -29,7 +29,6 @@
 		3B5A27EB1DA19DA600E55B01 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A27841DA19D6500E55B01 /* Push.swift */; };
 		3B5A27EC1DA19DA600E55B01 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A27851DA19D6500E55B01 /* Response.swift */; };
 		3B5A27ED1DA19DA600E55B01 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A27861DA19D6500E55B01 /* Socket.swift */; };
-		3B5A28401DA19E7300E55B01 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A28341DA19E5000E55B01 /* Starscream.framework */; };
 		3B607D511DA1296E008D7A82 /* Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B607D481DA1296E008D7A82 /* Panda.framework */; };
 		3B607D561DA1296E008D7A82 /* Panda_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B607D551DA1296E008D7A82 /* Panda_macOSTests.swift */; };
 		3B607D661DA15C57008D7A82 /* ChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ABA61DA10E7F0011EF08 /* ChannelHandler.swift */; };
@@ -42,6 +41,7 @@
 		3B607D6D1DA15C57008D7A82 /* PlaygroundChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ABAF1DA10E7F0011EF08 /* PlaygroundChannelHandler.swift */; };
 		3B607D6F1DA15C9A008D7A82 /* Panda.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B38ABAC1DA10E7F0011EF08 /* Panda.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B73031A1DA1A14D0000C028 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A28381DA19E5000E55B01 /* Starscream.framework */; };
+		3B7303211DA1A4C00000C028 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A28341DA19E5000E55B01 /* Starscream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,7 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5A28401DA19E7300E55B01 /* Starscream.framework in Frameworks */,
+				3B7303211DA1A4C00000C028 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B607D421DA128BD008D7A82 /* Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B607D411DA128BD008D7A82 /* Panda.framework */; };
 		3B6CB7411D4CAAA9005C40D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7401D4CAAA9005C40D8 /* AppDelegate.swift */; };
 		3B6CB7431D4CAAA9005C40D8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7421D4CAAA9005C40D8 /* MasterViewController.swift */; };
 		3B6CB7451D4CAAA9005C40D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7441D4CAAA9005C40D8 /* DetailViewController.swift */; };
@@ -16,6 +15,7 @@
 		3B6CB74D1D4CAAA9005C40D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB74B1D4CAAA9005C40D8 /* LaunchScreen.storyboard */; };
 		3B6CB7581D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7571D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift */; };
 		3B6CB7631D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */; };
+		3B7303231DA1A4D40000C028 /* Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7303221DA1A4D40000C028 /* Panda.framework */; };
 		3B8C1D701D7AAE7F00500B43 /* FibonacciPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */; };
 		3BDF2DE81D7C361300CFC1BB /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */; };
 		3BDF2DEA1D7C70D100CFC1BB /* FibonacciNumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */; };
@@ -59,6 +59,7 @@
 		3B6CB75E1D4CAAAA005C40D8 /* Panda Electric MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda Electric MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_Electric_MobileUITests.swift; sourceTree = "<group>"; };
 		3B6CB7641D4CAAAA005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7303221DA1A4D40000C028 /* Panda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Panda.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-abzkcothuxehpycgppfltxmgjhcp/Build/Products/Debug-iphonesimulator/Panda.framework"; sourceTree = "<group>"; };
 		3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciPickerView.swift; sourceTree = "<group>"; };
 		3BC559701D8C89D400213420 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
 		3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
@@ -80,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B607D421DA128BD008D7A82 /* Panda.framework in Frameworks */,
+				3B7303231DA1A4D40000C028 /* Panda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +170,7 @@
 		699C29B9832A2FA4CC29E84E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B7303221DA1A4D40000C028 /* Panda.framework */,
 				3B607D411DA128BD008D7A82 /* Panda.framework */,
 				3B607D3F1DA1273D008D7A82 /* Pods_Panda_Umbrella_Panda_Electric_Mobile.framework */,
 				3B38ABBC1DA110430011EF08 /* Panda.framework */,
