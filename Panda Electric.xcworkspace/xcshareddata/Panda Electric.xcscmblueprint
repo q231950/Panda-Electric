@@ -5,12 +5,16 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "4A4A85873C4EBA58F7AE4AEBFB1B282B34F64750" : 9223372036854775807,
-    "5748AB2155A18AB100F52ACE8BB577D8E2F47847" : 9223372036854775807
+    "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D" : 9223372036854775807,
+    "5748AB2155A18AB100F52ACE8BB577D8E2F47847" : 9223372036854775807,
+    "7E6BCE16D3FADCE66C61EEEBEE85F3FE32F548A0" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B4A61382-8FF3-4EC9-A898-5B96CAFEA535",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "4A4A85873C4EBA58F7AE4AEBFB1B282B34F64750" : "Panda%20Electric\/",
-    "5748AB2155A18AB100F52ACE8BB577D8E2F47847" : "Panda\/"
+    "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D" : "Panda%20Electric\/Dependencies\/External\/Starscream\/",
+    "5748AB2155A18AB100F52ACE8BB577D8E2F47847" : "Panda\/",
+    "7E6BCE16D3FADCE66C61EEEBEE85F3FE32F548A0" : "Panda%20Electric\/Dependencies\/External\/Birdsong\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Panda Electric",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -25,6 +29,16 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:q231950\/Panda.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5748AB2155A18AB100F52ACE8BB577D8E2F47847"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sjrmanning\/Birdsong.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7E6BCE16D3FADCE66C61EEEBEE85F3FE32F548A0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/daltoniam\/Starscream.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D"
     }
   ]
 }
