@@ -13,9 +13,16 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
-    fileprivate let connection = PandaConnection(url: "http://localhost:4000/socket/websocket")
-//    fileprivate let connection = PandaConnection(url: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")
     
+    fileprivate var pandaConnection: PandaConnection!
+    var estimateChannelHandler: EstimateChannelHandler! {
+        didSet {
+            estimateChannelHandler?.estimateHandler = { (estimate: Estimate) -> Void in
+                print("handle estimation result \(estimate)")
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +36,8 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        setupConnection()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +49,19 @@ class MasterViewController: UITableViewController {
         objects.insert(Date() as AnyObject, at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+    
+    fileprivate func setupConnection() {
+        let topic = "main"
+        let user = "phone"
+    
+        estimateChannelHandler = EstimateChannelHandler(user: user,
+                                                        channel:"session",
+                                                        topic:topic)
+        
+        //        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
+        let url = "http://localhost:4000/socket/websocket"
+        pandaConnection = PandaConnection(url: url, channelHandlers: [estimateChannelHandler])
     }
 
     // MARK: - Segues

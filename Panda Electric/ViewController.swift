@@ -14,10 +14,9 @@ class ViewController: NSViewController, NSTextFieldDelegate {
 
     @IBOutlet var inputField: NSTextField!
     @IBOutlet var messageLabel: NSTextField!
-    //    let socket = Socket(url: "https://tranquil-peak-78260.herokuapp.com/socket/websocket")
 
-    var pandaConnection: PandaConnection!
-    var playgroundChannelHandler: PlaygroundChannelHandler! {
+    fileprivate var pandaConnection: PandaConnection!
+    fileprivate var playgroundChannelHandler: PlaygroundChannelHandler! {
         didSet {
             playgroundChannelHandler?.messageHandler = { (message: String, position: Int) -> Void in
                 self.handleMessage(message, atPosition: position)
@@ -47,7 +46,9 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                                                         channel:"session",
                                                         topic:topic)
         
-        pandaConnection = PandaConnection(url: "http://localhost:4000/socket/websocket", channelHandlers: [playgroundChannelHandler, estimateChannelHandler])
+//        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
+        let url = "http://localhost:4000/socket/websocket"
+        pandaConnection = PandaConnection(url: url, channelHandlers: [playgroundChannelHandler, estimateChannelHandler])
     }
     
     fileprivate func handleMessage(_ message: String, atPosition position: Int) {
