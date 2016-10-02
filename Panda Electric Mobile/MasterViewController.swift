@@ -60,7 +60,7 @@ class MasterViewController: UITableViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 let topic = objects[(indexPath as NSIndexPath).row] as! String
-                controller.socketHandler = PlaygroundChannelHandler(user: "phone", socket: socket, channel: "session", topic:topic)
+                controller.channelHandler = EstimateChannelHandler(user: "phone", channel: "session", topic:topic)
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

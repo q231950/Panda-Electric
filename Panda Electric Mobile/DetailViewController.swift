@@ -25,10 +25,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                                                                                         FibonacciNumber(index:12, value:233),
                                                                                         FibonacciNumber(index:13, value:377),
                                                                                         FibonacciNumber(index:14, value:610),].reversed()))
-    var socketHandler: ChannelHandler? {
+    var channelHandler: EstimateChannelHandler? {
         didSet {
-            socketHandler?.messageHandler = { (message: String, position: Int) -> Void in
-                self.handleMessage(message, atPosition: position)
+            channelHandler?.estimateHandler = { (estimate: Estimate) -> Void in
+                // handle estimate
             }
         }
     }
@@ -37,7 +37,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = socketHandler?.topic as String?
+//        title = channelHandler?.topic as String?
         view.backgroundColor = UIColor.darkGray
         setupPickerView()
     }
@@ -51,8 +51,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         textField.text = string
-        if let socketHandler = self.socketHandler {
-            socketHandler.sendMessage(message: string)
+        if let channelHandler = self.channelHandler {
+            channelHandler.sendEstimate(estimate: .fibonacci(21))
         }
         return false
     }

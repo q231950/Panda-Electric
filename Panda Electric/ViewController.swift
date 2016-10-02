@@ -66,7 +66,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             socketHandler.sendMessage(message: inputField.stringValue)
         }
         if let estimateChannelHandler = estimateChannelHandler {
-            estimateChannelHandler.sendEstimate(estimate: .tshirt(size: .S)) // //.fibonacci(8)
+            estimateChannelHandler.sendEstimate(estimate: .fibonacci(8)) // .tshirt(size: .S)
         }
     }
 }
