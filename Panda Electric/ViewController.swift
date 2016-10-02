@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import Birdsong
 import Panda
 
 class ViewController: NSViewController, NSTextFieldDelegate {

@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Panda Electric.xcodeproj">
+      location = "container:Panda.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/kim/Development/Panda Electric/Panda Electric/Panda Electric for Mac.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Panda Electric Mobile.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
