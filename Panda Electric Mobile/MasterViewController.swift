@@ -48,8 +48,8 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.topic = objects[(indexPath as NSIndexPath).row] as? String
-                controller.connection = connection
+                let topic = objects[(indexPath as NSIndexPath).row] as! String
+                controller.channelHandler = EstimateChannelHandler(user: "phone", channel: "session", topic:topic)
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

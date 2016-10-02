@@ -181,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB72B1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda Electric" */;
 			buildPhases = (
+				E00E6F67BE2EB978BF3E3C06 /* [CP] Check Pods Manifest.lock */,
 				A535D4E775D35B96222B3317 /* [CP] Check Pods Manifest.lock */,
 				3D806333C817227002597715 /* [CP] Check Pods Manifest.lock */,
 				3B6CB7021D4C9F95005C40D8 /* Sources */,
@@ -204,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB72E1D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricTests" */;
 			buildPhases = (
+				38C925C4F893E2B793F8B8F8 /* [CP] Check Pods Manifest.lock */,
 				2367188F5E492DDCD60D0CB6 /* [CP] Check Pods Manifest.lock */,
 				5BCD8B085D7E53820A491239 /* [CP] Check Pods Manifest.lock */,
 				3B6CB7131D4C9F95005C40D8 /* Sources */,
@@ -228,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6CB7311D4C9F95005C40D8 /* Build configuration list for PBXNativeTarget "Panda ElectricUITests" */;
 			buildPhases = (
+				8DE2EB8370C1BA35B78FA504 /* [CP] Check Pods Manifest.lock */,
 				71233390CAAD58FFA8AFE033 /* [CP] Check Pods Manifest.lock */,
 				6DA57A37643FC7BE4FE8488D /* [CP] Check Pods Manifest.lock */,
 				3B6CB71E1D4C9F95005C40D8 /* Sources */,
@@ -344,6 +347,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda-Panda Electric/Pods-Panda-Panda Electric-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38C925C4F893E2B793F8B8F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3D806333C817227002597715 /* [CP] Check Pods Manifest.lock */ = {
@@ -496,6 +514,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panda ElectricUITests/Pods-Panda ElectricUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8DE2EB8370C1BA35B78FA504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		93A3D803CEA6A2A50CF57573 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +560,21 @@
 			showEnvVarsInLog = 0;
 		};
 		A535D4E775D35B96222B3317 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E00E6F67BE2EB978BF3E3C06 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -731,6 +779,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panda Electric.app/Contents/MacOS/Panda Electric";
 			};
 			name = Debug;
@@ -745,6 +794,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panda Electric.app/Contents/MacOS/Panda Electric";
 			};
 			name = Release;
@@ -758,6 +808,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Panda Electric";
 			};
 			name = Debug;
@@ -771,6 +822,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elbedev.Panda-ElectricUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Panda Electric";
 			};
 			name = Release;
