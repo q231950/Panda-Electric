@@ -1,0 +1,6 @@
+[submodule "Dependencies/External/Birdsong"]
+	path = Dependencies/External/Birdsong
+	url = https://github.com/sjrmanning/Birdsong.git
+[submodule "Dependencies/External/Starscream"]
+	path = Dependencies/External/Starscream
+	url = https://github.com/daltoniam/Starscream.git

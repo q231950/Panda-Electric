@@ -7,7 +7,6 @@
 //
 
 import GameplayKit
-import Birdsong
 
 public protocol PandaConnectionDelegate {
     func connectionEstablished(connection: PandaConnection)

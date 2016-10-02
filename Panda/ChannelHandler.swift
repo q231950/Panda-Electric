@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Birdsong
 
 public class ChannelHandler {
     internal var channel: Channel?

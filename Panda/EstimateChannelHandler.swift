@@ -6,7 +6,7 @@
 //
 //
 
-import Birdsong
+import Foundation
 
 public class EstimateChannelHandler: ChannelHandler {
     public var estimateHandler: ((_ estimate: Estimate) -> Void)?

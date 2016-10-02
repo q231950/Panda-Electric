@@ -6,7 +6,7 @@
 //
 //
 
-import Birdsong
+import Foundation
 
 public class PlaygroundChannelHandler: ChannelHandler {
     public var messageHandler: ((_ message: String, _ position: Int) -> Void)?
