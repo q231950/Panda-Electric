@@ -9,7 +9,7 @@
 import UIKit
 import Panda
 
-class MasterViewController: UITableViewController {
+class MasterViewController: UITableViewController, PandaConnectionDelegate {
 
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
@@ -26,7 +26,6 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        objects.append("main" as AnyObject)
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem
 
@@ -46,9 +45,52 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(_ sender: AnyObject) {
-        objects.insert(Date() as AnyObject, at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        self.tableView.insertRows(at: [indexPath], with: .automatic)
+        let alertController = UIAlertController(title: "Create Session", message: nil, preferredStyle: .alert)
+        let nameAction = UIAlertAction(title: "Ok", style: .default) { (_) in
+            let loginTextField = alertController.textFields![0] as UITextField
+            print(loginTextField.text)
+            PandaAPI.createSession(title: loginTextField.text!, user: "phone", completion: { (session: PandaSession?, err: Error?) in
+                if let s = session {
+                    DispatchQueue.main.async {
+                        self.objects.insert(s.title as AnyObject, at: 0)
+                        let indexPath = IndexPath(row: 0, section: 0)
+                        self.tableView.insertRows(at: [indexPath], with: .automatic)
+                    }
+                } else if let e = err {
+                    print(e.localizedDescription)
+                } else {
+                    print("[Create Session] completion with neither session nor error.")
+                }
+            })
+        }
+        nameAction.isEnabled = false
+        alertController.addTextField(configurationHandler: { (textField: UITextField) in
+            textField.placeholder = "Name"
+            NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
+                nameAction.isEnabled = textField.text != ""
+            }
+        })
+        alertController.addAction(nameAction)
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action: UIAlertAction) in
+            
+        }))
+        
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    // MARK: PandaConnectionDelegate
+    
+    func connectionEstablished(connection: PandaConnection) {
+        print("connectionEstablished")
+        
+//        objects.append("main" as AnyObject)
+//        tableView.reloadData()
+    }
+    
+    func connectionDisconnected(connection: PandaConnection) {
+        print("socket.onDisconnect")
     }
     
     fileprivate func setupConnection() {
@@ -62,6 +104,7 @@ class MasterViewController: UITableViewController {
         //        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
         let url = "http://localhost:4000/socket/websocket"
         pandaConnection = PandaConnection(url: url, channelHandlers: [estimateChannelHandler])
+        pandaConnection.delegate = self
     }
 
     // MARK: - Segues
