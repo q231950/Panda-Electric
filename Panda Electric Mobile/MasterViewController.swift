@@ -15,9 +15,9 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     var objects = [PandaSession]()
     
     fileprivate var pandaConnection: PandaConnection!
-    var estimateChannelHandler: EstimateChannelHandler! {
+    var estimationChannelHandler: EstimationChannelHandler! {
         didSet {
-            estimateChannelHandler?.estimateHandler = { (estimate: Estimate) -> Void in
+            estimationChannelHandler?.estimateHandler = { (estimate: Estimate) -> Void in
                 print("handle estimation result \(estimate)")
             }
         }
@@ -108,13 +108,13 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         let topic = "main"
         let user = "phone"
     
-        estimateChannelHandler = EstimateChannelHandler(user: user,
+        estimationChannelHandler = EstimationChannelHandler(user: user,
                                                         channel:"session",
                                                         topic:topic)
         
         //        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
         let url = "http://localhost:4000/socket/websocket"
-        pandaConnection = PandaConnection(url: url, channelHandlers: [estimateChannelHandler])
+        pandaConnection = PandaConnection(url: url, channelHandlers: [estimationChannelHandler])
         pandaConnection.delegate = self
     }
 
@@ -125,7 +125,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 let session = objects[(indexPath as NSIndexPath).row]
-                controller.channelHandler = EstimateChannelHandler(user: "phone", channel: "session", topic:session.title)
+                controller.channelHandler = EstimationChannelHandler(user: "phone", channel: "session", topic:session.title)
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

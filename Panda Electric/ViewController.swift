@@ -22,9 +22,9 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             }
         }
     }
-    var estimateChannelHandler: EstimateChannelHandler! {
+    var estimationChannelHandler: EstimationChannelHandler! {
         didSet {
-            estimateChannelHandler?.estimateHandler = { (estimate: Estimate) -> Void in
+            estimationChannelHandler?.estimateHandler = { (estimate: Estimate) -> Void in
                 print("handle estimation result \(estimate)")
             }
         }
@@ -41,13 +41,13 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                                                             channel:"playground",
                                                             topic:topic)
         
-        estimateChannelHandler = EstimateChannelHandler(user: user,
+        estimationChannelHandler = EstimationChannelHandler(user: user,
                                                         channel:"session",
                                                         topic:topic)
         
 //        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
         let url = "http://localhost:4000/socket/websocket"
-        pandaConnection = PandaConnection(url: url, channelHandlers: [playgroundChannelHandler, estimateChannelHandler])
+        pandaConnection = PandaConnection(url: url, channelHandlers: [playgroundChannelHandler, estimationChannelHandler])
     }
     
     fileprivate func handleMessage(_ message: String, atPosition position: Int) {
@@ -65,8 +65,8 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         if let socketHandler = playgroundChannelHandler {
             socketHandler.sendMessage(inputField.stringValue)
         }
-        if let estimateChannelHandler = estimateChannelHandler {
-            estimateChannelHandler.sendEstimate(.fibonacci(8)) // .tshirt(size: .S)
+        if let estimationChannelHandler = estimationChannelHandler {
+            estimationChannelHandler.sendEstimate(.fibonacci(8)) // .tshirt(size: .S)
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  EstimateChannelHandler.swift
+//  EstimationChannelHandler.swift
 //  Pods
 //
 //  Created by Martin Kim Dung-Pham on 29/09/2016.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class EstimateChannelHandler: ChannelHandler {
+open class EstimationChannelHandler: ChannelHandler {
     open var estimateHandler: ((_ estimate: Estimate) -> Void)?
     
     override func registerCallbacks(_ channel: Channel) {

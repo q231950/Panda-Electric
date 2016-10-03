@@ -25,7 +25,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                                                                                         FibonacciNumber(index:12, value:233),
                                                                                         FibonacciNumber(index:13, value:377),
                                                                                         FibonacciNumber(index:14, value:610),].reversed()))
-    var channelHandler: EstimateChannelHandler? {
+    var channelHandler: EstimationChannelHandler? {
         didSet {
             channelHandler?.estimateHandler = { (estimate: Estimate) -> Void in
                 // handle estimate

@@ -8,15 +8,6 @@
 
 import Foundation
 
-open class PandaSession {
-    open let title: String
-//    open let identifier: String
-    init(dict: [String : AnyObject]) {
-        title = dict["title"] as! String
-//        identifier = dict["id"] as! Number
-    }
-}
-
 open class PandaAPI {
     open static func createSession(_ title: String, user: String, completion: @escaping (_ session: PandaSession?, _ error: Error?) -> Swift.Void) {
         
