@@ -5,7 +5,7 @@
       location = "container:Panda.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/kim/Development/Panda Electric/Panda Electric/Panda Electric for Mac.xcodeproj">
+      location = "group:Panda Electric for Mac.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Panda Electric Mobile.xcodeproj">
