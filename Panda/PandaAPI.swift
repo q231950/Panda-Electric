@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class PandaSession {
+open class PandaSession {
     open let title: String
 //    open let identifier: String
     init(dict: [String : AnyObject]) {
@@ -17,16 +17,16 @@ public class PandaSession {
     }
 }
 
-public class PandaAPI {
-    public static func createSession(title: String, user: String, completion: @escaping (_ session: PandaSession?, _ error: Error?) -> Swift.Void) {
+open class PandaAPI {
+    open static func createSession(_ title: String, user: String, completion: @escaping (_ session: PandaSession?, _ error: Error?) -> Swift.Void) {
         
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
         
-        guard var URL = NSURL(string: "http://localhost:4000/api/sessions") else {return}
+        guard var URL = URL(string: "http://localhost:4000/api/sessions") else {return}
         let URLParams = [
             "user": user,
             ]
-        URL = URL.URLByAppendingQueryParameters(parametersDictionary: URLParams)
+        URL = URL.URLByAppendingQueryParameters(URLParams)
         let request = NSMutableURLRequest(url: URL as URL)
         request.httpMethod = "POST"
         
@@ -65,15 +65,15 @@ public class PandaAPI {
         session.finishTasksAndInvalidate()
     }
     
-    public static func sessions(user: String, completion: @escaping (_ sessions: [PandaSession]?, _ error: Error?) -> Swift.Void) {
+    open static func sessions(_ user: String, completion: @escaping (_ sessions: [PandaSession]?, _ error: Error?) -> Swift.Void) {
         
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
         
-        guard var URL = NSURL(string: "http://localhost:4000/api/sessions") else {return}
+        guard var URL = URL(string: "http://localhost:4000/api/sessions") else {return}
         let URLParams = [
             "user": user,
             ]
-        URL = URL.URLByAppendingQueryParameters(parametersDictionary: URLParams)
+        URL = URL.URLByAppendingQueryParameters(URLParams)
         let request = NSMutableURLRequest(url: URL as URL)
         request.httpMethod = "GET"
         
@@ -144,15 +144,15 @@ extension Dictionary : URLQueryParameterStringConvertible {
     
 }
 
-extension NSURL {
+extension URL {
     /**
      Creates a new URL by adding the given query parameters.
      @param parametersDictionary The query parameter dictionary to add.
      @return A new NSURL.
      */
-    func URLByAppendingQueryParameters(parametersDictionary : Dictionary<String, String>) -> NSURL {
-        let URLString : NSString = NSString(format: "%@?%@", self.absoluteString!, parametersDictionary.queryParameters)
-        return NSURL(string: URLString as String)!
+    func URLByAppendingQueryParameters(_ parametersDictionary : Dictionary<String, String>) -> URL {
+        let URLString : NSString = NSString(format: "%@?%@", self.absoluteString, parametersDictionary.queryParameters)
+        return URL(string: URLString as String)!
     }
 
 }

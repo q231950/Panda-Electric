@@ -8,10 +8,10 @@
 
 import Foundation
 
-public class PlaygroundChannelHandler: ChannelHandler {
-    public var messageHandler: ((_ message: String, _ position: Int) -> Void)?
+open class PlaygroundChannelHandler: ChannelHandler {
+    open var messageHandler: ((_ message: String, _ position: Int) -> Void)?
     
-    override func registerCallbacks(channel: Channel) {
+    override func registerCallbacks(_ channel: Channel) {
         channel.on("new:msg", callback: { message in
             if let messageHandler = self.messageHandler {
                 let body = message.payload["body"] as! String
@@ -21,7 +21,7 @@ public class PlaygroundChannelHandler: ChannelHandler {
         })
     }
     
-    public func sendMessage(message: String) {
+    open func sendMessage(_ message: String) {
         if let channel = self.channel {
             channel.send("new:msg", payload: ["body": message as AnyObject])
                 .receive("ok", callback: { response in

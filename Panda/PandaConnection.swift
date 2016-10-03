@@ -9,15 +9,15 @@
 import GameplayKit
 
 public protocol PandaConnectionDelegate {
-    func connectionEstablished(connection: PandaConnection)
-    func connectionDisconnected(connection: PandaConnection)
+    func connectionEstablished(_ connection: PandaConnection)
+    func connectionDisconnected(_ connection: PandaConnection)
 }
 
 protocol SocketProvider {
     func socket() -> Socket
 }
 
-public class PandaConnection: SocketProvider {
+open class PandaConnection: SocketProvider {
     
     open var delegate: PandaConnectionDelegate?
     fileprivate var stateMachine: GKStateMachine?
@@ -36,12 +36,12 @@ public class PandaConnection: SocketProvider {
     
     fileprivate func setupSocket() {
         socketInternal.onConnect = {
-            self.delegate?.connectionEstablished(connection: self)
+            self.delegate?.connectionEstablished(self)
             self.stateMachine?.enter(ConnectedState.self)
         }
         
         socketInternal.onDisconnect = { (error: NSError?) in
-            self.delegate?.connectionDisconnected(connection: self)
+            self.delegate?.connectionDisconnected(self)
             self.stateMachine?.enter(DisconnectedState.self)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: { 
                 self.socketInternal.connect()

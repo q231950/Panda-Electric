@@ -49,7 +49,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         let nameAction = UIAlertAction(title: "Ok", style: .default) { (_) in
             let loginTextField = alertController.textFields![0] as UITextField
             print(loginTextField.text)
-            PandaAPI.createSession(title: loginTextField.text!, user: "phone", completion: { (session: PandaSession?, err: Error?) in
+            PandaAPI.createSession(loginTextField.text!, user: "phone", completion: { (session: PandaSession?, err: Error?) in
                 if let s = session {
                     DispatchQueue.main.async {
                         self.objects.insert(s, at: 0)
@@ -82,10 +82,10 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     
     // MARK: PandaConnectionDelegate
     
-    func connectionEstablished(connection: PandaConnection) {
+    func connectionEstablished(_ connection: PandaConnection) {
         print("connectionEstablished")
         
-        PandaAPI.sessions(user: "phone") { (sessions: [PandaSession]?, err: Error?) in
+        PandaAPI.sessions("phone") { (sessions: [PandaSession]?, err: Error?) in
             if let s = sessions {
                 DispatchQueue.main.async {
                     s.forEach({ (session: PandaSession) in
@@ -98,7 +98,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         }
     }
     
-    func connectionDisconnected(connection: PandaConnection) {
+    func connectionDisconnected(_ connection: PandaConnection) {
         print("socket.onDisconnect")
         objects.removeAll()
         tableView.reloadData()

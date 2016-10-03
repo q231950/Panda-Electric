@@ -26,7 +26,7 @@ class ConnectedState: GKState {
         print("Socket connection established.")
         
         channelHandlers.forEach { (handler: ChannelHandler) in
-            handler.configureWithSocket(socket: self.socketProvider.socket())
+            handler.configureWithSocket(self.socketProvider.socket())
         }
     }
 }

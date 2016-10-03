@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ChannelHandler {
+open class ChannelHandler {
     internal var channel: Channel?
     fileprivate let topic: String
     fileprivate let user: String
@@ -20,23 +20,23 @@ public class ChannelHandler {
         self.channelName = channel
     }
     
-    public func configureWithSocket(socket: Socket) {
+    open func configureWithSocket(_ socket: Socket) {
         let channelIdentifier = "\(channelName):\(topic)"
         channel = socket.channel(channelIdentifier, payload: ["user": user as AnyObject])
-        registerCallbacks(channel: channel!)
+        registerCallbacks(channel!)
         
         channel?.join().receive("ok", callback: { payload in
             print("Successfully joined: \(self.channel?.topic)")
         })
     }
     
-    public func didDisconnect() {
+    open func didDisconnect() {
         channel?.leave()
     }
     
     // MARK: Subclass overrides
     
-    internal func registerCallbacks(channel: Channel) {
+    internal func registerCallbacks(_ channel: Channel) {
         assertionFailure("This is abstract. Must be overridden by subclass")
     }
 }

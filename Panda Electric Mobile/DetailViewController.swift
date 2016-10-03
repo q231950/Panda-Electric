@@ -52,7 +52,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         textField.text = string
         if let channelHandler = self.channelHandler {
-            channelHandler.sendEstimate(estimate: .fibonacci(21))
+            channelHandler.sendEstimate(.fibonacci(21))
         }
         return false
     }

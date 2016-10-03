@@ -8,10 +8,10 @@
 
 import Foundation
 
-public class EstimateChannelHandler: ChannelHandler {
-    public var estimateHandler: ((_ estimate: Estimate) -> Void)?
+open class EstimateChannelHandler: ChannelHandler {
+    open var estimateHandler: ((_ estimate: Estimate) -> Void)?
     
-    override func registerCallbacks(channel: Channel) {
+    override func registerCallbacks(_ channel: Channel) {
         channel.on("new:fibonacci_result", callback: { message in
             if let result = message.payload["fibonacci"] as? NSNumber {
                 self.estimateHandler?(Estimate.fibonacci(result.intValue))
@@ -26,7 +26,7 @@ public class EstimateChannelHandler: ChannelHandler {
         })
     }
     
-    public func sendEstimate(estimate: Estimate) {
+    open func sendEstimate(_ estimate: Estimate) {
         if let channel = self.channel {
             channel.send("new:estimate", payload: [estimate.kind: estimate.value as AnyObject])
                 .receive("ok", callback: { response in

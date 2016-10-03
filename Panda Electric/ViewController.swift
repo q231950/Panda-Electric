@@ -63,10 +63,10 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         }
         
         if let socketHandler = playgroundChannelHandler {
-            socketHandler.sendMessage(message: inputField.stringValue)
+            socketHandler.sendMessage(inputField.stringValue)
         }
         if let estimateChannelHandler = estimateChannelHandler {
-            estimateChannelHandler.sendEstimate(estimate: .fibonacci(8)) // .tshirt(size: .S)
+            estimateChannelHandler.sendEstimate(.fibonacci(8)) // .tshirt(size: .S)
         }
     }
 }
