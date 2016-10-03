@@ -14,6 +14,6 @@ open class PandaSession {
 
     init(dict: [String : AnyObject]) {
         title = dict["title"] as! String
-        identifier = dict["id"] as! String
+        identifier = dict["uuid"] as! String
     }
 }

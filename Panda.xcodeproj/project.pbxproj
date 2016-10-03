@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3B3440411DA24AF90027412A /* PandaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3440401DA24AF90027412A /* PandaSession.swift */; };
 		3B3440421DA24AF90027412A /* PandaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3440401DA24AF90027412A /* PandaSession.swift */; };
+		3B3440441DA24D280027412A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3440431DA24D280027412A /* User.swift */; };
+		3B3440451DA24D280027412A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3440431DA24D280027412A /* User.swift */; };
+		3B3440471DA293E30027412A /* SessionChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3440461DA293E30027412A /* SessionChannelHandler.swift */; };
+		3B3440481DA293E30027412A /* SessionChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3440461DA293E30027412A /* SessionChannelHandler.swift */; };
 		3B38AB961DA10E0C0011EF08 /* Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B38AB8C1DA10E0C0011EF08 /* Panda.framework */; };
 		3B38AB9B1DA10E0C0011EF08 /* PandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9A1DA10E0C0011EF08 /* PandaTests.swift */; };
 		3B38ABB01DA10E7F0011EF08 /* ChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ABA61DA10E7F0011EF08 /* ChannelHandler.swift */; };
@@ -142,6 +146,8 @@
 
 /* Begin PBXFileReference section */
 		3B3440401DA24AF90027412A /* PandaSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PandaSession.swift; sourceTree = "<group>"; };
+		3B3440431DA24D280027412A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B3440461DA293E30027412A /* SessionChannelHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionChannelHandler.swift; sourceTree = "<group>"; };
 		3B38AB8C1DA10E0C0011EF08 /* Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B38AB951DA10E0C0011EF08 /* PandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B38AB9A1DA10E0C0011EF08 /* PandaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaTests.swift; sourceTree = "<group>"; };
@@ -264,6 +270,7 @@
 				3B38ABA61DA10E7F0011EF08 /* ChannelHandler.swift */,
 				3B38ABAF1DA10E7F0011EF08 /* PlaygroundChannelHandler.swift */,
 				3B38ABAA1DA10E7F0011EF08 /* EstimationChannelHandler.swift */,
+				3B3440461DA293E30027412A /* SessionChannelHandler.swift */,
 			);
 			name = "Channel Handlers";
 			sourceTree = "<group>";
@@ -281,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				3B38ABA91DA10E7F0011EF08 /* Estimate.swift */,
+				3B3440431DA24D280027412A /* User.swift */,
 				3B3440401DA24AF90027412A /* PandaSession.swift */,
 			);
 			name = Model;
@@ -860,6 +868,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B38ABB01DA10E7F0011EF08 /* ChannelHandler.swift in Sources */,
+				3B3440471DA293E30027412A /* SessionChannelHandler.swift in Sources */,
 				3B38ABB81DA10E7F0011EF08 /* PandaConnection.swift in Sources */,
 				3B5A27E81DA19DA500E55B01 /* Socket.swift in Sources */,
 				3B3440411DA24AF90027412A /* PandaSession.swift in Sources */,
@@ -867,6 +876,7 @@
 				3B38ABB31DA10E7F0011EF08 /* Estimate.swift in Sources */,
 				3B38ABB11DA10E7F0011EF08 /* ConnectedState.swift in Sources */,
 				3B5A27E71DA19DA500E55B01 /* Response.swift in Sources */,
+				3B3440441DA24D280027412A /* User.swift in Sources */,
 				3B38ABB41DA10E7F0011EF08 /* EstimationChannelHandler.swift in Sources */,
 				3B38ABB91DA10E7F0011EF08 /* PlaygroundChannelHandler.swift in Sources */,
 				3B5A27E61DA19DA500E55B01 /* Push.swift in Sources */,
@@ -889,6 +899,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B607D661DA15C57008D7A82 /* ChannelHandler.swift in Sources */,
+				3B3440481DA293E30027412A /* SessionChannelHandler.swift in Sources */,
 				3B607D6C1DA15C57008D7A82 /* PandaConnection.swift in Sources */,
 				3B5A27ED1DA19DA600E55B01 /* Socket.swift in Sources */,
 				3B3440421DA24AF90027412A /* PandaSession.swift in Sources */,
@@ -896,6 +907,7 @@
 				3B607D691DA15C57008D7A82 /* Estimate.swift in Sources */,
 				3B607D671DA15C57008D7A82 /* ConnectedState.swift in Sources */,
 				3B5A27EC1DA19DA600E55B01 /* Response.swift in Sources */,
+				3B3440451DA24D280027412A /* User.swift in Sources */,
 				3B607D6A1DA15C57008D7A82 /* EstimationChannelHandler.swift in Sources */,
 				3B607D6D1DA15C57008D7A82 /* PlaygroundChannelHandler.swift in Sources */,
 				3B5A27EB1DA19DA600E55B01 /* Push.swift in Sources */,

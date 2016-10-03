@@ -36,14 +36,14 @@ open class PandaConnection: SocketProvider {
     
     fileprivate func setupSocket() {
         socketInternal.onConnect = {
-            self.delegate?.connectionEstablished(self)
             self.stateMachine?.enter(ConnectedState.self)
+            self.delegate?.connectionEstablished(self)
         }
         
         socketInternal.onDisconnect = { (error: NSError?) in
-            self.delegate?.connectionDisconnected(self)
             self.stateMachine?.enter(DisconnectedState.self)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: { 
+            self.delegate?.connectionDisconnected(self)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                 self.socketInternal.connect()
             })
         }

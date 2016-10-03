@@ -8,9 +8,44 @@
 
 import Foundation
 
+let baseURL = "http://localhost:4000/api/"
+
 open class PandaAPI {
+    open static func createUser(_ name: String, completion: @escaping (_ user: User?, _ error: Error?) -> Swift.Void) {
+        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
+        if let url = URL(string: baseURL.appending("users/")) {
+            let body = [
+                "user": [
+                    "name": name
+                ]
+            ]
+            let request = NSMutableURLRequest(url: url)
+            request.httpMethod = "POST"
+            request.addValue("application/json", forHTTPHeaderField: "Accept")
+            request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+            request.httpBody = try! JSONSerialization.data(withJSONObject: body, options: [])
+            
+            let task = session.dataTask(with: request as URLRequest, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+                if (error == nil) {
+                    // Success
+                    let statusCode = (response as! HTTPURLResponse).statusCode
+                    print("URL Session Task Succeeded: HTTP \(statusCode)")
+                    let json = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String : AnyObject]
+                    let user = User(uuid: json["uuid"] as! String, name: json["name"] as! String)
+                    completion(user, nil)
+                }
+                else {
+                    // Failure
+                    print("URL Session Task Failed: %@", error!.localizedDescription);
+                    completion(nil, error)
+                }
+            })
+            task.resume()
+            session.finishTasksAndInvalidate()
+        }
+    }
+    
     open static func createSession(_ title: String, user: String, completion: @escaping (_ session: PandaSession?, _ error: Error?) -> Swift.Void) {
-        
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
         
         guard var URL = URL(string: "http://localhost:4000/api/sessions") else {return}
