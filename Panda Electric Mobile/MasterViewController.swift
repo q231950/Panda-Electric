@@ -12,7 +12,7 @@ import Panda
 class MasterViewController: UITableViewController, PandaConnectionDelegate {
 
     var detailViewController: DetailViewController? = nil
-    var objects = [AnyObject]()
+    var objects = [PandaSession]()
     
     fileprivate var pandaConnection: PandaConnection!
     var estimateChannelHandler: EstimateChannelHandler! {
@@ -52,7 +52,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
             PandaAPI.createSession(title: loginTextField.text!, user: "phone", completion: { (session: PandaSession?, err: Error?) in
                 if let s = session {
                     DispatchQueue.main.async {
-                        self.objects.insert(s.title as AnyObject, at: 0)
+                        self.objects.insert(s, at: 0)
                         let indexPath = IndexPath(row: 0, section: 0)
                         self.tableView.insertRows(at: [indexPath], with: .automatic)
                     }
@@ -85,12 +85,23 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     func connectionEstablished(connection: PandaConnection) {
         print("connectionEstablished")
         
-//        objects.append("main" as AnyObject)
-//        tableView.reloadData()
+        PandaAPI.sessions(user: "phone") { (sessions: [PandaSession]?, err: Error?) in
+            if let s = sessions {
+                DispatchQueue.main.async {
+                    s.forEach({ (session: PandaSession) in
+                        self.objects.insert(session, at: 0)
+                        let indexPath = IndexPath(row: 0, section: 0)
+                        self.tableView.insertRows(at: [indexPath], with: .automatic)
+                    })
+                }
+            }
+        }
     }
     
     func connectionDisconnected(connection: PandaConnection) {
         print("socket.onDisconnect")
+        objects.removeAll()
+        tableView.reloadData()
     }
     
     fileprivate func setupConnection() {
@@ -113,8 +124,8 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                let topic = objects[(indexPath as NSIndexPath).row] as! String
-                controller.channelHandler = EstimateChannelHandler(user: "phone", channel: "session", topic:topic)
+                let session = objects[(indexPath as NSIndexPath).row]
+                controller.channelHandler = EstimateChannelHandler(user: "phone", channel: "session", topic:session.title)
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -134,11 +145,9 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        if let object = objects[(indexPath as NSIndexPath).row] as? Date {
-            cell.textLabel!.text = object.description
-        } else if let object = objects[(indexPath as NSIndexPath).row] as? String {
-            cell.textLabel!.text = object
-        }
+        let object = objects[(indexPath as NSIndexPath).row]
+        cell.textLabel!.text = object.title
+            
         return cell
     }
 
