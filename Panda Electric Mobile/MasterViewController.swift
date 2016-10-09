@@ -134,19 +134,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     func connectionEstablished(_ connection: PandaConnection) {
         print("connectionEstablished")
         
-        sessionChannelHandler.requestSessions(user())
-        
-//        PandaAPI.sessions("phone") { (sessions: [PandaSession]?, err: Error?) in
-//            if let s = sessions {
-//                DispatchQueue.main.async {
-//                    s.forEach({ (session: PandaSession) in
-//                        self.objects.insert(session, at: 0)
-//                        let indexPath = IndexPath(row: 0, section: 0)
-//                        self.tableView.insertRows(at: [indexPath], with: .automatic)
-//                    })
-//                }
-//            }
-//        }
+        sessionChannelHandler.requestSessions(user())        
     }
     
     func connectionDisconnected(_ connection: PandaConnection) {

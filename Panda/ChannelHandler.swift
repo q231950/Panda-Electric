@@ -10,18 +10,18 @@ import Foundation
 
 open class ChannelHandler {
     internal var channel: Channel?
-    fileprivate let topic: String
+    public let topic: String
+    public let channelIdentifier: String
     fileprivate let user: String
-    fileprivate let channelName: String
     
     public init(user: String, channel: String, topic: String) {
         self.user = user
         self.topic = topic
-        self.channelName = channel
+        self.channelIdentifier = channel
     }
     
     open func configureWithSocket(_ socket: Socket) {
-        let channelIdentifier = "\(channelName):\(topic)"
+        let channelIdentifier = "\(self.channelIdentifier):\(topic)"
         channel = socket.channel(channelIdentifier, payload: ["user": user as AnyObject])
         registerCallbacks(channel!)
         

@@ -37,9 +37,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        title = channelHandler?.topic as String?
+        title = channelHandler?.topic as String?
         view.backgroundColor = UIColor.darkGray
         setupPickerView()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
     
     fileprivate func handleMessage(_ message: String, atPosition position: Int) {
