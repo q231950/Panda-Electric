@@ -25,6 +25,18 @@
 		3B38ABB71DA10E7F0011EF08 /* PandaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ABAD1DA10E7F0011EF08 /* PandaAPI.swift */; };
 		3B38ABB81DA10E7F0011EF08 /* PandaConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ABAE1DA10E7F0011EF08 /* PandaConnection.swift */; };
 		3B38ABB91DA10E7F0011EF08 /* PlaygroundChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ABAF1DA10E7F0011EF08 /* PlaygroundChannelHandler.swift */; };
+		3B5918031DAA91DD00333777 /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5917FD1DAA91DD00333777 /* CIColorExtension.swift */; };
+		3B5918041DAA91DD00333777 /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5917FD1DAA91DD00333777 /* CIColorExtension.swift */; };
+		3B5918051DAA91DD00333777 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5917FE1DAA91DD00333777 /* CIImageExtension.swift */; };
+		3B5918061DAA91DD00333777 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5917FE1DAA91DD00333777 /* CIImageExtension.swift */; };
+		3B5918071DAA91DD00333777 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B5917FF1DAA91DD00333777 /* Info.plist */; };
+		3B5918081DAA91DD00333777 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B5917FF1DAA91DD00333777 /* Info.plist */; };
+		3B5918091DAA91DD00333777 /* QRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5918001DAA91DD00333777 /* QRCode.h */; };
+		3B59180A1DAA91DD00333777 /* QRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5918001DAA91DD00333777 /* QRCode.h */; };
+		3B59180B1DAA91DD00333777 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918011DAA91DD00333777 /* QRCode.swift */; };
+		3B59180C1DAA91DD00333777 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918011DAA91DD00333777 /* QRCode.swift */; };
+		3B59180D1DAA91DD00333777 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918021DAA91DD00333777 /* UIImageViewExtension.swift */; };
+		3B59180E1DAA91DD00333777 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918021DAA91DD00333777 /* UIImageViewExtension.swift */; };
 		3B5A27E41DA19DA500E55B01 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A27821DA19D6500E55B01 /* Channel.swift */; };
 		3B5A27E51DA19DA500E55B01 /* Presence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A27831DA19D6500E55B01 /* Presence.swift */; };
 		3B5A27E61DA19DA500E55B01 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A27841DA19D6500E55B01 /* Push.swift */; };
@@ -162,6 +174,12 @@
 		3B38ABAD1DA10E7F0011EF08 /* PandaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PandaAPI.swift; sourceTree = "<group>"; };
 		3B38ABAE1DA10E7F0011EF08 /* PandaConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PandaConnection.swift; sourceTree = "<group>"; };
 		3B38ABAF1DA10E7F0011EF08 /* PlaygroundChannelHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundChannelHandler.swift; sourceTree = "<group>"; };
+		3B5917FD1DAA91DD00333777 /* CIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIColorExtension.swift; sourceTree = "<group>"; };
+		3B5917FE1DAA91DD00333777 /* CIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIImageExtension.swift; sourceTree = "<group>"; };
+		3B5917FF1DAA91DD00333777 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5918001DAA91DD00333777 /* QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCode.h; sourceTree = "<group>"; };
+		3B5918011DAA91DD00333777 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+		3B5918021DAA91DD00333777 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3B5A276C1DA19D6500E55B01 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3B5A276D1DA19D6500E55B01 /* Birdsong.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Birdsong.podspec; sourceTree = "<group>"; };
 		3B5A27701DA19D6500E55B01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -341,11 +359,26 @@
 			path = PandaTests;
 			sourceTree = "<group>";
 		};
+		3B5917FC1DAA91DD00333777 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				3B5917FD1DAA91DD00333777 /* CIColorExtension.swift */,
+				3B5917FE1DAA91DD00333777 /* CIImageExtension.swift */,
+				3B5917FF1DAA91DD00333777 /* Info.plist */,
+				3B5918001DAA91DD00333777 /* QRCode.h */,
+				3B5918011DAA91DD00333777 /* QRCode.swift */,
+				3B5918021DAA91DD00333777 /* UIImageViewExtension.swift */,
+			);
+			name = QRCode;
+			path = Dependencies/External/QRCode/QRCode;
+			sourceTree = SOURCE_ROOT;
+		};
 		3B5A26931DA19CC200E55B01 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
 				3B5A27EE1DA19E5000E55B01 /* Starscream */,
 				3B5A276B1DA19D6500E55B01 /* Birdsong */,
+				3B5917FC1DAA91DD00333777 /* QRCode */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
@@ -591,6 +624,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5918091DAA91DD00333777 /* QRCode.h in Headers */,
 				3B38ABB61DA10E7F0011EF08 /* Panda.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +633,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B59180A1DAA91DD00333777 /* QRCode.h in Headers */,
 				3B607D6F1DA15C9A008D7A82 /* Panda.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -835,6 +870,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5918071DAA91DD00333777 /* Info.plist in Resources */,
 				3B38ABB51DA10E7F0011EF08 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -850,6 +886,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5918081DAA91DD00333777 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,9 +909,12 @@
 				3B38ABB81DA10E7F0011EF08 /* PandaConnection.swift in Sources */,
 				3B5A27E81DA19DA500E55B01 /* Socket.swift in Sources */,
 				3B3440411DA24AF90027412A /* PandaSession.swift in Sources */,
+				3B5918051DAA91DD00333777 /* CIImageExtension.swift in Sources */,
 				3B5A27E41DA19DA500E55B01 /* Channel.swift in Sources */,
+				3B5918031DAA91DD00333777 /* CIColorExtension.swift in Sources */,
 				3B38ABB31DA10E7F0011EF08 /* Estimate.swift in Sources */,
 				3B38ABB11DA10E7F0011EF08 /* ConnectedState.swift in Sources */,
+				3B59180D1DAA91DD00333777 /* UIImageViewExtension.swift in Sources */,
 				3B5A27E71DA19DA500E55B01 /* Response.swift in Sources */,
 				3B3440441DA24D280027412A /* User.swift in Sources */,
 				3B38ABB41DA10E7F0011EF08 /* EstimationChannelHandler.swift in Sources */,
@@ -882,6 +922,7 @@
 				3B5A27E61DA19DA500E55B01 /* Push.swift in Sources */,
 				3B38ABB21DA10E7F0011EF08 /* DisconnectedState.swift in Sources */,
 				3B38ABB71DA10E7F0011EF08 /* PandaAPI.swift in Sources */,
+				3B59180B1DAA91DD00333777 /* QRCode.swift in Sources */,
 				3B5A27E51DA19DA500E55B01 /* Presence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -903,9 +944,12 @@
 				3B607D6C1DA15C57008D7A82 /* PandaConnection.swift in Sources */,
 				3B5A27ED1DA19DA600E55B01 /* Socket.swift in Sources */,
 				3B3440421DA24AF90027412A /* PandaSession.swift in Sources */,
+				3B5918061DAA91DD00333777 /* CIImageExtension.swift in Sources */,
 				3B5A27E91DA19DA600E55B01 /* Channel.swift in Sources */,
+				3B5918041DAA91DD00333777 /* CIColorExtension.swift in Sources */,
 				3B607D691DA15C57008D7A82 /* Estimate.swift in Sources */,
 				3B607D671DA15C57008D7A82 /* ConnectedState.swift in Sources */,
+				3B59180E1DAA91DD00333777 /* UIImageViewExtension.swift in Sources */,
 				3B5A27EC1DA19DA600E55B01 /* Response.swift in Sources */,
 				3B3440451DA24D280027412A /* User.swift in Sources */,
 				3B607D6A1DA15C57008D7A82 /* EstimationChannelHandler.swift in Sources */,
@@ -913,6 +957,7 @@
 				3B5A27EB1DA19DA600E55B01 /* Push.swift in Sources */,
 				3B607D681DA15C57008D7A82 /* DisconnectedState.swift in Sources */,
 				3B607D6B1DA15C57008D7A82 /* PandaAPI.swift in Sources */,
+				3B59180C1DAA91DD00333777 /* QRCode.swift in Sources */,
 				3B5A27EA1DA19DA600E55B01 /* Presence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,3 +4,6 @@
 [submodule "Dependencies/External/Starscream"]
 	path = Dependencies/External/Starscream
 	url = https://github.com/daltoniam/Starscream.git
+[submodule "Dependencies/External/QRCode"]
+	path = Dependencies/External/QRCode
+	url = git@github.com:aschuch/QRCode.git
