@@ -297,7 +297,6 @@
 		3B38AB821DA10E0C0011EF08 = {
 			isa = PBXGroup;
 			children = (
-				3B5A27EE1DA19E5000E55B01 /* Starscream */,
 				3B38AB8E1DA10E0C0011EF08 /* Panda */,
 				3B38AB991DA10E0C0011EF08 /* PandaTests */,
 				3B607D491DA1296E008D7A82 /* Panda macOS */,
@@ -345,6 +344,7 @@
 		3B5A26931DA19CC200E55B01 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				3B5A27EE1DA19E5000E55B01 /* Starscream */,
 				3B5A276B1DA19D6500E55B01 /* Birdsong */,
 			);
 			name = Dependencies;
@@ -435,7 +435,7 @@
 				3B5A28211DA19E5000E55B01 /* Tests */,
 			);
 			name = Starscream;
-			path = Dependencies/External/Starscream;
+			path = ../Dependencies/External/Starscream;
 			sourceTree = "<group>";
 		};
 		3B5A27F21DA19E5000E55B01 /* examples */ = {
