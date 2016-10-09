@@ -7,3 +7,6 @@
 [submodule "Dependencies/External/QRCode"]
 	path = Dependencies/External/QRCode
 	url = git@github.com:aschuch/QRCode.git
+[submodule "Dependencies/External/MTBBarcodeScanner"]
+	path = Dependencies/External/MTBBarcodeScanner
+	url = git@github.com:mikebuss/MTBBarcodeScanner.git
