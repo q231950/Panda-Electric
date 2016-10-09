@@ -8,11 +8,27 @@
 
 import Foundation
 
-//let baseURL = "http://localhost:4000/api/"
-let baseURL = "https://tranquil-peak-78260.herokuapp.com/api/"
+enum BackendURL: String {
+    case localhost = "http://localhost:4000/socket/websocket"
+    case heroku = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
+}
+
 
 open class PandaAPI {
-    open static func createUser(_ name: String, completion: @escaping (_ user: User?, _ error: Error?) -> Swift.Void) {
+
+    open let baseURL: String
+    
+    public init() {
+        
+        let environment = ProcessInfo.processInfo.environment
+        if environment["RUN_ON_LOCALHOST"] == "true" {
+            baseURL = BackendURL.localhost.rawValue
+        } else {
+            baseURL = BackendURL.heroku.rawValue
+        }
+    }
+    
+    open func createUser(_ name: String, completion: @escaping (_ user: User?, _ error: Error?) -> Swift.Void) {
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
         if let url = URL(string: baseURL.appending("users/")) {
             let body = [
@@ -46,7 +62,7 @@ open class PandaAPI {
         }
     }
     
-    open static func createSession(_ title: String, user: String, completion: @escaping (_ session: PandaSession?, _ error: Error?) -> Swift.Void) {
+    open func createSession(_ title: String, user: String, completion: @escaping (_ session: PandaSession?, _ error: Error?) -> Swift.Void) {
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
         
         guard var URL = URL(string: baseURL.appending("sessions")) else {return}
@@ -92,7 +108,7 @@ open class PandaAPI {
         session.finishTasksAndInvalidate()
     }
     
-    open static func sessions(_ user: String, completion: @escaping (_ sessions: [PandaSession]?, _ error: Error?) -> Swift.Void) {
+    open func sessions(_ user: String, completion: @escaping (_ sessions: [PandaSession]?, _ error: Error?) -> Swift.Void) {
         
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
         

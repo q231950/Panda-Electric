@@ -13,6 +13,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
 
     var detailViewController: DetailViewController? = nil
     var objects = [PandaSession]()
+    let api = PandaAPI()
     
     fileprivate var pandaConnection: PandaConnection!
     var sessionChannelHandler: SessionChannelHandler! {
@@ -73,7 +74,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
             let loginTextField = alertController.textFields![0] as UITextField
             print(loginTextField.text)
             if let name = loginTextField.text {
-                PandaAPI.createUser(name, completion: { (user: User?, error: Error?) in
+                self.api.createUser(name, completion: { (user: User?, error: Error?) in
                     if let user = user {
                         UserDefaults.standard.setValue(user.uuid, forKey: "uuid")
                         completion(user)
@@ -159,9 +160,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
                                                         channel:"sessions",
                                                         topic:uuid)
         
-        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
-//        let url = "http://localhost:4000/socket/websocket"
-        pandaConnection = PandaConnection(url: url, channelHandlers: [sessionChannelHandler])
+        pandaConnection = PandaConnection(url: api.baseURL, channelHandlers: [sessionChannelHandler])
         pandaConnection.delegate = self
     }
 
