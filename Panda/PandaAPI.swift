@@ -8,7 +8,8 @@
 
 import Foundation
 
-let baseURL = "http://localhost:4000/api/"
+//let baseURL = "http://localhost:4000/api/"
+let baseURL = "https://tranquil-peak-78260.herokuapp.com/api/"
 
 open class PandaAPI {
     open static func createUser(_ name: String, completion: @escaping (_ user: User?, _ error: Error?) -> Swift.Void) {
@@ -48,7 +49,7 @@ open class PandaAPI {
     open static func createSession(_ title: String, user: String, completion: @escaping (_ session: PandaSession?, _ error: Error?) -> Swift.Void) {
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
         
-        guard var URL = URL(string: "http://localhost:4000/api/sessions") else {return}
+        guard var URL = URL(string: baseURL.appending("sessions")) else {return}
         let URLParams = [
             "user": user,
             ]
@@ -95,7 +96,7 @@ open class PandaAPI {
         
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
         
-        guard var URL = URL(string: "http://localhost:4000/api/sessions") else {return}
+        guard var URL = URL(string: baseURL.appending("sessions")) else {return}
         let URLParams = [
             "user": user,
             ]

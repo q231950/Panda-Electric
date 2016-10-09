@@ -45,8 +45,8 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                                                         channel:"session",
                                                         topic:topic)
         
-//        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
-        let url = "http://localhost:4000/socket/websocket"
+        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
+//        let url = "http://localhost:4000/socket/websocket"
         pandaConnection = PandaConnection(url: url, channelHandlers: [playgroundChannelHandler, estimationChannelHandler])
     }
     

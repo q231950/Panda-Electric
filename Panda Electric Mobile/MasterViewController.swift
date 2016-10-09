@@ -159,8 +159,8 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
                                                         channel:"sessions",
                                                         topic:uuid)
         
-        //        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
-        let url = "http://localhost:4000/socket/websocket"
+        let url = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
+//        let url = "http://localhost:4000/socket/websocket"
         pandaConnection = PandaConnection(url: url, channelHandlers: [sessionChannelHandler])
         pandaConnection.delegate = self
     }
