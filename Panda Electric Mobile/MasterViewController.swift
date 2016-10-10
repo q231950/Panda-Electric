@@ -106,6 +106,23 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     }
 
     func insertNewObject(_ sender: AnyObject) {
+        let alertController = UIAlertController(title: "Create/Join", message: nil, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "Create new", style: .default, handler: { (action: UIAlertAction) in
+            self.createSession()
+        }))
+        alertController.addAction(UIAlertAction(title: "Join existing", style: .default, handler: { (action: UIAlertAction) in
+            self.performSegue(withIdentifier: "sessionSearchSegue", sender: nil)
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action: UIAlertAction) in
+            
+        }))
+        
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func createSession() {
         let alertController = UIAlertController(title: "Create Session", message: nil, preferredStyle: .alert)
         let nameAction = UIAlertAction(title: "Ok", style: .default) { (_) in
             let loginTextField = alertController.textFields![0] as UITextField

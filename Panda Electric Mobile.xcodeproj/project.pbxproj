@@ -17,6 +17,9 @@
 		3B59181A1DAAAB7D00333777 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B5918131DAAAB7D00333777 /* Info.plist */; };
 		3B59181B1DAAAB7D00333777 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918151DAAAB7D00333777 /* QRCode.swift */; };
 		3B59181C1DAAAB7D00333777 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918161DAAAB7D00333777 /* UIImageViewExtension.swift */; };
+		3B5918201DAAB09200333777 /* SessionSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59181F1DAAB09200333777 /* SessionSearchViewController.swift */; };
+		3B5918BA1DAAB3FD00333777 /* MTBBarcodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5918B91DAAB3EF00333777 /* MTBBarcodeScanner.framework */; };
+		3B5918BB1DAAB3FD00333777 /* MTBBarcodeScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5918B91DAAB3EF00333777 /* MTBBarcodeScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B6CB7411D4CAAA9005C40D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7401D4CAAA9005C40D8 /* AppDelegate.swift */; };
 		3B6CB7431D4CAAA9005C40D8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7421D4CAAA9005C40D8 /* MasterViewController.swift */; };
 		3B6CB7451D4CAAA9005C40D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7441D4CAAA9005C40D8 /* DetailViewController.swift */; };
@@ -31,6 +34,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3B5918B61DAAB3EF00333777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B5918AB1DAAB3EF00333777 /* MTBBarcodeScannerExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27C3BF3E18A7140F00C44713;
+			remoteInfo = MTBBarcodeScannerExample;
+		};
+		3B5918B81DAAB3EF00333777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B5918AB1DAAB3EF00333777 /* MTBBarcodeScannerExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 563B264C1CD9F95F00DE7D8D;
+			remoteInfo = MTBBarcodeScanner;
+		};
+		3B5918BC1DAAB3FD00333777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B5918AB1DAAB3EF00333777 /* MTBBarcodeScannerExample.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 563B264B1CD9F95F00DE7D8D;
+			remoteInfo = MTBBarcodeScanner;
+		};
 		3B6CB7541D4CAAA9005C40D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3B6CB7351D4CAAA9005C40D8 /* Project object */;
@@ -56,6 +80,7 @@
 			files = (
 				3B5917EA1DAA824400333777 /* Starscream.framework in Embed Frameworks */,
 				3B5917EE1DAA824B00333777 /* Panda.framework in Embed Frameworks */,
+				3B5918BB1DAAB3FD00333777 /* MTBBarcodeScanner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +101,41 @@
 		3B5918141DAAAB7D00333777 /* QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCode.h; sourceTree = "<group>"; };
 		3B5918151DAAAB7D00333777 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		3B5918161DAAAB7D00333777 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		3B59181F1DAAB09200333777 /* SessionSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionSearchViewController.swift; sourceTree = "<group>"; };
+		3B59187E1DAAB3EF00333777 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3B59187F1DAAB3EF00333777 /* .ruby-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
+		3B5918811DAAB3EF00333777 /* MTBBarcodeScanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MTBBarcodeScanner.png; sourceTree = "<group>"; };
+		3B5918821DAAB3EF00333777 /* sample-barcodes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-barcodes.png"; sourceTree = "<group>"; };
+		3B5918831DAAB3EF00333777 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		3B5918871DAAB3EF00333777 /* MTBBarcodeScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBBarcodeScanner.h; sourceTree = "<group>"; };
+		3B5918881DAAB3EF00333777 /* MTBBarcodeScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBBarcodeScanner.m; sourceTree = "<group>"; };
+		3B59188A1DAAB3EF00333777 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		3B59188C1DAAB3EF00333777 /* SuggestedFeatures.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SuggestedFeatures.md; sourceTree = "<group>"; };
+		3B59188D1DAAB3EF00333777 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		3B59188E1DAAB3EF00333777 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		3B59188F1DAAB3EF00333777 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3B5918901DAAB3EF00333777 /* MTBBarcodeScanner.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MTBBarcodeScanner.podspec; sourceTree = "<group>"; };
+		3B5918931DAAB3EF00333777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5918941DAAB3EF00333777 /* MTBBarcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBBarcode.h; sourceTree = "<group>"; };
+		3B5918971DAAB3EF00333777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3B5918991DAAB3EF00333777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3B59189B1DAAB3EF00333777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3B59189E1DAAB3EF00333777 /* MTBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBAppDelegate.h; sourceTree = "<group>"; };
+		3B59189F1DAAB3EF00333777 /* MTBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBAppDelegate.m; sourceTree = "<group>"; };
+		3B5918A11DAAB3EF00333777 /* MTBAdvancedExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBAdvancedExampleViewController.h; sourceTree = "<group>"; };
+		3B5918A21DAAB3EF00333777 /* MTBAdvancedExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBAdvancedExampleViewController.m; sourceTree = "<group>"; };
+		3B5918A31DAAB3EF00333777 /* MTBBasicExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBBasicExampleViewController.h; sourceTree = "<group>"; };
+		3B5918A41DAAB3EF00333777 /* MTBBasicExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBBasicExampleViewController.m; sourceTree = "<group>"; };
+		3B5918A61DAAB3EF00333777 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B5918A71DAAB3EF00333777 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3B5918A81DAAB3EF00333777 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B5918A91DAAB3EF00333777 /* MTBBarcodeScannerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTBBarcodeScannerExample-Info.plist"; sourceTree = "<group>"; };
+		3B5918AA1DAAB3EF00333777 /* MTBBarcodeScannerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTBBarcodeScannerExample-Prefix.pch"; sourceTree = "<group>"; };
+		3B5918AB1DAAB3EF00333777 /* MTBBarcodeScannerExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MTBBarcodeScannerExample.xcodeproj; sourceTree = "<group>"; };
+		3B5918B01DAAB3EF00333777 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B5918B11DAAB3EF00333777 /* MTBBarcodeScannerExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTBBarcodeScannerExampleTests-Info.plist"; sourceTree = "<group>"; };
+		3B5918B21DAAB3EF00333777 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		3B5918B31DAAB3EF00333777 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3B607D3F1DA1273D008D7A82 /* Pods_Panda_Umbrella_Panda_Electric_Mobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Panda_Umbrella_Panda_Electric_Mobile.framework; path = "Pods/../build/Debug-iphoneos/Pods_Panda_Umbrella_Panda_Electric_Mobile.framework"; sourceTree = "<group>"; };
 		3B607D411DA128BD008D7A82 /* Panda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Panda.framework; path = "build/Debug-iphoneos/Panda.framework"; sourceTree = "<group>"; };
 		3B6CB73D1D4CAAA9005C40D8 /* Panda Electric Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Panda Electric Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +176,7 @@
 			files = (
 				3B5917E91DAA824400333777 /* Starscream.framework in Frameworks */,
 				3B5917ED1DAA824B00333777 /* Panda.framework in Frameworks */,
+				3B5918BA1DAAB3FD00333777 /* MTBBarcodeScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,9 +214,174 @@
 		3B59181D1DAAAB8700333777 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				3B59187D1DAAB3EF00333777 /* MTBBarcodeScanner */,
 				3B5918171DAAAB7D00333777 /* QRCode */,
 			);
 			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		3B59181E1DAAB06900333777 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				3B59180F1DAAA97700333777 /* AddMemberViewController.swift */,
+				3B59181F1DAAB09200333777 /* SessionSearchViewController.swift */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		3B59187D1DAAB3EF00333777 /* MTBBarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				3B59187E1DAAB3EF00333777 /* .gitignore */,
+				3B59187F1DAAB3EF00333777 /* .ruby-version */,
+				3B5918801DAAB3EF00333777 /* Assets */,
+				3B5918831DAAB3EF00333777 /* CHANGELOG.md */,
+				3B5918841DAAB3EF00333777 /* Classes */,
+				3B59188B1DAAB3EF00333777 /* Documentation */,
+				3B59188D1DAAB3EF00333777 /* Gemfile */,
+				3B59188E1DAAB3EF00333777 /* Gemfile.lock */,
+				3B59188F1DAAB3EF00333777 /* LICENSE */,
+				3B5918901DAAB3EF00333777 /* MTBBarcodeScanner.podspec */,
+				3B5918911DAAB3EF00333777 /* Project */,
+				3B5918B21DAAB3EF00333777 /* Rakefile */,
+				3B5918B31DAAB3EF00333777 /* README.md */,
+			);
+			name = MTBBarcodeScanner;
+			path = Dependencies/External/MTBBarcodeScanner;
+			sourceTree = SOURCE_ROOT;
+		};
+		3B5918801DAAB3EF00333777 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918811DAAB3EF00333777 /* MTBBarcodeScanner.png */,
+				3B5918821DAAB3EF00333777 /* sample-barcodes.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3B5918841DAAB3EF00333777 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918851DAAB3EF00333777 /* ios */,
+				3B5918891DAAB3EF00333777 /* osx */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B5918851DAAB3EF00333777 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918861DAAB3EF00333777 /* Scanners */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		3B5918861DAAB3EF00333777 /* Scanners */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918871DAAB3EF00333777 /* MTBBarcodeScanner.h */,
+				3B5918881DAAB3EF00333777 /* MTBBarcodeScanner.m */,
+			);
+			path = Scanners;
+			sourceTree = "<group>";
+		};
+		3B5918891DAAB3EF00333777 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				3B59188A1DAAB3EF00333777 /* .gitkeep */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		3B59188B1DAAB3EF00333777 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				3B59188C1DAAB3EF00333777 /* SuggestedFeatures.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		3B5918911DAAB3EF00333777 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918921DAAB3EF00333777 /* MTBBarcodeScanner */,
+				3B5918951DAAB3EF00333777 /* MTBBarcodeScannerExample */,
+				3B5918AB1DAAB3EF00333777 /* MTBBarcodeScannerExample.xcodeproj */,
+				3B5918AE1DAAB3EF00333777 /* MTBBarcodeScannerExampleTests */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		3B5918921DAAB3EF00333777 /* MTBBarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918931DAAB3EF00333777 /* Info.plist */,
+				3B5918941DAAB3EF00333777 /* MTBBarcode.h */,
+			);
+			path = MTBBarcodeScanner;
+			sourceTree = "<group>";
+		};
+		3B5918951DAAB3EF00333777 /* MTBBarcodeScannerExample */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918961DAAB3EF00333777 /* LaunchScreen.xib */,
+				3B5918981DAAB3EF00333777 /* Main_iPad.storyboard */,
+				3B59189A1DAAB3EF00333777 /* Main_iPhone.storyboard */,
+				3B59189C1DAAB3EF00333777 /* Classes */,
+				3B5918A51DAAB3EF00333777 /* InfoPlist.strings */,
+				3B5918A71DAAB3EF00333777 /* Images.xcassets */,
+				3B5918A81DAAB3EF00333777 /* main.m */,
+				3B5918A91DAAB3EF00333777 /* MTBBarcodeScannerExample-Info.plist */,
+				3B5918AA1DAAB3EF00333777 /* MTBBarcodeScannerExample-Prefix.pch */,
+			);
+			path = MTBBarcodeScannerExample;
+			sourceTree = "<group>";
+		};
+		3B59189C1DAAB3EF00333777 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B59189D1DAAB3EF00333777 /* ApplicationDelegate */,
+				3B5918A01DAAB3EF00333777 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B59189D1DAAB3EF00333777 /* ApplicationDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3B59189E1DAAB3EF00333777 /* MTBAppDelegate.h */,
+				3B59189F1DAAB3EF00333777 /* MTBAppDelegate.m */,
+			);
+			path = ApplicationDelegate;
+			sourceTree = "<group>";
+		};
+		3B5918A01DAAB3EF00333777 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918A11DAAB3EF00333777 /* MTBAdvancedExampleViewController.h */,
+				3B5918A21DAAB3EF00333777 /* MTBAdvancedExampleViewController.m */,
+				3B5918A31DAAB3EF00333777 /* MTBBasicExampleViewController.h */,
+				3B5918A41DAAB3EF00333777 /* MTBBasicExampleViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3B5918AC1DAAB3EF00333777 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918B71DAAB3EF00333777 /* MTBBarcodeScannerExample.app */,
+				3B5918B91DAAB3EF00333777 /* MTBBarcodeScanner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B5918AE1DAAB3EF00333777 /* MTBBarcodeScannerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B5918AF1DAAB3EF00333777 /* InfoPlist.strings */,
+				3B5918B11DAAB3EF00333777 /* MTBBarcodeScannerExampleTests-Info.plist */,
+			);
+			path = MTBBarcodeScannerExampleTests;
 			sourceTree = "<group>";
 		};
 		3B6CB7341D4CAAA9005C40D8 = {
@@ -185,6 +411,7 @@
 		3B6CB73F1D4CAAA9005C40D8 /* Panda Electric Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				3B59181E1DAAB06900333777 /* Session */,
 				3B59181D1DAAAB8700333777 /* Dependencies */,
 				3B6CB7401D4CAAA9005C40D8 /* AppDelegate.swift */,
 				3BC559721D8C91F200213420 /* Root Navigation */,
@@ -196,7 +423,6 @@
 				3B6CB7491D4CAAA9005C40D8 /* Assets.xcassets */,
 				3B6CB74B1D4CAAA9005C40D8 /* LaunchScreen.storyboard */,
 				3B6CB74E1D4CAAA9005C40D8 /* Info.plist */,
-				3B59180F1DAAA97700333777 /* AddMemberViewController.swift */,
 			);
 			path = "Panda Electric Mobile";
 			sourceTree = "<group>";
@@ -274,6 +500,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3B5918BD1DAAB3FD00333777 /* PBXTargetDependency */,
 			);
 			name = "Panda Electric Mobile";
 			productName = "Panda Electric Mobile";
@@ -354,6 +581,12 @@
 			mainGroup = 3B6CB7341D4CAAA9005C40D8;
 			productRefGroup = 3B6CB73E1D4CAAA9005C40D8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3B5918AC1DAAB3EF00333777 /* Products */;
+					ProjectRef = 3B5918AB1DAAB3EF00333777 /* MTBBarcodeScannerExample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3B6CB73C1D4CAAA9005C40D8 /* Panda Electric Mobile */,
@@ -362,6 +595,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3B5918B71DAAB3EF00333777 /* MTBBarcodeScannerExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MTBBarcodeScannerExample.app;
+			remoteRef = 3B5918B61DAAB3EF00333777 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B5918B91DAAB3EF00333777 /* MTBBarcodeScanner.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MTBBarcodeScanner.framework;
+			remoteRef = 3B5918B81DAAB3EF00333777 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3B6CB73B1D4CAAA9005C40D8 /* Resources */ = {
@@ -399,6 +649,7 @@
 				3B5918101DAAA97700333777 /* AddMemberViewController.swift in Sources */,
 				3B5918181DAAAB7D00333777 /* CIColorExtension.swift in Sources */,
 				3BDF2DE81D7C361300CFC1BB /* FibonacciSequence.swift in Sources */,
+				3B5918201DAAB09200333777 /* SessionSearchViewController.swift in Sources */,
 				3B6CB7451D4CAAA9005C40D8 /* DetailViewController.swift in Sources */,
 				3B8C1D701D7AAE7F00500B43 /* FibonacciPickerView.swift in Sources */,
 				3B5918191DAAAB7D00333777 /* CIImageExtension.swift in Sources */,
@@ -429,6 +680,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3B5918BD1DAAB3FD00333777 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MTBBarcodeScanner;
+			targetProxy = 3B5918BC1DAAB3FD00333777 /* PBXContainerItemProxy */;
+		};
 		3B6CB7551D4CAAA9005C40D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3B6CB73C1D4CAAA9005C40D8 /* Panda Electric Mobile */;
@@ -442,6 +698,46 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3B5918961DAAB3EF00333777 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5918971DAAB3EF00333777 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		3B5918981DAAB3EF00333777 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5918991DAAB3EF00333777 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3B59189A1DAAB3EF00333777 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B59189B1DAAB3EF00333777 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3B5918A51DAAB3EF00333777 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5918A61DAAB3EF00333777 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3B5918AF1DAAB3EF00333777 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5918B01DAAB3EF00333777 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		3B6CB7461D4CAAA9005C40D8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
