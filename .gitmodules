@@ -10,3 +10,6 @@
 [submodule "Dependencies/External/MTBBarcodeScanner"]
 	path = Dependencies/External/MTBBarcodeScanner
 	url = git@github.com:mikebuss/MTBBarcodeScanner.git
+[submodule "Dependencies/External/RxSwift"]
+	path = Dependencies/External/RxSwift
+	url = git@github.com:ReactiveX/RxSwift.git
