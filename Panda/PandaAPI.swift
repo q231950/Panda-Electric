@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 enum BackendURL: String {
     case localhost = "http://localhost:4000/socket/websocket"
@@ -26,6 +27,10 @@ open class PandaAPI {
         } else {
             baseURL = BackendURL.heroku.rawValue
         }
+    }
+    
+    open func createUserWithName(_ name: String) -> Observable<Results> {
+        
     }
     
     open func createUser(_ name: String, completion: @escaping (_ user: User?, _ error: Error?) -> Swift.Void) {

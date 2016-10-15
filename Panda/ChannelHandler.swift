@@ -25,13 +25,13 @@ open class ChannelHandler {
         channel = socket.channel(channelIdentifier, payload: ["user": user as AnyObject])
         registerCallbacks(channel!)
         
-        channel?.join().receive("ok", callback: { payload in
+        let _ = channel?.join().receive("ok", callback: { payload in
             print("Successfully joined: \(self.channel?.topic)")
         })
     }
     
     open func didDisconnect() {
-        channel?.leave()
+        let _ = channel?.leave()
     }
     
     // MARK: Subclass overrides
