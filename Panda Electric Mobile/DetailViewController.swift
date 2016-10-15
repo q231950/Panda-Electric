@@ -43,7 +43,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if let navigationController = segue.destination as? UINavigationController {
+            if let viewController = navigationController.topViewController as? AddMemberViewController {
+                viewController.channelHandler = channelHandler
+            }
+        }
     }
     
     fileprivate func handleMessage(_ message: String, atPosition position: Int) {

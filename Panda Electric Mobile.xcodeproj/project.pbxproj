@@ -387,8 +387,6 @@
 		3B6CB7341D4CAAA9005C40D8 = {
 			isa = PBXGroup;
 			children = (
-				3B5917EC1DAA824B00333777 /* Panda.framework */,
-				3B5917E81DAA824400333777 /* Starscream.framework */,
 				3B6CB73F1D4CAAA9005C40D8 /* Panda Electric Mobile */,
 				3B6CB7561D4CAAA9005C40D8 /* Panda Electric MobileTests */,
 				3B6CB7611D4CAAAA005C40D8 /* Panda Electric MobileUITests */,
@@ -456,6 +454,8 @@
 		699C29B9832A2FA4CC29E84E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B5917EC1DAA824B00333777 /* Panda.framework */,
+				3B5917E81DAA824400333777 /* Starscream.framework */,
 				3B7303221DA1A4D40000C028 /* Panda.framework */,
 				3B607D411DA128BD008D7A82 /* Panda.framework */,
 				3B607D3F1DA1273D008D7A82 /* Pods_Panda_Umbrella_Panda_Electric_Mobile.framework */,

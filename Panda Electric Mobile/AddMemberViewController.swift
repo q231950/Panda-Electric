@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import Panda
 
 class AddMemberViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
+    var channelHandler: EstimationChannelHandler? {
+        didSet {
+            title = channelHandler?.topic
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "asd"
-        
         setupImageViewConstraints()
         
-        let qrCode = QRCode("http://elbedev.com")
-        imageView.image = qrCode?.image
+        if let qrCode = QRCode((channelHandler?.channelIdentifier)!) {
+            imageView.image = qrCode.image
+        }
     }
     
     private func setupImageViewConstraints() {
