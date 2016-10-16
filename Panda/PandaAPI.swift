@@ -10,14 +10,24 @@ import Foundation
 import RxSwift
 
 enum BackendURL: String {
-    case localhost = "http://localhost:4000/socket/websocket"
-    case heroku = "https://tranquil-peak-78260.herokuapp.com/socket/websocket"
+    case localhost = "http://localhost:4000/"
+    case heroku = "https://tranquil-peak-78260.herokuapp.com/"
 }
 
 
 open class PandaAPI {
 
-    open let baseURL: String
+    private let baseURL: String
+    open var socketUrl: String {
+        get {
+            return baseURL.appending("socket/websocket/")
+        }
+    }
+    private var ApiUrl: String {
+        get {
+            return baseURL.appending("api/")
+        }
+    }
     
     public init() {
         
@@ -29,141 +39,48 @@ open class PandaAPI {
         }
     }
     
-    open func createUserWithName(_ name: String) -> Observable<Results> {
-        
-    }
-    
-    open func createUser(_ name: String, completion: @escaping (_ user: User?, _ error: Error?) -> Swift.Void) {
-        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
-        if let url = URL(string: baseURL.appending("users/")) {
-            let body = [
-                "user": [
-                    "name": name
+    open func userWithName(_ name: String) -> Observable<User> {
+        return Observable.create { observer in
+            let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
+            if let url = URL(string: self.ApiUrl.appending("users/")) {
+                let body = [
+                    "user": [
+                        "name": name
+                    ]
                 ]
-            ]
-            let request = NSMutableURLRequest(url: url)
-            request.httpMethod = "POST"
-            request.addValue("application/json", forHTTPHeaderField: "Accept")
-            request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-            request.httpBody = try! JSONSerialization.data(withJSONObject: body, options: [])
-            
-            let task = session.dataTask(with: request as URLRequest, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
-                if (error == nil) {
-                    // Success
-                    let statusCode = (response as! HTTPURLResponse).statusCode
-                    print("URL Session Task Succeeded: HTTP \(statusCode)")
-                    let json = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String : AnyObject]
-                    let user = User(uuid: json["uuid"] as! String, name: json["name"] as! String)
-                    completion(user, nil)
-                }
-                else {
-                    // Failure
-                    print("URL Session Task Failed: %@", error!.localizedDescription);
-                    completion(nil, error)
-                }
-            })
-            task.resume()
-            session.finishTasksAndInvalidate()
+                let request = NSMutableURLRequest(url: url)
+                request.httpMethod = "POST"
+                request.addValue("application/json", forHTTPHeaderField: "Accept")
+                request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+                request.httpBody = try! JSONSerialization.data(withJSONObject: body, options: [])
+                
+                let task = session.dataTask(with: request as URLRequest, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+                    if (error == nil) {
+                        // Success
+                        let statusCode = (response as! HTTPURLResponse).statusCode
+                        guard statusCode == 200 else {
+                            print("URL Session Task Failed with status code: ", statusCode, "response: ", response);
+                            return
+                        }
+                        
+                        print("URL Session Task Succeeded: HTTP \(statusCode)")
+                        let json = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String : AnyObject]
+                        let user = User(uuid: json["uuid"] as! String, name: json["name"] as! String)
+                        observer.on(.next(user))
+                        observer.on(.completed)
+                    }
+                    else {
+                        // Failure
+                        print("URL Session Task Failed: %@", error!.localizedDescription);
+                        observer.on(.error(error!))
+                        
+                    }
+                })
+                task.resume()
+                session.finishTasksAndInvalidate()
+            }
+            return Disposables.create()
         }
-    }
-    
-    open func createSession(_ title: String, user: String, completion: @escaping (_ session: PandaSession?, _ error: Error?) -> Swift.Void) {
-        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
-        
-        guard var URL = URL(string: baseURL.appending("sessions")) else {return}
-        let URLParams = [
-            "user": user,
-            ]
-        URL = URL.URLByAppendingQueryParameters(URLParams)
-        let request = NSMutableURLRequest(url: URL as URL)
-        request.httpMethod = "POST"
-        
-        // Headers
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-        
-        // JSON Body
-        let bodyObject = [
-            "session": [
-                "title": title
-            ],
-            "user": [
-                "id": user
-            ]
-        ]
-        request.httpBody = try! JSONSerialization.data(withJSONObject: bodyObject, options: [])
-        
-        /* Start a new Task */
-        let task = session.dataTask(with: request as URLRequest, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
-            if (error == nil) {
-                // Success
-                let statusCode = (response as! HTTPURLResponse).statusCode
-                print("URL Session Task Succeeded: HTTP \(statusCode)")
-                let json = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments)
-                let pandaSession = PandaSession(dict: json as! [String : AnyObject])
-                completion(pandaSession, nil)
-            }
-            else {
-                // Failure
-                print("URL Session Task Failed: %@", error!.localizedDescription);
-                completion(nil, error)
-            }
-        })
-        task.resume()
-        session.finishTasksAndInvalidate()
-    }
-    
-    open func sessions(_ user: String, completion: @escaping (_ sessions: [PandaSession]?, _ error: Error?) -> Swift.Void) {
-        
-        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
-        
-        guard var URL = URL(string: baseURL.appending("sessions")) else {return}
-        let URLParams = [
-            "user": user,
-            ]
-        URL = URL.URLByAppendingQueryParameters(URLParams)
-        let request = NSMutableURLRequest(url: URL as URL)
-        request.httpMethod = "GET"
-        
-        // Headers
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-        
-        // JSON Body
-        let bodyObject = [
-            "user": [
-                "id": user
-            ]
-        ]
-        request.httpBody = try! JSONSerialization.data(withJSONObject: bodyObject, options: [])
-        
-        /* Start a new Task */
-        let task = session.dataTask(with: request as URLRequest, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
-            if (error == nil) {
-                // Success
-                let statusCode = (response as! HTTPURLResponse).statusCode
-                print("URL Session Task Succeeded: HTTP \(statusCode)")
-                if let json = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [AnyObject] {
-                    var sessions = [PandaSession]()
-                    json.forEach({ (dict: AnyObject) in
-                        let pandaSession = PandaSession(dict: dict as! [String : AnyObject])
-                        sessions.append(pandaSession)
-                    })
-                    
-                    completion(sessions, nil)
-                } else {
-                    print("Failed to parse Sessions: %@", error!.localizedDescription);
-                    completion(nil, error)
-                }
-            }
-            else {
-                // Failure
-                print("URL Session Task Failed: %@", error!.localizedDescription);
-                completion(nil, error)
-            }
-        })
-        task.resume()
-        session.finishTasksAndInvalidate()
     }
 }
 

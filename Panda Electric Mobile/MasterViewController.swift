@@ -8,6 +8,7 @@
 
 import UIKit
 import Panda
+import RxSwift
 
 class MasterViewController: UITableViewController, PandaConnectionDelegate {
 
@@ -55,11 +56,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         let defaults = UserDefaults.standard
         let uuid = defaults.string(forKey: "uuid")
         guard uuid != nil else {
-            createUser(completion: { (user: User?) in
-                if let user = user {
-                    self.setupConnection(uuid: user.uuid)
-                }
-            })
+            createUser()
             return
         }
         print("Signed in as user with uuid \(uuid)")
@@ -68,26 +65,25 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         
     }
     
-    fileprivate func createUser(completion: @escaping (_ user: User?) -> Swift.Void) {
+    private func createUser() {
         let alertController = UIAlertController(title: "Create User", message: nil, preferredStyle: .alert)
         let nameAction = UIAlertAction(title: "Ok", style: .default) { (_) in
             let loginTextField = alertController.textFields![0] as UITextField
-            print(loginTextField.text)
+            
             if let name = loginTextField.text {
-                self.api.createUser(name, completion: { (user: User?, error: Error?) in
-                    if let user = user {
-                        UserDefaults.standard.setValue(user.uuid, forKey: "uuid")
-                        completion(user)
-                    } else if let e = error {
-                        print(e.localizedDescription)
-                    } else {
-                        print("[Create User] completion with neither user nor error.")
-                    }
-                })
-            } else {
-                self.createUser(completion: completion)
+                let _ = self.api.userWithName(name).subscribe(onNext: { (user: User) in
+                    UserDefaults.standard.setValue(user.uuid, forKey: "uuid")
+                    self.setupConnection(uuid: user.uuid)
+                    }, onError: { (error: Error) in
+                        
+                    }, onCompleted: {
+                        print("Completed")
+                }) {
+                    print("Disposed")
+                }
             }
         }
+    
         nameAction.isEnabled = false
         alertController.addTextField(configurationHandler: { (textField: UITextField) in
             textField.placeholder = "Name"
@@ -101,7 +97,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    fileprivate func user() -> String {
+    private func user() -> String {
         return UserDefaults.standard.string(forKey: "uuid")!
     }
 
@@ -160,12 +156,12 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         tableView.reloadData()
     }
     
-    fileprivate func setupConnection(uuid: String) {
+    private func setupConnection(uuid: String) {
         sessionChannelHandler = SessionChannelHandler(user: uuid,
-                                                        channel:"sessions",
-                                                        topic:uuid)
+                                                      channel:"sessions",
+                                                      topic:uuid)
         
-        pandaConnection = PandaConnection(url: api.baseURL, channelHandlers: [sessionChannelHandler])
+        pandaConnection = PandaConnection(url: api.socketUrl, channelHandlers: [sessionChannelHandler])
         pandaConnection.delegate = self
     }
 
