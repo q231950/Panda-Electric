@@ -198,7 +198,9 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 let session = objects[(indexPath as NSIndexPath).row]
                 controller.title = session.title
+                controller.user = user()
                 let estimationChannelHandler = EstimationChannelHandler(user: self.user(), channel: "estimation", topic:session.identifier)
+                estimationChannelHandler.title = session.title
                 pandaConnection.appendChannelHandler(channelHandler: estimationChannelHandler)
                 controller.channelHandler = estimationChannelHandler
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem

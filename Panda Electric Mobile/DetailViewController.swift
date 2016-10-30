@@ -15,6 +15,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     var stateMachine: GKStateMachine!
     var fibonacciPickerView: FibonacciPickerView!
     var selectedNumber: FibonacciNumber?
+    var user: String?
     var channelHandler: EstimationChannelHandler? {
         didSet {
             channelHandler?.estimateHandler = { (estimate: Estimate) -> Void in
@@ -28,6 +29,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let estimatingState = EstimatingState()
+        let estimatedState = EstimatedState()
+        stateMachine = GKStateMachine(states: [estimatingState, estimatedState])
+        stateMachine.enter(EstimatingState.self)
         
         view.backgroundColor = UIColor.darkGray
         setupPickerView()
@@ -52,8 +57,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func doneAction(_ sender: Any) {
-        if let number = selectedNumber {
-            channelHandler?.sendEstimate(.fibonacci(number.value))
+        if let number = selectedNumber, let user = self.user {
+            channelHandler?.sendEstimate(.fibonacci(number.value), userIdentifier: user)
         }
     }
     

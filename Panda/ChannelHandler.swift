@@ -12,7 +12,7 @@ open class ChannelHandler {
     internal var channel: Channel?
     public let topic: String
     public let channelIdentifier: String
-    fileprivate let user: String
+    private let user: String
     
     public init(user: String, channel: String, topic: String) {
         self.user = user

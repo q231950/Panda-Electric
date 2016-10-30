@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B57BDC11DC65D000069CC41 /* EstimationStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57BDC01DC65D000069CC41 /* EstimationStates.swift */; };
 		3B5917E91DAA824400333777 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5917E81DAA824400333777 /* Starscream.framework */; };
 		3B5917EA1DAA824400333777 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5917E81DAA824400333777 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B5918101DAAA97700333777 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59180F1DAAA97700333777 /* AddMemberViewController.swift */; };
@@ -95,6 +96,7 @@
 		1B509D07F3F783BA36046F0C /* Pods-Pandas-Panda Electric Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandas-Panda Electric Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pandas-Panda Electric Mobile/Pods-Pandas-Panda Electric Mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		3B38ABBA1DA10EAE0011EF08 /* Panda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Panda.framework; path = "build/Debug-iphoneos/Panda.framework"; sourceTree = "<group>"; };
 		3B38ABBC1DA110430011EF08 /* Panda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Panda.framework; path = "build/Debug-iphoneos/Panda.framework"; sourceTree = "<group>"; };
+		3B57BDC01DC65D000069CC41 /* EstimationStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimationStates.swift; sourceTree = "<group>"; };
 		3B5917E81DAA824400333777 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5917EC1DAA824B00333777 /* Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B59180F1DAAA97700333777 /* AddMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B57BDBE1DC65CE50069CC41 /* Estimation */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CB7441D4CAAA9005C40D8 /* DetailViewController.swift */,
+				3B57BDBF1DC65CF10069CC41 /* States */,
+			);
+			name = Estimation;
+			sourceTree = "<group>";
+		};
+		3B57BDBF1DC65CF10069CC41 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				3B57BDC01DC65D000069CC41 /* EstimationStates.swift */,
+			);
+			name = States;
+			sourceTree = "<group>";
+		};
 		3B5918171DAAAB7D00333777 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,7 +439,7 @@
 				3B59181D1DAAAB8700333777 /* Dependencies */,
 				3B6CB7401D4CAAA9005C40D8 /* AppDelegate.swift */,
 				3BC559721D8C91F200213420 /* Root Navigation */,
-				3B6CB7441D4CAAA9005C40D8 /* DetailViewController.swift */,
+				3B57BDBE1DC65CE50069CC41 /* Estimation */,
 				3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */,
 				3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */,
 				3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */,
@@ -666,6 +685,7 @@
 				3B6CB7431D4CAAA9005C40D8 /* MasterViewController.swift in Sources */,
 				3B6CB7411D4CAAA9005C40D8 /* AppDelegate.swift in Sources */,
 				3B59181B1DAAAB7D00333777 /* QRCode.swift in Sources */,
+				3B57BDC11DC65D000069CC41 /* EstimationStates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

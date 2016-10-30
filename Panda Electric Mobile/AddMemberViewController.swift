@@ -14,7 +14,7 @@ class AddMemberViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     var channelHandler: EstimationChannelHandler? {
         didSet {
-            title = channelHandler?.topic
+            title = channelHandler?.title
         }
     }
     
@@ -23,7 +23,7 @@ class AddMemberViewController: UIViewController {
         
         setupImageViewConstraints()
         
-        if let qrCode = QRCode((channelHandler?.channelIdentifier)!) {
+        if let qrCode = QRCode((channelHandler?.topic)!) {
             imageView.image = qrCode.image
         }
     }
