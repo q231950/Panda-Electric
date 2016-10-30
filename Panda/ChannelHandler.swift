@@ -22,6 +22,7 @@ open class ChannelHandler {
     
     open func configureWithSocket(_ socket: Socket) {
         let channelIdentifier = "\(self.channelIdentifier):\(topic)"
+        print("connecting to channel: \(channelIdentifier)")
         channel = socket.channel(channelIdentifier, payload: ["user": user as AnyObject])
         registerCallbacks(channel!)
         

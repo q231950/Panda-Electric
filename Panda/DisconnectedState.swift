@@ -10,10 +10,14 @@ import GameplayKit
 
 class DisconnectedState: GKState {
 
-    fileprivate let channelHandlers: [ChannelHandler]!
+    private var channelHandlers = [ChannelHandler]()
     
     init(channelHandlers: [ChannelHandler]) {
-        self.channelHandlers = channelHandlers
+        self.channelHandlers.append(contentsOf: channelHandlers)
+    }
+    
+    public func appendChannelHandler(_ channelHandler: ChannelHandler) {
+        channelHandlers.append(channelHandler)
     }
     
     override func didEnter(from previousState: GKState?) {

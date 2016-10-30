@@ -10,12 +10,17 @@ import GameplayKit
 
 class ConnectedState: GKState {
     
-    fileprivate let socketProvider: SocketProvider
-    fileprivate let channelHandlers: [ChannelHandler]!
+    private let socketProvider: SocketProvider
+    private var channelHandlers = [ChannelHandler]()
     
     init(socketProvider: SocketProvider, channelHandlers: [ChannelHandler]) {
         self.socketProvider = socketProvider
-        self.channelHandlers = channelHandlers
+        self.channelHandlers.append(contentsOf: channelHandlers)
+    }
+    
+    public func appendChannelHandler(_ channelHandler: ChannelHandler) {
+        channelHandlers.append(channelHandler)
+        channelHandler.configureWithSocket(self.socketProvider.socket())
     }
     
     override func didEnter(from previousState: GKState?) {

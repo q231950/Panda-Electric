@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol FibonacciPickerViewDelegate {
+    func pickerViewDidSelectFibonacciNumber(pickerView: FibonacciPickerView, number: FibonacciNumber)
+}
+
 class FibonacciPickerView: UIView, UIScrollViewDelegate {
     let scrollView = UIScrollView()
     let contentView = UIView()
@@ -17,6 +21,7 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     let margin: CGFloat = 40
     let sequence: FibonacciSequence
     var stackView:UIStackView!
+    var delegate: FibonacciPickerViewDelegate?
     
     init (sequence: FibonacciSequence) {
         self.sequence = sequence
@@ -28,7 +33,6 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
         stackView.arrangedSubviews.forEach { (v: UIView) in
             bringSubview(toFront: v)
         }
-//        bringSubviewToFront(stackView)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -89,7 +93,7 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
         var buttons = [UIView]()
         sequence.numbers.forEach { (number: FibonacciNumber) in
             let button = FibonacciNumberButton(fibonacciNumber: number)
-            button.addTarget(self, action: #selector(FibonacciPickerView.selectFibonacciNumber), for: .touchUpInside)
+            button.addTarget(self, action: #selector(FibonacciPickerView.selectFibonacciNumberButton), for: .touchUpInside)
             buttons.append(button)
         }
         
@@ -112,8 +116,19 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     
     /// MARK: Actions
     
-    func selectFibonacciNumber(_ button: FibonacciNumberButton) {
-        print("pressed \(button.fibonacciNumber.value)")
+    func selectFibonacciNumberButton(_ button: FibonacciNumberButton) {
+        selectFibonacciNumber(button.fibonacciNumber)
+    }
+    
+    func selectFibonacciNumber(_ number: FibonacciNumber) {
+        print("select \(number.value)")
+        
+        let index = sequence.numbers.index { (n:FibonacciNumber) -> Bool in
+            return n.value == number.value
+        }
+        if let i = index {
+            scrollView.contentOffset = CGPoint(x: 0, y: offsetForIndex(i))
+        }
     }
     
     /// MARK: Snapping
@@ -135,5 +150,17 @@ class FibonacciPickerView: UIView, UIScrollViewDelegate {
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         targetContentOffset.pointee.y = closestTargetContentOffsetForOffset(targetContentOffset.pointee)
+        let index = indexForOffset(targetContentOffset.pointee.y)
+        delegate?.pickerViewDidSelectFibonacciNumber(pickerView: self, number: sequence.numbers[index])
+    }
+    
+    private func indexForOffset(_ offset: CGFloat) -> Int {
+        let index = Int(offset / ( stackView.arrangedSubviews[0].frame.size.height + spacing ))
+        return stackView.arrangedSubviews.count - index - 1
+    }
+    
+    private func offsetForIndex(_ index: Int) -> CGFloat {
+        let offset = CGFloat(stackView.arrangedSubviews.count - index - 1) * ( stackView.arrangedSubviews[0].frame.size.height + spacing )
+        return offset
     }
 }

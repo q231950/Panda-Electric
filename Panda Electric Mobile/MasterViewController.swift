@@ -197,7 +197,10 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 let session = objects[(indexPath as NSIndexPath).row]
-                controller.channelHandler = EstimationChannelHandler(user: self.user(), channel: session.identifier, topic:session.title)
+                controller.title = session.title
+                let estimationChannelHandler = EstimationChannelHandler(user: self.user(), channel: "estimation", topic:session.identifier)
+                pandaConnection.appendChannelHandler(channelHandler: estimationChannelHandler)
+                controller.channelHandler = estimationChannelHandler
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
