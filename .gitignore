@@ -10,6 +10,7 @@ build/
 *.perspectivev3
 !default.perspectivev3
 *.xcworkspace
+PandaElectric.xcworkspace/xcuserdata/**
 !default.xcworkspace
 xcuserdata
 profile
