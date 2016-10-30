@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3B5917E91DAA824400333777 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5917E81DAA824400333777 /* Starscream.framework */; };
 		3B5917EA1DAA824400333777 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5917E81DAA824400333777 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3B5917ED1DAA824B00333777 /* Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5917EC1DAA824B00333777 /* Panda.framework */; };
-		3B5917EE1DAA824B00333777 /* Panda.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5917EC1DAA824B00333777 /* Panda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B5918101DAAA97700333777 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59180F1DAAA97700333777 /* AddMemberViewController.swift */; };
 		3B5918181DAAAB7D00333777 /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918111DAAAB7D00333777 /* CIColorExtension.swift */; };
 		3B5918191DAAAB7D00333777 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918121DAAAB7D00333777 /* CIImageExtension.swift */; };
@@ -28,6 +26,10 @@
 		3B6CB74D1D4CAAA9005C40D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB74B1D4CAAA9005C40D8 /* LaunchScreen.storyboard */; };
 		3B6CB7581D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7571D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift */; };
 		3B6CB7631D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */; };
+		3B7550C71DC5092200BA7E9C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7550C61DC5092200BA7E9C /* RxSwift.framework */; };
+		3B7550C81DC5092200BA7E9C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7550C61DC5092200BA7E9C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B7550CC1DC51FF700BA7E9C /* Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5917EC1DAA824B00333777 /* Panda.framework */; };
+		3B7550CD1DC51FF700BA7E9C /* Panda.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5917EC1DAA824B00333777 /* Panda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B8C1D701D7AAE7F00500B43 /* FibonacciPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */; };
 		3BDF2DE81D7C361300CFC1BB /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */; };
 		3BDF2DEA1D7C70D100CFC1BB /* FibonacciNumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2DE91D7C70D100CFC1BB /* FibonacciNumberButton.swift */; };
@@ -78,9 +80,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3B7550C81DC5092200BA7E9C /* RxSwift.framework in Embed Frameworks */,
 				3B5917EA1DAA824400333777 /* Starscream.framework in Embed Frameworks */,
-				3B5917EE1DAA824B00333777 /* Panda.framework in Embed Frameworks */,
 				3B5918BB1DAAB3FD00333777 /* MTBBarcodeScanner.framework in Embed Frameworks */,
+				3B7550CD1DC51FF700BA7E9C /* Panda.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +156,8 @@
 		3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_Electric_MobileUITests.swift; sourceTree = "<group>"; };
 		3B6CB7641D4CAAAA005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B7303221DA1A4D40000C028 /* Panda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Panda.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-abzkcothuxehpycgppfltxmgjhcp/Build/Products/Debug-iphonesimulator/Panda.framework"; sourceTree = "<group>"; };
+		3B7550C61DC5092200BA7E9C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7550CA1DC5125900BA7E9C /* Panda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Panda.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-cdsgfyadhxncifbukdvkcegmdsyk/Build/Products/Debug-iphonesimulator/Panda.framework"; sourceTree = "<group>"; };
 		3B8C1D6F1D7AAE7F00500B43 /* FibonacciPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciPickerView.swift; sourceTree = "<group>"; };
 		3BC559701D8C89D400213420 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
 		3BDF2DE71D7C361300CFC1BB /* FibonacciSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
@@ -174,9 +179,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7550C71DC5092200BA7E9C /* RxSwift.framework in Frameworks */,
 				3B5917E91DAA824400333777 /* Starscream.framework in Frameworks */,
-				3B5917ED1DAA824B00333777 /* Panda.framework in Frameworks */,
 				3B5918BA1DAAB3FD00333777 /* MTBBarcodeScanner.framework in Frameworks */,
+				3B7550CC1DC51FF700BA7E9C /* Panda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +393,7 @@
 		3B6CB7341D4CAAA9005C40D8 = {
 			isa = PBXGroup;
 			children = (
+				3B7550C61DC5092200BA7E9C /* RxSwift.framework */,
 				3B6CB73F1D4CAAA9005C40D8 /* Panda Electric Mobile */,
 				3B6CB7561D4CAAA9005C40D8 /* Panda Electric MobileTests */,
 				3B6CB7611D4CAAAA005C40D8 /* Panda Electric MobileUITests */,
@@ -454,6 +461,7 @@
 		699C29B9832A2FA4CC29E84E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B7550CA1DC5125900BA7E9C /* Panda.framework */,
 				3B5917EC1DAA824B00333777 /* Panda.framework */,
 				3B5917E81DAA824400333777 /* Starscream.framework */,
 				3B7303221DA1A4D40000C028 /* Panda.framework */,
@@ -852,6 +860,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = X29V4JPQ55;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -869,6 +878,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = X29V4JPQ55;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",

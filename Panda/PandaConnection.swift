@@ -54,5 +54,4 @@ open class PandaConnection: SocketProvider {
     func socket() -> Socket {
         return socketInternal
     }
-    
 }

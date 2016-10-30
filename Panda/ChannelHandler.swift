@@ -37,6 +37,6 @@ open class ChannelHandler {
     // MARK: Subclass overrides
     
     internal func registerCallbacks(_ channel: Channel) {
-        assertionFailure("This is abstract. Must be overridden by subclass")
+//        assertionFailure("This is abstract. Must be overridden by subclass")
     }
 }

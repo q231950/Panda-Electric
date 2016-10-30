@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 enum BackendURL: String {
-    case localhost = "http://localhost:4000/"
+    case localhost = "http://192.168.1.10:4000/"
     case heroku = "https://tranquil-peak-78260.herokuapp.com/"
 }
 
@@ -59,7 +59,7 @@ open class PandaAPI {
                         // Success
                         let statusCode = (response as! HTTPURLResponse).statusCode
                         guard statusCode == 200 else {
-                            print("URL Session Task Failed with status code: ", statusCode, "response: ", response);
+                            print("URL Session Task Failed with status code: ", statusCode, "response: \(response)");
                             return
                         }
                         

@@ -7,41 +7,94 @@
 //
 
 import Foundation
+import RxSwift
 
 open class SessionChannelHandler: ChannelHandler {
     open var sessionHandler: ((_ session: PandaSession) -> Void)?
+    private let domain = "com.elbedev.sessionChannelHandler"
     
-    override func registerCallbacks(_ channel: Channel) {
-        let _ = channel.on("new:session", callback: { message in
-            if let json = message.payload["session"] as? [String : AnyObject] {
-                print("Received \(json)")
-                self.sessionHandler?(PandaSession(dict: json))
+    open func sessions(_ user: String) -> Observable<PandaSession>{
+        return Observable.create { observer in
+            if let channel = self.channel {
+                let _ = channel.send("read:sessions", payload: ["user": user as AnyObject])
+                    .receive("ok", callback: { response in
+                        if let json = response["response"] as? [String : AnyObject] {
+                            if let jsonSessions = json["sessions"] as? [[String : AnyObject]] {
+                                let _ = jsonSessions.map {
+                                    (jsonSession: [String : AnyObject]) -> Void in
+                                    let session = PandaSession(dict: jsonSession["session"] as! [String : AnyObject])
+                                    observer.on(.next(session))
+                                }
+                            }
+                        }
+                        observer.on(.completed)
+                    })
+                    .receive("error", callback: { reason in
+                        print("Error when requesting sessions for user \(user)")
+                    })
             }
-        })
-    }
-    
-    open func requestSessions(_ user: String) {
-        print("requestSessions")
-        if let channel = self.channel {
-            let _ = channel.send("read:sessions", payload: ["user": user as AnyObject])
-                .receive("ok", callback: { response in
-                    print("Requested sessions for user \(user).")
-                })
-                .receive("error", callback: { reason in
-                    print("Error when requesting sessions for user \(user)")
-                })
+        
+            return Disposables.create()
         }
     }
     
-    open func createSession(_ user: String, title: String) {
-        if let channel = self.channel {
-            let _ = channel.send("new:session", payload: ["user": user as AnyObject, "title": title as AnyObject])
-                .receive("ok", callback: { response in
-                    print("Requested creation of a new session.")
-                })
-                .receive("error", callback: { reason in
-                    print("Error when creating a session: \(reason)")
-                })
+    open func createSession(_ user: String, title: String) -> Observable<PandaSession> {
+        return Observable.create { observer in
+            if let channel = self.channel {
+                let _ = channel.send("new:session", payload: ["user": user as AnyObject, "title": title as AnyObject])
+                    .receive("ok", callback: { response in
+                        if let json = response["response"] as? [String : AnyObject] {
+                            if let jsonSession = json["session"] as? [String : AnyObject] {
+                                let session = PandaSession(dict: jsonSession)
+                                observer.on(.next(session))
+                            }
+                        }
+                    })
+                    .receive("error", callback: { reason in
+                        print("Error when creating a session: \(reason)")
+                    })
+            }
+            
+            return Disposables.create()
         }
     }
+    
+    open func joinSession(_ uuid: String, user: String) -> Observable<PandaSession> {
+        return Observable.create { observer in
+            if let channel = self.channel {
+                let _ = channel.send("join:session", payload: ["user": user as AnyObject, "uuid": uuid as AnyObject])
+                    .receive("ok", callback: { response in
+                        if let json = response["response"] as? [String : AnyObject] {
+                            if let jsonSession = json["session"] as? [String : AnyObject] {
+                                let session = PandaSession(dict: jsonSession)
+                                observer.on(.next(session))
+                            }
+                        }
+                    })
+                    .receive("error", callback: { reason in
+                        print("Error when creating a session: \(reason)")
+                    })
+            }
+            
+            return Disposables.create()
+        }
+    }
+    
+    open func deleteSession(user: String, uuid: String) -> Observable<String> {
+        return Observable.create { observer in
+            if let channel = self.channel {
+                let _ = channel.send("delete:session", payload: ["user": user as AnyObject, "uuid": uuid as AnyObject])
+                    .receive("ok", callback: { response in
+                        observer.on(.next(uuid))
+                    })
+                    .receive("error", callback: { reason in
+                        print("Error when creating a session: \(reason)")
+                        let error = NSError(domain: self.domain, code: 3, userInfo: [NSLocalizedDescriptionKey : reason])
+                        observer.on(.error(error))
+                    })
+        }
+        
+        return Disposables.create()
+    }
+}
 }

@@ -14,19 +14,15 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
 
     var detailViewController: DetailViewController? = nil
     var objects = [PandaSession]()
+    var sessionsObservable: Observable<PandaSession>!
     let api = PandaAPI()
+    var isStartUp = true
     
     fileprivate var pandaConnection: PandaConnection!
     var sessionChannelHandler: SessionChannelHandler! {
         didSet {
             sessionChannelHandler?.sessionHandler = { (session: PandaSession) -> Void in
-                print("handle new session: \(session.identifier)")
-                DispatchQueue.main.async {
-                    self.objects.insert(session, at: 0)
-                    let indexPath = IndexPath(row: 0, section: 0)
-                    self.tableView.insertRows(at: [indexPath], with: .automatic)
-                }
-
+                
             }
         }
     }
@@ -34,7 +30,6 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
@@ -53,6 +48,11 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        guard isStartUp else {
+            return
+        }
+        
+        isStartUp = false
         let defaults = UserDefaults.standard
         let uuid = defaults.string(forKey: "uuid")
         guard uuid != nil else {
@@ -60,9 +60,8 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
             return
         }
         print("Signed in as user with uuid \(uuid)")
-//        UserDefaults.standard.removeObject(forKey: "uuid")
+        //        UserDefaults.standard.removeObject(forKey: "uuid")
         setupConnection(uuid: uuid!)
-        
     }
     
     private func createUser() {
@@ -97,7 +96,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    private func user() -> String {
+    fileprivate func user() -> String {
         return UserDefaults.standard.string(forKey: "uuid")!
     }
 
@@ -123,7 +122,20 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         let nameAction = UIAlertAction(title: "Ok", style: .default) { (_) in
             let loginTextField = alertController.textFields![0] as UITextField
             let title = loginTextField.text!
-            self.sessionChannelHandler.createSession(self.user(), title: title)
+            let createObservable = self.sessionChannelHandler.createSession(self.user(), title: title)
+            let _ = createObservable.subscribe(onNext: { (session: PandaSession) in
+                DispatchQueue.main.async {
+                    self.objects.insert(session, at: 0)
+                    let indexPath = IndexPath(row: 0, section: 0)
+                    self.tableView.insertRows(at: [indexPath], with: .automatic)
+                }
+                }, onError: { (error: Error) in
+                    print(error)
+                }, onCompleted: {
+                    print("done")
+                }, onDisposed: {
+                    print("disposed")
+            })
         }
         nameAction.isEnabled = false
         alertController.addTextField(configurationHandler: { (textField: UITextField) in
@@ -147,7 +159,19 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     func connectionEstablished(_ connection: PandaConnection) {
         print("connectionEstablished")
         
-        sessionChannelHandler.requestSessions(user())        
+        let _ = sessionsObservable.subscribe(onNext: { (session: PandaSession) in
+            print("handle session: \(session.identifier)")
+            DispatchQueue.main.async {
+                self.objects.insert(session, at: 0)
+                let indexPath = IndexPath(row: 0, section: 0)
+                self.tableView.insertRows(at: [indexPath], with: .automatic)
+            }
+            
+            }, onError: { (error: Error) in
+                
+            }, onCompleted: {
+            }) {
+        }
     }
     
     func connectionDisconnected(_ connection: PandaConnection) {
@@ -161,6 +185,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
                                                       channel:"sessions",
                                                       topic:uuid)
         
+        sessionsObservable = sessionChannelHandler.sessions(user())
         pandaConnection = PandaConnection(url: api.socketUrl, channelHandlers: [sessionChannelHandler])
         pandaConnection.delegate = self
     }
@@ -176,6 +201,10 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
+        } else if segue.identifier == "sessionSearchSegue" {
+            let navigationController = segue.destination as! UINavigationController
+            let controller = navigationController.topViewController as! SessionSearchViewController
+            controller.delegate = self
         }
     }
 
@@ -205,13 +234,36 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            objects.remove(at: (indexPath as NSIndexPath).row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            let deleteSessionObservable = sessionChannelHandler.deleteSession(user: user(), uuid: objects[indexPath.row].identifier)
+            let _ = deleteSessionObservable.subscribe(onNext: { (uuid: String) in
+                self.objects.remove(at: (indexPath as NSIndexPath).row)
+                self.tableView.deleteRows(at: [indexPath], with: .fade)
+                }, onError: { (error: Error) in
+                    print(error)
+//                    self.tableView.reloadRows(at: [indexPath], with: .fade)
+                    self.tableView.setEditing(false, animated: true)
+                }, onCompleted: {
+                    
+                }, onDisposed: {
+            })
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
+}
 
-
+extension MasterViewController: SessionSearchViewControllerDelegate {
+    func sessionSearchViewControllerDidFindSession(sessionSearchViewController: SessionSearchViewController, uuid: String) {
+        sessionSearchViewController.dismiss(animated: true, completion: { () in
+            let joinSessionObservable = self.sessionChannelHandler.joinSession(uuid, user: self.user())
+            let _ = joinSessionObservable.subscribe(onNext: { (session: PandaSession) in
+                DispatchQueue.main.async {
+                    self.objects.insert(session, at: 0)
+                    let indexPath = IndexPath(row: 0, section: 0)
+                    self.tableView.insertRows(at: [indexPath], with: .automatic)
+                }
+            })
+        })
+    }
 }
 

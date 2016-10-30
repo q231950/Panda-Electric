@@ -9,12 +9,19 @@
 import UIKit
 import MTBBarcodeScanner
 
+protocol SessionSearchViewControllerDelegate {
+    func sessionSearchViewControllerDidFindSession(sessionSearchViewController: SessionSearchViewController, uuid: String)
+}
+
 class SessionSearchViewController: UIViewController {
     @IBOutlet weak var previewView: UIView!
     var scanner: MTBBarcodeScanner!
+    var delegate: SessionSearchViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .cancel, target: self, action: #selector(UIViewController.cancel))
         
         setupPreviewViewConstraints()
         
@@ -29,8 +36,20 @@ class SessionSearchViewController: UIViewController {
         scanner = MTBBarcodeScanner(previewView: previewView)
         var error: NSError?
         scanner.startScanning(resultBlock: { (results: [Any]?) in
-            
-            }, error: &error)
+            if let code = self.codeFromResults(results) {
+                self.delegate?.sessionSearchViewControllerDidFindSession(sessionSearchViewController: self, uuid: code)
+                self.scanner.stopScanning()
+            }
+        }, error: &error)
+    }
+    
+    private func codeFromResults(_ results: [Any]?) -> String? {
+        if let r = results {
+            return r.map({ (code: Any) -> String in
+                return (code as! AVMetadataMachineReadableCodeObject).stringValue
+            }).first
+        }
+        return nil
     }
     
     private func setupPreviewViewConstraints() {
@@ -42,5 +61,11 @@ class SessionSearchViewController: UIViewController {
             previewView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -34),
             previewView.heightAnchor.constraint(equalTo: previewView.widthAnchor)
             ])
+    }
+}
+
+extension UIViewController {
+    func cancel() {
+        dismiss(animated: true, completion: nil)
     }
 }
