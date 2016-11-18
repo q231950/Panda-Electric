@@ -11,4 +11,20 @@ import Foundation
 public struct User {
     public let uuid: String
     public let name: String
+    public var estimate: Estimate?
+    
+    init?(dict: [String:Any]) {
+        guard let uuid = dict["uuid"] as? String,
+            let name = dict["name"] as? String
+        else {
+            return nil
+        }
+        
+        self.uuid = uuid
+        self.name = name
+        
+        if let estimateJson = dict["estimate"] as? [String:AnyObject] {
+            estimate = Estimate(dict: estimateJson)
+        }
+    }
 }

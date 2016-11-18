@@ -13,15 +13,15 @@ import RxSwift
 class MasterViewController: UITableViewController, PandaConnectionDelegate {
 
     var detailViewController: DetailViewController? = nil
-    var objects = [PandaSession]()
-    var sessionsObservable: Observable<PandaSession>!
+    var objects = [PandaSessionModel]()
+    var sessionsObservable: Observable<PandaSessionModel>!
     let api = PandaAPI()
     var isStartUp = true
     
     fileprivate var pandaConnection: PandaConnection!
     var sessionChannelHandler: SessionChannelHandler! {
         didSet {
-            sessionChannelHandler?.sessionHandler = { (session: PandaSession) -> Void in
+            sessionChannelHandler?.sessionHandler = { (session: PandaSessionModel) -> Void in
                 
             }
         }
@@ -123,7 +123,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
             let loginTextField = alertController.textFields![0] as UITextField
             let title = loginTextField.text!
             let createObservable = self.sessionChannelHandler.createSession(self.user(), title: title)
-            let _ = createObservable.subscribe(onNext: { (session: PandaSession) in
+            let _ = createObservable.subscribe(onNext: { (session: PandaSessionModel) in
                 DispatchQueue.main.async {
                     self.objects.insert(session, at: 0)
                     let indexPath = IndexPath(row: 0, section: 0)
@@ -159,7 +159,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
     func connectionEstablished(_ connection: PandaConnection) {
         print("connectionEstablished")
         
-        let _ = sessionsObservable.subscribe(onNext: { (session: PandaSession) in
+        let _ = sessionsObservable.subscribe(onNext: { (session: PandaSessionModel) in
             print("handle session: \(session.identifier)")
             DispatchQueue.main.async {
                 self.objects.insert(session, at: 0)
@@ -261,7 +261,7 @@ extension MasterViewController: SessionSearchViewControllerDelegate {
     func sessionSearchViewControllerDidFindSession(sessionSearchViewController: SessionSearchViewController, uuid: String) {
         sessionSearchViewController.dismiss(animated: true, completion: { () in
             let joinSessionObservable = self.sessionChannelHandler.joinSession(uuid, user: self.user())
-            let _ = joinSessionObservable.subscribe(onNext: { (session: PandaSession) in
+            let _ = joinSessionObservable.subscribe(onNext: { (session: PandaSessionModel) in
                 DispatchQueue.main.async {
                     self.objects.insert(session, at: 0)
                     let indexPath = IndexPath(row: 0, section: 0)

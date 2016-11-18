@@ -90,7 +90,7 @@
          <EnvironmentVariable
             key = "RUN_ON_LOCALHOST"
             value = "true"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>

@@ -1,5 +1,5 @@
 //
-//  PandaSession.swift
+//  PandaSessionModel.swift
 //  Panda
 //
 //  Created by Martin Kim Dung-Pham on 03/10/2016.
@@ -8,12 +8,23 @@
 
 import Foundation
 
-open class PandaSession {
+open class PandaSessionModel {
     open let title: String
     open let identifier: String
+    open let estimates: [UserEstimation]
 
-    init(dict: [String : AnyObject]) {
-        title = dict["title"] as! String
-        identifier = dict["uuid"] as! String
+    init?(dict: [String:AnyObject]) {
+        guard let title = dict["title"] as? String,
+            let identifier = dict["uuid"] as? String,
+            let estimatesJson = dict["estimates"] as? [[String:Any]]
+        else {
+            return nil
+        }
+        
+        self.title = title
+        self.identifier = identifier
+        estimates = estimatesJson.map { (json:[String : Any]) -> UserEstimation in
+            return UserEstimation(dict: json)
+        }
     }
 }

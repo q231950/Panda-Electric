@@ -19,6 +19,7 @@ public enum TShirtSize: String {
 public enum Estimate {
     case tshirt(size: TShirtSize)
     case fibonacci(Int)
+    case none
     
     var value: String {
         get {
@@ -27,6 +28,8 @@ public enum Estimate {
                 return "\(value)"
             case .tshirt(size: let size):
                 return size.rawValue
+            case .none:
+                return "none"
             }
         }
     }
@@ -38,7 +41,23 @@ public enum Estimate {
                 return "fibonacci"
             case .tshirt(size: _):
                 return "tshirt"
+            case .none:
+                return "none"
             }
+        }
+    }
+    
+    init(dict: [String:AnyObject]?) {
+        if let kind = dict?["kind"] as? String, kind == "fibonacci", let value = dict?["value"] as? Int {
+            self = .fibonacci(value)
+        } else if let kind = dict?["kind"] as? String, kind == "tshirt", let value = dict?["value"] as? String {
+            if let size = TShirtSize(rawValue: value) {
+                self = .tshirt(size: size)
+            } else {
+                self = .none
+            }
+        } else {
+            self = .none
         }
     }
 }

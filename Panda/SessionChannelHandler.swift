@@ -10,10 +10,10 @@ import Foundation
 import RxSwift
 
 open class SessionChannelHandler: ChannelHandler {
-    open var sessionHandler: ((_ session: PandaSession) -> Void)?
+    open var sessionHandler: ((_ session: PandaSessionModel) -> Void)?
     private let domain = "com.elbedev.sessionChannelHandler"
     
-    open func sessions(_ user: String) -> Observable<PandaSession>{
+    open func sessions(_ user: String) -> Observable<PandaSessionModel>{
         return Observable.create { observer in
             if let channel = self.channel {
                 let _ = channel.send("read:sessions", payload: ["user": user as AnyObject])
@@ -22,8 +22,9 @@ open class SessionChannelHandler: ChannelHandler {
                             if let jsonSessions = json["sessions"] as? [[String : AnyObject]] {
                                 let _ = jsonSessions.map {
                                     (jsonSession: [String : AnyObject]) -> Void in
-                                    let session = PandaSession(dict: jsonSession["session"] as! [String : AnyObject])
-                                    observer.on(.next(session))
+                                    if let session = PandaSessionModel(dict: jsonSession["session"] as! [String : AnyObject]) {
+                                        observer.on(.next(session))
+                                    }
                                 }
                             }
                         }
@@ -38,15 +39,16 @@ open class SessionChannelHandler: ChannelHandler {
         }
     }
     
-    open func createSession(_ user: String, title: String) -> Observable<PandaSession> {
+    open func createSession(_ user: String, title: String) -> Observable<PandaSessionModel> {
         return Observable.create { observer in
             if let channel = self.channel {
                 let _ = channel.send("new:session", payload: ["user": user as AnyObject, "title": title as AnyObject])
                     .receive("ok", callback: { response in
                         if let json = response["response"] as? [String : AnyObject] {
                             if let jsonSession = json["session"] as? [String : AnyObject] {
-                                let session = PandaSession(dict: jsonSession)
-                                observer.on(.next(session))
+                                if let session = PandaSessionModel(dict: jsonSession) {
+                                    observer.on(.next(session))
+                                }
                             }
                         }
                     })
@@ -59,15 +61,16 @@ open class SessionChannelHandler: ChannelHandler {
         }
     }
     
-    open func joinSession(_ uuid: String, user: String) -> Observable<PandaSession> {
+    open func joinSession(_ uuid: String, user: String) -> Observable<PandaSessionModel> {
         return Observable.create { observer in
             if let channel = self.channel {
                 let _ = channel.send("join:session", payload: ["user": user as AnyObject, "uuid": uuid as AnyObject])
                     .receive("ok", callback: { response in
                         if let json = response["response"] as? [String : AnyObject] {
                             if let jsonSession = json["session"] as? [String : AnyObject] {
-                                let session = PandaSession(dict: jsonSession)
-                                observer.on(.next(session))
+                                if let session = PandaSessionModel(dict: jsonSession) {
+                                    observer.on(.next(session))
+                                }
                             }
                         }
                     })

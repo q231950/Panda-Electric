@@ -46,6 +46,8 @@
 		3B607D6C1DA15C57008D7A82 /* PandaConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ABAE1DA10E7F0011EF08 /* PandaConnection.swift */; };
 		3B607D6D1DA15C57008D7A82 /* PlaygroundChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ABAF1DA10E7F0011EF08 /* PlaygroundChannelHandler.swift */; };
 		3B607D6F1DA15C9A008D7A82 /* Panda.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B38ABAC1DA10E7F0011EF08 /* Panda.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B69C94B1DDF7947005E8122 /* UserEstimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69C94A1DDF7947005E8122 /* UserEstimation.swift */; };
+		3B69C94C1DDF7947005E8122 /* UserEstimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69C94A1DDF7947005E8122 /* UserEstimation.swift */; };
 		3B73031A1DA1A14D0000C028 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A28381DA19E5000E55B01 /* Starscream.framework */; };
 		3B7303211DA1A4C00000C028 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A28341DA19E5000E55B01 /* Starscream.framework */; };
 		3B80CCC61DB281D3001BB547 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80CC9F1DB2819C001BB547 /* RxSwift.framework */; };
@@ -286,9 +288,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B3440401DA24AF90027412A /* PandaSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PandaSession.swift; sourceTree = "<group>"; };
+		3B3440401DA24AF90027412A /* PandaSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PandaSession.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3B3440431DA24D280027412A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		3B3440461DA293E30027412A /* SessionChannelHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionChannelHandler.swift; sourceTree = "<group>"; };
+		3B3440461DA293E30027412A /* SessionChannelHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SessionChannelHandler.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3B38AB8C1DA10E0C0011EF08 /* Panda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Panda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B38AB951DA10E0C0011EF08 /* PandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B38AB9A1DA10E0C0011EF08 /* PandaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaTests.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 		3B607D721DA161F9008D7A82 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-abzkcothuxehpycgppfltxmgjhcp/Build/Products/Debug/Starscream-OSX/Starscream.framework"; sourceTree = "<group>"; };
 		3B607D761DA171C7008D7A82 /* Birdsong.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Birdsong.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-abzkcothuxehpycgppfltxmgjhcp/Build/Products/Debug/Birdsong/Birdsong.framework"; sourceTree = "<group>"; };
 		3B607D781DA171CB008D7A82 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-abzkcothuxehpycgppfltxmgjhcp/Build/Products/Debug/Starscream/Starscream.framework"; sourceTree = "<group>"; };
+		3B69C94A1DDF7947005E8122 /* UserEstimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEstimation.swift; sourceTree = "<group>"; };
 		3B80CC871DB2819B001BB547 /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = Dependencies/External/RxSwift/Rx.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -431,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				3B38ABA91DA10E7F0011EF08 /* Estimate.swift */,
+				3B69C94A1DDF7947005E8122 /* UserEstimation.swift */,
 				3B3440431DA24D280027412A /* User.swift */,
 				3B3440401DA24AF90027412A /* PandaSession.swift */,
 			);
@@ -746,7 +750,7 @@
 				3B80CCBD1DB2819C001BB547 /* RxTest.framework */,
 				3B80CCBF1DB2819C001BB547 /* AllTests-iOS.xctest */,
 				3B80CCC11DB2819C001BB547 /* AllTests-tvOS.xctest */,
-				3B80CCC31DB2819C001BB547 /* AllTests-OSX.xctest */,
+				3B80CCC31DB2819C001BB547 /* AllTests-macOS.xctest */,
 				3B80CCC51DB2819C001BB547 /* PerformanceTests.app */,
 			);
 			name = Products;
@@ -1137,10 +1141,10 @@
 			remoteRef = 3B80CCC01DB2819C001BB547 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3B80CCC31DB2819C001BB547 /* AllTests-OSX.xctest */ = {
+		3B80CCC31DB2819C001BB547 /* AllTests-macOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "AllTests-OSX.xctest";
+			path = "AllTests-macOS.xctest";
 			remoteRef = 3B80CCC21DB2819C001BB547 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1194,6 +1198,7 @@
 				3B3440471DA293E30027412A /* SessionChannelHandler.swift in Sources */,
 				3B38ABB81DA10E7F0011EF08 /* PandaConnection.swift in Sources */,
 				3B5A27E81DA19DA500E55B01 /* Socket.swift in Sources */,
+				3B69C94B1DDF7947005E8122 /* UserEstimation.swift in Sources */,
 				3B3440411DA24AF90027412A /* PandaSession.swift in Sources */,
 				3B5A27E41DA19DA500E55B01 /* Channel.swift in Sources */,
 				3B38ABB31DA10E7F0011EF08 /* Estimate.swift in Sources */,
@@ -1225,6 +1230,7 @@
 				3B3440481DA293E30027412A /* SessionChannelHandler.swift in Sources */,
 				3B607D6C1DA15C57008D7A82 /* PandaConnection.swift in Sources */,
 				3B5A27ED1DA19DA600E55B01 /* Socket.swift in Sources */,
+				3B69C94C1DDF7947005E8122 /* UserEstimation.swift in Sources */,
 				3B3440421DA24AF90027412A /* PandaSession.swift in Sources */,
 				3B5A27E91DA19DA600E55B01 /* Channel.swift in Sources */,
 				3B607D691DA15C57008D7A82 /* Estimate.swift in Sources */,
