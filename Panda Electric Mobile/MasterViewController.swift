@@ -160,7 +160,6 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         print("connectionEstablished")
         
         let _ = sessionsObservable.subscribe(onNext: { (session: PandaSessionModel) in
-            print("handle session: \(session.identifier)")
             DispatchQueue.main.async {
                 self.objects.insert(session, at: 0)
                 let indexPath = IndexPath(row: 0, section: 0)

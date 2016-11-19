@@ -15,7 +15,7 @@ open class PandaSessionModel {
 
     init?(dict: [String:AnyObject]) {
         guard let title = dict["title"] as? String,
-            let identifier = dict["uuid"] as? String,
+            let identifier = dict["id"] as? String,
             let estimatesJson = dict["estimates"] as? [[String:Any]]
         else {
             return nil
@@ -26,5 +26,7 @@ open class PandaSessionModel {
         estimates = estimatesJson.map { (json:[String : Any]) -> UserEstimation in
             return UserEstimation(dict: json)
         }
+        
+        
     }
 }

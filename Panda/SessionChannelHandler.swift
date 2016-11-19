@@ -22,7 +22,7 @@ open class SessionChannelHandler: ChannelHandler {
                             if let jsonSessions = json["sessions"] as? [[String : AnyObject]] {
                                 let _ = jsonSessions.map {
                                     (jsonSession: [String : AnyObject]) -> Void in
-                                    if let session = PandaSessionModel(dict: jsonSession["session"] as! [String : AnyObject]) {
+                                    if let session = PandaSessionModel(dict: jsonSession) {
                                         observer.on(.next(session))
                                     }
                                 }
