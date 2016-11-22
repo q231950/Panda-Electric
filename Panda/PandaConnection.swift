@@ -7,26 +7,22 @@
 //
 
 import GameplayKit
+import RxSwift
 
-public protocol PandaConnectionDelegate {
-    func connectionEstablished(_ connection: PandaConnection)
-    func connectionDisconnected(_ connection: PandaConnection)
+public protocol SocketProvider {
+    func socket() -> RxSocket
 }
 
-protocol SocketProvider {
-    func socket() -> Socket
-}
-
-open class PandaConnection: SocketProvider {
+public class PandaConnection: SocketProvider {
     
-    open var delegate: PandaConnectionDelegate?
+    //open var delegate: PandaConnectionDelegate?
     private var stateMachine: GKStateMachine?
-    private let socketInternal: Socket
+    private let socketInternal: RxSocket
     private var connectedState: ConnectedState!
     private var disconnectedState: DisconnectedState!
     
     public init(url: String, channelHandlers: [ChannelHandler]) {
-        socketInternal = Socket(url: url)
+        socketInternal = RxSocket(url: URL(string: url)!) // TODO remove the force cast
         
         connectedState = ConnectedState(socketProvider: self, channelHandlers: channelHandlers)
         disconnectedState = DisconnectedState(channelHandlers: channelHandlers)
@@ -42,23 +38,29 @@ open class PandaConnection: SocketProvider {
     }
     
     private func setupSocket() {
-        socketInternal.onConnect = {
-            self.stateMachine?.enter(ConnectedState.self)
-            self.delegate?.connectionEstablished(self)
-        }
-        
-        socketInternal.onDisconnect = { (error: NSError?) in
-            self.stateMachine?.enter(DisconnectedState.self)
-            self.delegate?.connectionDisconnected(self)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                self.socketInternal.connect()
-            })
+        socketInternal.rx_connectivity.subscribe { (event: Event<SocketConnectivityState>) in
+            switch event.element {
+            case .Connected?:
+                print("🎉")
+                self.stateMachine?.enter(ConnectedState.self)
+            case .Disconnected(_)?:
+                print("🍓")
+                self.stateMachine?.enter(DisconnectedState.self)
+                self.reconnect(self.socketInternal)
+            default: break
+            }
         }
         
         socketInternal.connect()
     }
     
-    func socket() -> Socket {
+    public func socket() -> RxSocket {
         return socketInternal
+    }
+    
+    private func reconnect(_ socket: RxSocket) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+            socket.connect()
+        })
     }
 }

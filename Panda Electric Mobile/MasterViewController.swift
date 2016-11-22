@@ -10,7 +10,7 @@ import UIKit
 import Panda
 import RxSwift
 
-class MasterViewController: UITableViewController, PandaConnectionDelegate {
+class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [PandaSessionModel]()
@@ -60,7 +60,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
             return
         }
         print("Signed in as user with uuid \(uuid)")
-        //        UserDefaults.standard.removeObject(forKey: "uuid")
+        // UserDefaults.standard.removeObject(forKey: "uuid")
         setupConnection(uuid: uuid!)
     }
     
@@ -154,11 +154,7 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    // MARK: PandaConnectionDelegate
-    
-    func connectionEstablished(_ connection: PandaConnection) {
-        print("connectionEstablished")
-        
+    func connectionEstablished() {
         let _ = sessionsObservable.subscribe(onNext: { (session: PandaSessionModel) in
             DispatchQueue.main.async {
                 self.objects.insert(session, at: 0)
@@ -173,10 +169,9 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         }
     }
     
-    func connectionDisconnected(_ connection: PandaConnection) {
-        print("socket.onDisconnect")
-        objects.removeAll()
-        tableView.reloadData()
+    func disconnected() {
+        self.objects.removeAll()
+        self.tableView.reloadData()
     }
     
     private func setupConnection(uuid: String) {
@@ -186,7 +181,15 @@ class MasterViewController: UITableViewController, PandaConnectionDelegate {
         
         sessionsObservable = sessionChannelHandler.sessions(user())
         pandaConnection = PandaConnection(url: api.socketUrl, channelHandlers: [sessionChannelHandler])
-        pandaConnection.delegate = self
+        let _ = pandaConnection.socket().rx_connectivity.subscribe { (event: Event<SocketConnectivityState>) in
+            switch event.element {
+                case .Connected?:
+                    self.connectionEstablished()
+                case .Disconnected(_)?:
+                    self.disconnected()
+                default: break
+            }
+        }
     }
 
     // MARK: - Segues
