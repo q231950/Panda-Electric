@@ -8,7 +8,11 @@
 
 import Foundation
 
-open class PandaSessionModel {
+public func ==(lhs: PandaSessionModel, rhs: PandaSessionModel) -> Bool {
+    return (lhs.identifier == rhs.identifier)
+}
+
+public final class PandaSessionModel : Equatable {
     open let title: String
     open let identifier: String
     open let estimates: [UserEstimation]
@@ -26,7 +30,22 @@ open class PandaSessionModel {
         estimates = estimatesJson.map { (json:[String : Any]) -> UserEstimation in
             return UserEstimation(dict: json)
         }
-        
-        
+    }
+    
+    init(title: String, identifier: String, estimates: [UserEstimation]) {
+        self.title = title
+        self.identifier = identifier
+        self.estimates = estimates
+    }
+    
+    public static func all() -> [PandaSessionModel] {
+        return [PandaSessionModel(title: "panda session model", identifier: "123456", estimates: []),
+                PandaSessionModel(title: "2nd panda session model", identifier: "234567", estimates: [])]
+    }
+}
+
+extension PandaSessionModel: Hashable {
+    public var hashValue: Int {
+        return self.identifier.hashValue
     }
 }

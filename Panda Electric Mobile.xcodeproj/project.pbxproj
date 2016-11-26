@@ -27,6 +27,7 @@
 		3B6CB74D1D4CAAA9005C40D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6CB74B1D4CAAA9005C40D8 /* LaunchScreen.storyboard */; };
 		3B6CB7581D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7571D4CAAA9005C40D8 /* Panda_Electric_MobileTests.swift */; };
 		3B6CB7631D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */; };
+		3B7125BE1DE9BFC6000E339D /* PandaSessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7125BD1DE9BFC6000E339D /* PandaSessionTableViewCell.swift */; };
 		3B7550C71DC5092200BA7E9C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7550C61DC5092200BA7E9C /* RxSwift.framework */; };
 		3B7550C81DC5092200BA7E9C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7550C61DC5092200BA7E9C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B7550CC1DC51FF700BA7E9C /* Panda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5917EC1DAA824B00333777 /* Panda.framework */; };
@@ -157,6 +158,7 @@
 		3B6CB75E1D4CAAAA005C40D8 /* Panda Electric MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panda Electric MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6CB7621D4CAAAA005C40D8 /* Panda_Electric_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panda_Electric_MobileUITests.swift; sourceTree = "<group>"; };
 		3B6CB7641D4CAAAA005C40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7125BD1DE9BFC6000E339D /* PandaSessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PandaSessionTableViewCell.swift; sourceTree = "<group>"; };
 		3B7303221DA1A4D40000C028 /* Panda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Panda.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-abzkcothuxehpycgppfltxmgjhcp/Build/Products/Debug-iphonesimulator/Panda.framework"; sourceTree = "<group>"; };
 		3B7550C61DC5092200BA7E9C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7550CA1DC5125900BA7E9C /* Panda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Panda.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-cdsgfyadhxncifbukdvkcegmdsyk/Build/Products/Debug-iphonesimulator/Panda.framework"; sourceTree = "<group>"; };
@@ -473,6 +475,7 @@
 			isa = PBXGroup;
 			children = (
 				3B6CB7421D4CAAA9005C40D8 /* MasterViewController.swift */,
+				3B7125BD1DE9BFC6000E339D /* PandaSessionTableViewCell.swift */,
 			);
 			name = "Root Navigation";
 			sourceTree = "<group>";
@@ -676,6 +679,7 @@
 				3B5918101DAAA97700333777 /* AddMemberViewController.swift in Sources */,
 				3B5918181DAAAB7D00333777 /* CIColorExtension.swift in Sources */,
 				3BDF2DE81D7C361300CFC1BB /* FibonacciSequence.swift in Sources */,
+				3B7125BE1DE9BFC6000E339D /* PandaSessionTableViewCell.swift in Sources */,
 				3B5918201DAAB09200333777 /* SessionSearchViewController.swift in Sources */,
 				3B6CB7451D4CAAA9005C40D8 /* DetailViewController.swift in Sources */,
 				3B8C1D701D7AAE7F00500B43 /* FibonacciPickerView.swift in Sources */,

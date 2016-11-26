@@ -9,6 +9,7 @@
 import UIKit
 import Panda
 import RxSwift
+import RxCocoa
 import os.log
 
 class MasterViewController: UITableViewController {
@@ -19,6 +20,7 @@ class MasterViewController: UITableViewController {
     let api = PandaAPI()
     var isStartUp = true
     static let uiLog = OSLog(subsystem: "com.elbedev.Panda", category: "UI")
+    let sessions = Observable.just(PandaSessionModel.all())
     
     private var pandaConnection: PandaConnection!
   
@@ -32,6 +34,15 @@ class MasterViewController: UITableViewController {
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+        }
+        
+        tableView.delegate = nil
+        tableView.dataSource = nil
+        let _ = sessions.bindTo(tableView
+            .rx
+            .items(cellIdentifier: PandaSessionTableViewCell.Identifier, cellType: PandaSessionTableViewCell.self)) {
+                row, session, cell in
+                cell.configureWithSession(session: session)
         }
     }
 

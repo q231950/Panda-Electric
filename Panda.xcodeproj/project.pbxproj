@@ -48,6 +48,7 @@
 		3B607D6F1DA15C9A008D7A82 /* Panda.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B38ABAC1DA10E7F0011EF08 /* Panda.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B69C94B1DDF7947005E8122 /* UserEstimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69C94A1DDF7947005E8122 /* UserEstimation.swift */; };
 		3B69C94C1DDF7947005E8122 /* UserEstimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69C94A1DDF7947005E8122 /* UserEstimation.swift */; };
+		3B7125D41DE9C0EE000E339D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80CCA71DB2819C001BB547 /* RxCocoa.framework */; };
 		3B73031A1DA1A14D0000C028 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A28381DA19E5000E55B01 /* Starscream.framework */; };
 		3B7303211DA1A4C00000C028 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A28341DA19E5000E55B01 /* Starscream.framework */; };
 		3B7567D91DE2288700AB0A0C /* RxSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7567D81DE2288700AB0A0C /* RxSocket.swift */; };
@@ -384,6 +385,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7125D41DE9C0EE000E339D /* RxCocoa.framework in Frameworks */,
 				3B80CCC61DB281D3001BB547 /* RxSwift.framework in Frameworks */,
 				3B7303211DA1A4C00000C028 /* Starscream.framework in Frameworks */,
 			);
