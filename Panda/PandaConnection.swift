@@ -21,7 +21,7 @@ public class PandaConnection: SocketProvider {
     private let socketWrapper: RxSocket
     
     public init(url: String, channelHandlers: [ChannelHandler]) {
-        os_log("Initialised PandaConnection%@", log: PandaConnection.socket_log, ".")
+        os_log("initialised PandaConnection 🐼", log: PandaConnection.socket_log, type: .info)
         socketWrapper = RxSocket(url: URL(string: url)!) // TODO remove the force cast
         
         setupSocket()
@@ -35,10 +35,10 @@ public class PandaConnection: SocketProvider {
             switch event.element {
             case .Connected?:
                 print("🎉")
-                os_log("Connected!", log: PandaConnection.socket_log, type: .debug)
+                os_log("Connected 🎉", log: PandaConnection.socket_log, type: .debug)
             case .Disconnected(_)?:
                 print("🍓")
-                os_log("Disconnected!", log: PandaConnection.socket_log, type: .debug)
+                os_log("Disconnected 😭", log: PandaConnection.socket_log, type: .debug)
                 self.reconnect(self.socketWrapper)
             default: break
             }

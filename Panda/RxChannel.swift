@@ -13,6 +13,7 @@ import os.log
 public enum ChannelEvent {
     case event(event:String, payload:Socket.Payload)
     case data(NSData)
+    case joined
 }
 
 public class RxChannel {
@@ -24,9 +25,10 @@ public class RxChannel {
     init(_ socket: Socket, topic: String, payload: Socket.Payload) {
         channel = Channel(socket: socket, topic: topic, params: payload)
         
+        os_log("joining %@", log: RxChannel.channelLog, type: .info, topic)
         let _ = channel.join().receive("ok", callback: { (payload: Socket.Payload) in
             os_log("joined", log: RxChannel.channelLog, type: .info)
-            self.subject.on(.next(ChannelEvent.event(event: "joined", payload: payload)))
+            self.subject.on(.next(ChannelEvent.joined))
         })
     }
     
@@ -38,7 +40,8 @@ public class RxChannel {
         })
         let _ = push.receive("error", callback: {(payload: Socket.Payload)  in
             os_log("%@ received error %@", log:RxChannel.channelLog, type: .error, topic, payload)
-            self.subject.on(.next(ChannelEvent.event(event:push.event , payload: payload)))
+            //self.subject.on(.next(ChannelEvent.event(event:push.event , payload: payload)))
+            self.subject.on(.error(NSError()))
         })
         
         return self.subject

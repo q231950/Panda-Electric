@@ -9,6 +9,7 @@
 import UIKit
 import Panda
 import RxSwift
+import os.log
 
 class MasterViewController: UITableViewController {
 
@@ -17,6 +18,7 @@ class MasterViewController: UITableViewController {
     var sessionsObservable: Observable<PandaSessionModel>!
     let api = PandaAPI()
     var isStartUp = true
+    static let uiLog = OSLog(subsystem: "com.elbedev.Panda", category: "UI")
     
     private var pandaConnection: PandaConnection!
   
@@ -131,19 +133,37 @@ class MasterViewController: UITableViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    func connectionEstablished() {
-        let _ = sessionsObservable.subscribe(onNext: { (session: PandaSessionModel) in
-            DispatchQueue.main.async {
-                self.objects.insert(session, at: 0)
-                let indexPath = IndexPath(row: 0, section: 0)
-                self.tableView.insertRows(at: [indexPath], with: .automatic)
+    func connectionEstablished(_ socket: RxSocket) {
+        let uuid = user()
+        let channelIdentifier = "sessions:\(uuid)"
+        let channel = self.pandaConnection.socket().channel(channelIdentifier, payload: ["user": uuid as AnyObject])
+        let _ = channel.send(topic: "read:sessions", payload: ["user": uuid as AnyObject]).filter({ (event: ChannelEvent) -> Bool in
+            switch event {
+                case .event(_): return true
+                default: return false
             }
-            
-            }, onError: { (error: Error) in
-                
-            }, onCompleted: {
-            }) {
-        }
+        }).subscribe(onNext: { (event: ChannelEvent) in
+            os_log("received sessions", log: MasterViewController.uiLog, type: .info)
+        }, onError: { (error: Error) in
+            os_log("error receiving sessions", log: MasterViewController.uiLog, type: .error)
+        }, onCompleted: {
+            os_log("received sessions completed", log: MasterViewController.uiLog, type: .info)
+        }, onDisposed: {
+            os_log("received sessions disposed", log: MasterViewController.uiLog, type: .info)
+        })
+        
+//        let _ = sessionsObservable.subscribe(onNext: { (session: PandaSessionModel) in
+//            DispatchQueue.main.async {
+//                self.objects.insert(session, at: 0)
+//                let indexPath = IndexPath(row: 0, section: 0)
+//                self.tableView.insertRows(at: [indexPath], with: .automatic)
+//            }
+//            
+//            }, onError: { (error: Error) in
+//                
+//            }, onCompleted: {
+//            }) {
+//        }
     }
     
     func disconnected() {
@@ -153,20 +173,11 @@ class MasterViewController: UITableViewController {
     
     private func setupConnection(uuid: String) {
         pandaConnection = PandaConnection(url: api.socketUrl, channelHandlers: [])
-        let _ = pandaConnection.socket().rx_connectivity.subscribe { (event: Event<SocketConnectivityState>) in
+        let _ = pandaConnection.socket().connect().subscribe { (event: Event<SocketConnectivityState>) in
             switch event.element {
                 case .Connected?:
-                    let channelIdentifier = "sessions:\(uuid)"
-                    let channel = self.pandaConnection.socket().channel(channelIdentifier, payload: ["user": uuid as AnyObject])
-                    let _ = channel.send(topic: "read:sessions", payload: ["user": uuid as AnyObject]).subscribe(onNext: { (event: ChannelEvent) in
-                        
-                    }, onError: { (error: Error) in
-                        
-                    }, onCompleted: {
-                        
-                    }, onDisposed: {
-                        
-                    })
+                    os_log("connected", log: MasterViewController.uiLog, type: .info)
+                    self.connectionEstablished(self.pandaConnection.socket())
                 case .Disconnected(_)?:
                     self.disconnected()
                 default: break
