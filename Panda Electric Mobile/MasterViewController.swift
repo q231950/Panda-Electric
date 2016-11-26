@@ -183,15 +183,19 @@ class MasterViewController: UITableViewController {
     }
     
     private func setupConnection(uuid: String) {
-        pandaConnection = PandaConnection(url: api.socketUrl, channelHandlers: [])
+        guard let url = URL(string: api.socketUrl) else {
+            return
+        }
+        
+        pandaConnection = PandaConnection(url: url)
         let _ = pandaConnection.socket().connect().subscribe { (event: Event<SocketConnectivityState>) in
             switch event.element {
-                case .Connected?:
-                    os_log("connected", log: MasterViewController.uiLog, type: .info)
-                    self.connectionEstablished(self.pandaConnection.socket())
-                case .Disconnected(_)?:
-                    self.disconnected()
-                default: break
+            case .Connected?:
+                os_log("connected", log: MasterViewController.uiLog, type: .info)
+                self.connectionEstablished(self.pandaConnection.socket())
+            case .Disconnected(_)?:
+                self.disconnected()
+            default: break
             }
         }
     }

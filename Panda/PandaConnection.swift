@@ -20,9 +20,9 @@ public class PandaConnection: SocketProvider {
     
     private let socketWrapper: RxSocket
     
-    public init(url: String, channelHandlers: [ChannelHandler]) {
+    public init(url: URL) {
         os_log("initialised PandaConnection 🐼", log: PandaConnection.socket_log, type: .info)
-        socketWrapper = RxSocket(url: URL(string: url)!) // TODO remove the force cast
+        socketWrapper = RxSocket(url: url)
         
         setupSocket()
     }
