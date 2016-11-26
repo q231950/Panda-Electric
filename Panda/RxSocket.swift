@@ -22,8 +22,9 @@ public class RxSocket {
         }
     }
     
-    public func connect() {
+    public func connect() -> Observable<SocketConnectivityState>{
         socket.connect()
+        return subject
     }
     
     public func channel(_ topic: String, payload: Socket.Payload) -> RxChannel {

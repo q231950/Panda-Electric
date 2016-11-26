@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 enum BackendURL: String {
-    case localhost = "http://192.168.1.16:4000/"
+    case localhost = "http://192.168.1.14:4000/"
     case heroku = "https://tranquil-peak-78260.herokuapp.com/"
 }
 

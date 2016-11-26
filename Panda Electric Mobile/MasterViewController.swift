@@ -153,16 +153,20 @@ class MasterViewController: UITableViewController {
     
     private func setupConnection(uuid: String) {
         pandaConnection = PandaConnection(url: api.socketUrl, channelHandlers: [])
-        
         let _ = pandaConnection.socket().rx_connectivity.subscribe { (event: Event<SocketConnectivityState>) in
             switch event.element {
                 case .Connected?:
                     let channelIdentifier = "sessions:\(uuid)"
-                    let something = self.pandaConnection.socket().channel(channelIdentifier, payload: ["user": uuid as AnyObject])
-                    something.rx_channelEvent().subscribe { (event: Event<ChannelEvent>) in
-                      print(event)
-                    }
-                    something.send(uuid: uuid, payload: ["user": uuid as AnyObject])
+                    let channel = self.pandaConnection.socket().channel(channelIdentifier, payload: ["user": uuid as AnyObject])
+                    let _ = channel.send(topic: "read:sessions", payload: ["user": uuid as AnyObject]).subscribe(onNext: { (event: ChannelEvent) in
+                        
+                    }, onError: { (error: Error) in
+                        
+                    }, onCompleted: {
+                        
+                    }, onDisposed: {
+                        
+                    })
                 case .Disconnected(_)?:
                     self.disconnected()
                 default: break

@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import os.log
 
 public enum ChannelEvent {
     case event(event:String, payload:Socket.Payload)
@@ -16,26 +17,31 @@ public enum ChannelEvent {
 
 public class RxChannel {
     
-    let subject = PublishSubject<ChannelEvent>()
-    let channel: Channel
+    private let subject = PublishSubject<ChannelEvent>()
+    private let channel: Channel
+    static let channelLog = OSLog(subsystem: "com.elbedev.Panda", category: "Channel")
     
     init(_ socket: Socket, topic: String, payload: Socket.Payload) {
         channel = Channel(socket: socket, topic: topic, params: payload)
-        channel.on("ok", callback: { response in
-            let r:Response = response
-            print("asd")
-            
-            self.subject.on(.next(ChannelEvent.event(event: response.event, payload: response.payload)))
-        })
         
-        channel.join()
+        let _ = channel.join().receive("ok", callback: { (payload: Socket.Payload) in
+            os_log("joined", log: RxChannel.channelLog, type: .info)
+            self.subject.on(.next(ChannelEvent.event(event: "joined", payload: payload)))
+        })
     }
     
-    public func send(uuid: String, payload: Socket.Payload) {
-        let push = channel.send("read:sessions", payload: payload)
-        //push.receive("ok", callback: {(payload: Socket.Payload)  in
-         //   self.subject.on(.next(ChannelEvent.event(event:push.event , payload: payload)))
-        //})
+    public func send(topic: String, payload: Socket.Payload) -> Observable<ChannelEvent> {
+        let push = channel.send(topic, payload: payload)
+        let _ = push.receive("ok", callback: {(payload: Socket.Payload)  in
+            os_log("%@ received ok", log:RxChannel.channelLog, type: .debug, topic)
+            self.subject.on(.next(ChannelEvent.event(event:push.event , payload: payload)))
+        })
+        let _ = push.receive("error", callback: {(payload: Socket.Payload)  in
+            os_log("%@ received error %@", log:RxChannel.channelLog, type: .error, topic, payload)
+            self.subject.on(.next(ChannelEvent.event(event:push.event , payload: payload)))
+        })
+        
+        return self.subject
     }
     
     public func rx_channelEvent() -> Observable<ChannelEvent> {

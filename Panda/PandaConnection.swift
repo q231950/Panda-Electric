@@ -31,7 +31,7 @@ public class PandaConnection: SocketProvider {
     }
     
     private func setupSocket() {
-        socketWrapper.rx_connectivity.subscribe { (event: Event<SocketConnectivityState>) in
+        let _ = socketWrapper.connect().subscribe { (event: Event<SocketConnectivityState>) in
             switch event.element {
             case .Connected?:
                 print("🎉")
@@ -43,8 +43,6 @@ public class PandaConnection: SocketProvider {
             default: break
             }
         }
-        
-        socketWrapper.connect()
     }
     
     public func socket() -> RxSocket {
@@ -53,7 +51,7 @@ public class PandaConnection: SocketProvider {
     
     private func reconnect(_ socket: RxSocket) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-            socket.connect()
+            let _ = socket.connect()
         })
     }
 }
