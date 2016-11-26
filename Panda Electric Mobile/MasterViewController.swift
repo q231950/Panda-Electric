@@ -38,22 +38,6 @@ class MasterViewController: UITableViewController {
         
         tableView.delegate = nil
         tableView.dataSource = nil
-        sessionObservable = PandaSessionObservable()
-        let _ = sessionObservable.sessions.subscribe(onNext: { (sessions: [PandaSessionModel]) in
-            let _ = Observable.just(sessions).bindTo(self.tableView
-                .rx
-                .items(cellIdentifier: PandaSessionTableViewCell.Identifier, cellType: PandaSessionTableViewCell.self)) {
-                    row, session, cell in
-                    cell.configureWithSession(session: session)
-            }
-        }, onError: { (error: Error) in
-        }, onCompleted: {
-            
-        }, onDisposed: {
-            
-        })
-        
-        sessionObservable.fire()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -158,33 +142,22 @@ class MasterViewController: UITableViewController {
         let uuid = user()
         let channelIdentifier = "sessions:\(uuid)"
         let channel = self.pandaConnection.socket().channel(channelIdentifier, payload: ["user": uuid as AnyObject])
-        let _ = channel.send(topic: "read:sessions", payload: ["user": uuid as AnyObject]).filter({ (event: ChannelEvent) -> Bool in
-            switch event {
-                case .event(_): return true
-                default: return false
+        sessionObservable = PandaSessionObservable(channel: channel, userId:uuid)
+        let _ = sessionObservable.sessions.subscribe(onNext: { (sessions: [PandaSessionModel]) in
+            os_log("received sessions to display", log: MasterViewController.uiLog, type: .info)
+            let _ = Observable.just(sessions).bindTo(self.tableView
+                .rx
+                .items(cellIdentifier: PandaSessionTableViewCell.Identifier, cellType: PandaSessionTableViewCell.self)) {
+                    row, session, cell in
+                    cell.configureWithSession(session: session)
             }
-        }).subscribe(onNext: { (event: ChannelEvent) in
-            os_log("received sessions", log: MasterViewController.uiLog, type: .info)
         }, onError: { (error: Error) in
-            os_log("error receiving sessions", log: MasterViewController.uiLog, type: .error)
+            os_log("error fetching from view model", log: MasterViewController.uiLog, type: .error)
         }, onCompleted: {
-            os_log("received sessions completed", log: MasterViewController.uiLog, type: .info)
+            os_log("completed fetching from view model", log: MasterViewController.uiLog, type: .info)
         }, onDisposed: {
-            os_log("received sessions disposed", log: MasterViewController.uiLog, type: .info)
+            os_log("disposed after fetching from view model", log: MasterViewController.uiLog, type: .info)
         })
-        
-//        let _ = sessionsObservable.subscribe(onNext: { (session: PandaSessionModel) in
-//            DispatchQueue.main.async {
-//                self.objects.insert(session, at: 0)
-//                let indexPath = IndexPath(row: 0, section: 0)
-//                self.tableView.insertRows(at: [indexPath], with: .automatic)
-//            }
-//            
-//            }, onError: { (error: Error) in
-//                
-//            }, onCompleted: {
-//            }) {
-//        }
     }
     
     func disconnected() {
