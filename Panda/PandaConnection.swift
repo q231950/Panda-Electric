@@ -8,6 +8,7 @@
 
 import GameplayKit
 import RxSwift
+import os.log
 
 public protocol SocketProvider {
     func socket() -> RxSocket
@@ -15,47 +16,39 @@ public protocol SocketProvider {
 
 public class PandaConnection: SocketProvider {
     
-    //open var delegate: PandaConnectionDelegate?
-    private var stateMachine: GKStateMachine?
-    private let socketInternal: RxSocket
-    private var connectedState: ConnectedState!
-    private var disconnectedState: DisconnectedState!
+    static let socket_log = OSLog(subsystem: "com.elbedev.Panda", category: "Socket")
+    
+    private let socketWrapper: RxSocket
     
     public init(url: String, channelHandlers: [ChannelHandler]) {
-        socketInternal = RxSocket(url: URL(string: url)!) // TODO remove the force cast
-        
-        connectedState = ConnectedState(socketProvider: self, channelHandlers: channelHandlers)
-        disconnectedState = DisconnectedState(channelHandlers: channelHandlers)
-        stateMachine = GKStateMachine(states: [disconnectedState, connectedState])
-        stateMachine?.enter(DisconnectedState.self)
+        os_log("Initialised PandaConnection%@", log: PandaConnection.socket_log, ".")
+        socketWrapper = RxSocket(url: URL(string: url)!) // TODO remove the force cast
         
         setupSocket()
     }
     
     public func appendChannelHandler(channelHandler: ChannelHandler) {
-        connectedState.appendChannelHandler(channelHandler)
-        disconnectedState.appendChannelHandler(channelHandler)
     }
     
     private func setupSocket() {
-        socketInternal.rx_connectivity.subscribe { (event: Event<SocketConnectivityState>) in
+        socketWrapper.rx_connectivity.subscribe { (event: Event<SocketConnectivityState>) in
             switch event.element {
             case .Connected?:
                 print("🎉")
-                self.stateMachine?.enter(ConnectedState.self)
+                os_log("Connected!", log: PandaConnection.socket_log, type: .debug)
             case .Disconnected(_)?:
                 print("🍓")
-                self.stateMachine?.enter(DisconnectedState.self)
-                self.reconnect(self.socketInternal)
+                os_log("Disconnected!", log: PandaConnection.socket_log, type: .debug)
+                self.reconnect(self.socketWrapper)
             default: break
             }
         }
         
-        socketInternal.connect()
+        socketWrapper.connect()
     }
     
     public func socket() -> RxSocket {
-        return socketInternal
+        return socketWrapper
     }
     
     private func reconnect(_ socket: RxSocket) {

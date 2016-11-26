@@ -14,14 +14,16 @@ open class EstimationChannelHandler: ChannelHandler {
     
     open func sendEstimate(_ estimate: Estimate, userIdentifier: String) {
         if let channel = self.channel {
-            let _ = channel.send("new:estimate", payload: [estimate.kind: estimate.value as AnyObject,
-                                                           "user": userIdentifier as AnyObject])
-                .receive("ok", callback: { response in
-                    print("Sent a message!")
-                })
-                .receive("error", callback: { reason in
-                    print("Message didn't send: \(reason)")
-                })
+            /*
+             let _ = channel.send("new:estimate", payload: [estimate.kind: estimate.value as AnyObject,
+             "user": userIdentifier as AnyObject])
+             .receive("ok", callback: { response in
+             print("Sent a message!")
+             })
+             .receive("error", callback: { reason in
+             print("Message didn't send: \(reason)")
+             })
+             */
         }
     }
 }

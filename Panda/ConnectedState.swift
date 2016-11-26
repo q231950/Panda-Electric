@@ -27,7 +27,7 @@ class ConnectedState: GKState {
         super.didEnter(from: previousState)
         
         // Unified logging support will come to Swift soon 👏
-        // os_log(OS_LOG_DEFAULT, "Socket connection established.")
+        //os_log(OS_LOG_DEFAULT, "Socket connection established.")
         print("Socket connection established.")
         
         channelHandlers.forEach { (handler: ChannelHandler) in

@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import RxSwift
 
 open class ChannelHandler {
-    internal var channel: Channel?
+    internal var channel: RxChannel?
     public let topic: String
     public let channelIdentifier: String
     private let user: String
@@ -20,24 +21,26 @@ open class ChannelHandler {
         self.channelIdentifier = channel
     }
     
-    open func configureWithSocket(_ socket: Socket) {
+    open func configureWithSocket(_ socket: RxSocket) {
+        
         let channelIdentifier = "\(self.channelIdentifier):\(topic)"
         print("connecting to channel: \(channelIdentifier)")
         channel = socket.channel(channelIdentifier, payload: ["user": user as AnyObject])
-        registerCallbacks(channel!)
         
+        /*
         let _ = channel?.join().receive("ok", callback: { payload in
             print("Successfully joined: \(self.channel?.topic)")
         })
+         */
     }
     
     open func didDisconnect() {
-        let _ = channel?.leave()
+        //let _ = channel?.leave()
     }
     
     // MARK: Subclass overrides
     
-    internal func registerCallbacks(_ channel: Channel) {
+    internal func registerCallbacks(_ channel: Observable<ChannelEvent>) {
 //        assertionFailure("This is abstract. Must be overridden by subclass")
     }
 }

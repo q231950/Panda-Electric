@@ -53,6 +53,8 @@
 		3B7567D91DE2288700AB0A0C /* RxSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7567D81DE2288700AB0A0C /* RxSocket.swift */; };
 		3B7567DA1DE2288700AB0A0C /* RxSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7567D81DE2288700AB0A0C /* RxSocket.swift */; };
 		3B80CCC61DB281D3001BB547 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80CC9F1DB2819C001BB547 /* RxSwift.framework */; };
+		3B812E231DE4DE8600BD55E4 /* RxChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812E221DE4DE8600BD55E4 /* RxChannel.swift */; };
+		3B812E241DE4DE8600BD55E4 /* RxChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812E221DE4DE8600BD55E4 /* RxChannel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -374,6 +376,7 @@
 		3B69C94A1DDF7947005E8122 /* UserEstimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEstimation.swift; sourceTree = "<group>"; };
 		3B7567D81DE2288700AB0A0C /* RxSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSocket.swift; sourceTree = "<group>"; };
 		3B80CC871DB2819B001BB547 /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = Dependencies/External/RxSwift/Rx.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3B812E221DE4DE8600BD55E4 /* RxChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxChannel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -729,6 +732,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7567D81DE2288700AB0A0C /* RxSocket.swift */,
+				3B812E221DE4DE8600BD55E4 /* RxChannel.swift */,
 			);
 			name = Socket;
 			sourceTree = "<group>";
@@ -1207,6 +1211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B38ABB01DA10E7F0011EF08 /* ChannelHandler.swift in Sources */,
+				3B812E231DE4DE8600BD55E4 /* RxChannel.swift in Sources */,
 				3B3440471DA293E30027412A /* SessionChannelHandler.swift in Sources */,
 				3B38ABB81DA10E7F0011EF08 /* PandaConnection.swift in Sources */,
 				3B5A27E81DA19DA500E55B01 /* Socket.swift in Sources */,
@@ -1240,6 +1245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B607D661DA15C57008D7A82 /* ChannelHandler.swift in Sources */,
+				3B812E241DE4DE8600BD55E4 /* RxChannel.swift in Sources */,
 				3B3440481DA293E30027412A /* SessionChannelHandler.swift in Sources */,
 				3B607D6C1DA15C57008D7A82 /* PandaConnection.swift in Sources */,
 				3B5A27ED1DA19DA600E55B01 /* Socket.swift in Sources */,
