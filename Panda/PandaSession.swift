@@ -37,11 +37,6 @@ public final class PandaSessionModel : Equatable {
         self.identifier = identifier
         self.estimates = estimates
     }
-    
-    public static func all() -> [PandaSessionModel] {
-        return [PandaSessionModel(title: "panda session model", identifier: "123456", estimates: []),
-                PandaSessionModel(title: "2nd panda session model", identifier: "234567", estimates: [])]
-    }
 }
 
 extension PandaSessionModel: Hashable {

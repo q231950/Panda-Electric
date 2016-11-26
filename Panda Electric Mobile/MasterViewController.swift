@@ -20,8 +20,8 @@ class MasterViewController: UITableViewController {
     let api = PandaAPI()
     var isStartUp = true
     static let uiLog = OSLog(subsystem: "com.elbedev.Panda", category: "UI")
-    let sessions = Observable.just(PandaSessionModel.all())
     
+    private var sessionObservable: PandaSessionObservable!
     private var pandaConnection: PandaConnection!
   
     override func viewDidLoad() {
@@ -38,12 +38,22 @@ class MasterViewController: UITableViewController {
         
         tableView.delegate = nil
         tableView.dataSource = nil
-        let _ = sessions.bindTo(tableView
-            .rx
-            .items(cellIdentifier: PandaSessionTableViewCell.Identifier, cellType: PandaSessionTableViewCell.self)) {
-                row, session, cell in
-                cell.configureWithSession(session: session)
-        }
+        sessionObservable = PandaSessionObservable()
+        let _ = sessionObservable.sessions.subscribe(onNext: { (sessions: [PandaSessionModel]) in
+            let _ = Observable.just(sessions).bindTo(self.tableView
+                .rx
+                .items(cellIdentifier: PandaSessionTableViewCell.Identifier, cellType: PandaSessionTableViewCell.self)) {
+                    row, session, cell in
+                    cell.configureWithSession(session: session)
+            }
+        }, onError: { (error: Error) in
+        }, onCompleted: {
+            
+        }, onDisposed: {
+            
+        })
+        
+        sessionObservable.fire()
     }
 
     override func viewWillAppear(_ animated: Bool) {

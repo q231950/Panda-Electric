@@ -49,6 +49,8 @@
 		3B69C94B1DDF7947005E8122 /* UserEstimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69C94A1DDF7947005E8122 /* UserEstimation.swift */; };
 		3B69C94C1DDF7947005E8122 /* UserEstimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69C94A1DDF7947005E8122 /* UserEstimation.swift */; };
 		3B7125D41DE9C0EE000E339D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80CCA71DB2819C001BB547 /* RxCocoa.framework */; };
+		3B7125E11DE9CE9B000E339D /* PandaSessionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7125E01DE9CE9B000E339D /* PandaSessionObservable.swift */; };
+		3B7125E21DE9CE9B000E339D /* PandaSessionObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7125E01DE9CE9B000E339D /* PandaSessionObservable.swift */; };
 		3B73031A1DA1A14D0000C028 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A28381DA19E5000E55B01 /* Starscream.framework */; };
 		3B7303211DA1A4C00000C028 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A28341DA19E5000E55B01 /* Starscream.framework */; };
 		3B7567D91DE2288700AB0A0C /* RxSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7567D81DE2288700AB0A0C /* RxSocket.swift */; };
@@ -375,6 +377,7 @@
 		3B607D761DA171C7008D7A82 /* Birdsong.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Birdsong.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-abzkcothuxehpycgppfltxmgjhcp/Build/Products/Debug/Birdsong/Birdsong.framework"; sourceTree = "<group>"; };
 		3B607D781DA171CB008D7A82 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = "../../../Library/Developer/Xcode/DerivedData/Panda_Electric-abzkcothuxehpycgppfltxmgjhcp/Build/Products/Debug/Starscream/Starscream.framework"; sourceTree = "<group>"; };
 		3B69C94A1DDF7947005E8122 /* UserEstimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEstimation.swift; sourceTree = "<group>"; };
+		3B7125E01DE9CE9B000E339D /* PandaSessionObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PandaSessionObservable.swift; sourceTree = "<group>"; };
 		3B7567D81DE2288700AB0A0C /* RxSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSocket.swift; sourceTree = "<group>"; };
 		3B80CC871DB2819B001BB547 /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = Dependencies/External/RxSwift/Rx.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3B812E221DE4DE8600BD55E4 /* RxChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxChannel.swift; sourceTree = "<group>"; };
@@ -446,6 +449,7 @@
 				3B69C94A1DDF7947005E8122 /* UserEstimation.swift */,
 				3B3440431DA24D280027412A /* User.swift */,
 				3B3440401DA24AF90027412A /* PandaSession.swift */,
+				3B7125E01DE9CE9B000E339D /* PandaSessionObservable.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1228,6 +1232,7 @@
 				3B38ABB91DA10E7F0011EF08 /* PlaygroundChannelHandler.swift in Sources */,
 				3B5A27E61DA19DA500E55B01 /* Push.swift in Sources */,
 				3B7567D91DE2288700AB0A0C /* RxSocket.swift in Sources */,
+				3B7125E11DE9CE9B000E339D /* PandaSessionObservable.swift in Sources */,
 				3B38ABB21DA10E7F0011EF08 /* DisconnectedState.swift in Sources */,
 				3B38ABB71DA10E7F0011EF08 /* PandaAPI.swift in Sources */,
 				3B5A27E51DA19DA500E55B01 /* Presence.swift in Sources */,
@@ -1262,6 +1267,7 @@
 				3B607D6D1DA15C57008D7A82 /* PlaygroundChannelHandler.swift in Sources */,
 				3B5A27EB1DA19DA600E55B01 /* Push.swift in Sources */,
 				3B7567DA1DE2288700AB0A0C /* RxSocket.swift in Sources */,
+				3B7125E21DE9CE9B000E339D /* PandaSessionObservable.swift in Sources */,
 				3B607D681DA15C57008D7A82 /* DisconnectedState.swift in Sources */,
 				3B607D6B1DA15C57008D7A82 /* PandaAPI.swift in Sources */,
 				3B5A27EA1DA19DA600E55B01 /* Presence.swift in Sources */,
