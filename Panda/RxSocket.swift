@@ -28,7 +28,7 @@ public class RxSocket {
     }
     
     public func channel(_ topic: String, payload: Socket.Payload) -> RxChannel {
-        return RxChannel(socket, topic: topic, payload: payload)
+        return RxChannel(socket, 👨‍🚀:subject, topic: topic, payload: payload)
     }
     
     public private(set) lazy var rx_connectivity: Observable<SocketConnectivityState> = {

@@ -22,7 +22,7 @@ public class RxChannel {
     private let channel: Channel
     static let channelLog = OSLog(subsystem: "com.elbedev.Panda", category: "Channel")
     
-    init(_ socket: Socket, topic: String, payload: Socket.Payload) {
+    init(_ socket: Socket, 👨‍🚀: Observable<SocketConnectivityState>, topic: String, payload: Socket.Payload) {
         channel = Channel(socket: socket, topic: topic, params: payload)
         
         os_log("joining %@", log: RxChannel.channelLog, type: .info, topic)
@@ -30,6 +30,17 @@ public class RxChannel {
             os_log("joined", log: RxChannel.channelLog, type: .info)
             self.subject.on(.next(ChannelEvent.joined))
         })
+        
+        let _ = 👨‍🚀.subscribe { (event: Event<SocketConnectivityState>) in
+            switch event.element {
+            case .Connected?:
+                os_log("connected", log: RxChannel.channelLog, type: .info)
+            case .Disconnected(_)?:
+                os_log("disconnected", log: RxChannel.channelLog, type: .error)
+                self.subject.on(.error(NSError()))
+            default: break
+            }
+        }
     }
     
     public func send(topic: String, payload: Socket.Payload) -> Observable<ChannelEvent> {

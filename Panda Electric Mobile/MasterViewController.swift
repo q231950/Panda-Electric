@@ -153,6 +153,8 @@ class MasterViewController: UITableViewController {
             }
         }, onError: { (error: Error) in
             os_log("error fetching from view model", log: MasterViewController.uiLog, type: .error)
+            self.tableView.delegate = nil
+            self.tableView.dataSource = nil
         }, onCompleted: {
             os_log("completed fetching from view model", log: MasterViewController.uiLog, type: .info)
         }, onDisposed: {

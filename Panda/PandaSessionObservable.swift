@@ -38,6 +38,7 @@ public class PandaSessionObservable {
             }
         }, onError: { (error: Error) in
             os_log("error receiving sessions response", log: PandaSessionObservable.log, type: .error)
+            self.subject.on(.error(error))
         }, onCompleted: {
             os_log("receive sessions response completed", log: PandaSessionObservable.log, type: .info)
         }, onDisposed: {
