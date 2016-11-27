@@ -13,3 +13,6 @@
 [submodule "Dependencies/External/RxSwift"]
 	path = Dependencies/External/RxSwift
 	url = git@github.com:ReactiveX/RxSwift.git
+[submodule "Dependencies/External/RxDataSources"]
+	path = Dependencies/External/RxDataSources
+	url = git@github.com:RxSwiftCommunity/RxDataSources.git
