@@ -34,10 +34,8 @@ public class PandaConnection: SocketProvider {
         let _ = socketWrapper.connect().subscribe { (event: Event<SocketConnectivityState>) in
             switch event.element {
             case .Connected?:
-                print("🎉")
                 os_log("Connected 🎉", log: PandaConnection.socket_log, type: .debug)
             case .Disconnected(_)?:
-                print("🍓")
                 os_log("Disconnected 😭", log: PandaConnection.socket_log, type: .debug)
                 self.reconnect(self.socketWrapper)
             default: break

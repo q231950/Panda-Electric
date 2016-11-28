@@ -13,6 +13,7 @@ public class RxSocket {
     
     public init(url: URL, params: [String: String]? = nil, selfSignedSSL: Bool = false) {
         socket = Socket(url: url, params: params, selfSignedSSL: selfSignedSSL)
+        socket.enableLogging = false
         
         socket.onConnect = {
             self.subject.on(.next(.Connected))

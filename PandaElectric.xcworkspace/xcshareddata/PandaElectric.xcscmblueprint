@@ -4,21 +4,23 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "4A4A85873C4EBA58F7AE4AEBFB1B282B34F64750" : 9223372036854775807,
-    "661D8C2D4993187619AB991BB9BF051AE8AE6EFD" : 9223372036854775807,
-    "8B123162C394A0A0A138779108E4C59DD771865A" : 9223372036854775807,
-    "21F57EA18F3134F05635356DEB85296F4A721511" : 9223372036854775807,
+    "4DD6810907F5B741470171C4B7D7EC023CD6437A" : 9223372036854775807,
+    "7E6BCE16D3FADCE66C61EEEBEE85F3FE32F548A0" : 9223372036854775807,
     "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D" : 9223372036854775807,
-    "7E6BCE16D3FADCE66C61EEEBEE85F3FE32F548A0" : 9223372036854775807
+    "21F57EA18F3134F05635356DEB85296F4A721511" : 9223372036854775807,
+    "8B123162C394A0A0A138779108E4C59DD771865A" : 9223372036854775807,
+    "661D8C2D4993187619AB991BB9BF051AE8AE6EFD" : 9223372036854775807,
+    "4A4A85873C4EBA58F7AE4AEBFB1B282B34F64750" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "47FEB6B9-7FCD-46C1-9218-F10A23B11875",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "4A4A85873C4EBA58F7AE4AEBFB1B282B34F64750" : "Panda-Electric\/",
-    "661D8C2D4993187619AB991BB9BF051AE8AE6EFD" : "Panda-Electric\/Dependencies\/External\/MTBBarcodeScanner\/",
-    "8B123162C394A0A0A138779108E4C59DD771865A" : "Panda-Electric\/Dependencies\/External\/RxSwift\/",
-    "21F57EA18F3134F05635356DEB85296F4A721511" : "Panda-Electric\/Dependencies\/External\/QRCode\/",
-    "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D" : "Panda-Electric\/Dependencies\/External\/Starscream\/",
-    "7E6BCE16D3FADCE66C61EEEBEE85F3FE32F548A0" : "Panda-Electric\/Dependencies\/External\/Birdsong\/"
+    "4DD6810907F5B741470171C4B7D7EC023CD6437A" : "PandaElectric\/Dependencies\/External\/RxDataSources\/",
+    "7E6BCE16D3FADCE66C61EEEBEE85F3FE32F548A0" : "PandaElectric\/Dependencies\/External\/Birdsong\/",
+    "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D" : "PandaElectric\/Dependencies\/External\/Starscream\/",
+    "21F57EA18F3134F05635356DEB85296F4A721511" : "PandaElectric\/Dependencies\/External\/QRCode\/",
+    "8B123162C394A0A0A138779108E4C59DD771865A" : "PandaElectric\/Dependencies\/External\/RxSwift\/",
+    "661D8C2D4993187619AB991BB9BF051AE8AE6EFD" : "PandaElectric\/Dependencies\/External\/MTBBarcodeScanner\/",
+    "4A4A85873C4EBA58F7AE4AEBFB1B282B34F64750" : "PandaElectric\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "PandaElectric",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -33,6 +35,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:q231950\/Panda-Electric.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A4A85873C4EBA58F7AE4AEBFB1B282B34F64750"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:RxSwiftCommunity\/RxDataSources.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DD6810907F5B741470171C4B7D7EC023CD6437A"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mikebuss\/MTBBarcodeScanner.git",

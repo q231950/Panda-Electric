@@ -18,10 +18,11 @@ class MasterViewController: UITableViewController {
     var objects = [PandaSessionModel]()
     var sessionsObservable: Observable<PandaSessionModel>!
     let api = PandaAPI()
+    let dataSource = MasterViewController.configureDataSource()
+    let disposeBag = DisposeBag()
     var isStartUp = true
     static let uiLog = OSLog(subsystem: "com.elbedev.Panda", category: "UI")
     
-    private var sessionObservable: PandaSessionObservable!
     private var pandaConnection: PandaConnection!
   
     override func viewDidLoad() {
@@ -38,6 +39,50 @@ class MasterViewController: UITableViewController {
         
         tableView.delegate = nil
         tableView.dataSource = nil
+        
+        
+        guard let url = URL(string: api.socketUrl) else {
+            return
+        }
+        
+        pandaConnection = PandaConnection(url: url)
+        
+        let userId = user()
+        
+        let channelIdentifier = "sessions:\(userId)"
+        let channel = self.pandaConnection.socket().channel(channelIdentifier, payload: ["user": userId as AnyObject])
+        let sessionsAPI = PandaSessionAPI(channel: channel, userId: userId)
+        
+        let loadFavoriteUsers = sessionsAPI
+            .sessions()
+            .map(TableViewEditingCommand.addSession)
+        
+        let initialLoadCommand = Observable.just(TableViewEditingCommand.setSessions(sessions: []))
+            .concat(loadFavoriteUsers)
+            .observeOn(MainScheduler.instance)
+        
+        let deleteUserCommand = tableView.rx.itemDeleted.map(TableViewEditingCommand.deleteSession)
+        
+        let moveSessionCommand = tableView
+            .rx.itemMoved
+            .map(TableViewEditingCommand.moveSession)
+        
+        let initialState = PandaSessionViewModel(sessions: [])
+        
+        let viewModel =  Observable.of(initialLoadCommand, deleteUserCommand, moveSessionCommand)
+            .merge()
+            .scan(initialState) { (viewModel: PandaSessionViewModel, command:TableViewEditingCommand) in viewModel.executeCommand(command) }
+            .shareReplay(1)
+        
+        let _ = viewModel
+            .map {
+                [
+                    SectionModel(model: "Sessions", items: $0.sessions)
+                ]
+            }
+            .bindTo(tableView.rx.items(dataSource: dataSource))
+            .addDisposableTo(disposeBag)
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -54,17 +99,19 @@ class MasterViewController: UITableViewController {
         
         isStartUp = false
         let defaults = UserDefaults.standard
-        let uuid = defaults.string(forKey: "uuid")
-        guard uuid != nil else {
+        guard let uuid = defaults.string(forKey: "uuid") else {
             createUser()
             return
         }
-        print("Signed in as user with uuid \(uuid)")
+        
+        os_log("Signed in as user with uuid %@", log: MasterViewController.uiLog, uuid)
+        
         // UserDefaults.standard.removeObject(forKey: "uuid")
-        setupConnection(uuid: uuid!)
+        setupConnection(uuid: uuid)
     }
     
     private func createUser() {
+        os_log("Creating user", log: MasterViewController.uiLog)
         let alertController = UIAlertController(title: "Create User", message: nil, preferredStyle: .alert)
         let nameAction = UIAlertAction(title: "Ok", style: .default) { (_) in
             let loginTextField = alertController.textFields![0] as UITextField
@@ -138,46 +185,16 @@ class MasterViewController: UITableViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    func connectionEstablished(_ socket: RxSocket) {
-        let uuid = user()
-        let channelIdentifier = "sessions:\(uuid)"
-        let channel = self.pandaConnection.socket().channel(channelIdentifier, payload: ["user": uuid as AnyObject])
-        sessionObservable = PandaSessionObservable(channel: channel, userId:uuid)
-        let _ = sessionObservable.sessions.subscribe(onNext: { (sessions: [PandaSessionModel]) in
-            os_log("received sessions to display", log: MasterViewController.uiLog, type: .info)
-            let _ = Observable.just(sessions).bindTo(self.tableView
-                .rx
-                .items(cellIdentifier: PandaSessionTableViewCell.Identifier, cellType: PandaSessionTableViewCell.self)) {
-                    row, session, cell in
-                    cell.configureWithSession(session: session)
-            }
-        }, onError: { (error: Error) in
-            os_log("error fetching from view model", log: MasterViewController.uiLog, type: .error)
-            self.tableView.delegate = nil
-            self.tableView.dataSource = nil
-        }, onCompleted: {
-            os_log("completed fetching from view model", log: MasterViewController.uiLog, type: .info)
-        }, onDisposed: {
-            os_log("disposed after fetching from view model", log: MasterViewController.uiLog, type: .info)
-        })
-    }
-    
     func disconnected() {
         self.objects.removeAll()
         self.tableView.reloadData()
     }
     
     private func setupConnection(uuid: String) {
-        guard let url = URL(string: api.socketUrl) else {
-            return
-        }
-        
-        pandaConnection = PandaConnection(url: url)
         let _ = pandaConnection.socket().connect().subscribe { (event: Event<SocketConnectivityState>) in
             switch event.element {
             case .Connected?:
                 os_log("connected", log: MasterViewController.uiLog, type: .info)
-                self.connectionEstablished(self.pandaConnection.socket())
             case .Disconnected(_)?:
                 self.disconnected()
             default: break
@@ -207,37 +224,31 @@ class MasterViewController: UITableViewController {
             controller.delegate = self
         }
     }
+}
 
-    // MARK: - Table View
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
-        let object = objects[(indexPath as NSIndexPath).row]
-        cell.textLabel!.text = object.title
-            
-        return cell
-    }
-
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+extension MasterViewController {
+    static func configureDataSource() -> RxTableViewSectionedReloadDataSource<SectionModel<String, PandaSessionModel>> {
+        let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, PandaSessionModel>>()
+        
+        dataSource.configureCell = { (_, tv, ip, sessionModel: PandaSessionModel) in
+            let cell = tv.dequeueReusableCell(withIdentifier: "PandaSessionTableViewCell")!
+            cell.textLabel?.text = sessionModel.title
+            return cell
         }
+        
+        dataSource.titleForHeaderInSection = { dataSource, sectionIndex in
+            return dataSource[sectionIndex].model
+        }
+        
+        dataSource.canEditRowAtIndexPath = { (ds, ip) in
+            return true
+        }
+        
+        dataSource.canMoveRowAtIndexPath = { _ in
+            return true
+        }
+        
+        return dataSource
     }
 }
 

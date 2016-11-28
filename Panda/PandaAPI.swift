@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import os.log
 
 enum BackendURL: String {
     case localhost = "http://192.168.1.14:4000/"
@@ -17,6 +18,7 @@ enum BackendURL: String {
 
 open class PandaAPI {
 
+    static let log = OSLog(subsystem: "com.elbedev.Panda", category: "PandaAPI")
     private let baseURL: String
     open var socketUrl: String {
         get {
@@ -59,11 +61,11 @@ open class PandaAPI {
                         // Success
                         let statusCode = (response as! HTTPURLResponse).statusCode
                         guard statusCode == 200 else {
-                            print("URL Session Task Failed with status code: ", statusCode, "response: \(response)");
+                            os_log("url session task failed with status code HTTP %i and response %@", log: PandaSessionAPI.log, statusCode, response!)
                             return
                         }
                         
-                        print("URL Session Task Succeeded: HTTP \(statusCode)")
+                        os_log("url session task succeeded: HTTP %i", log: PandaSessionAPI.log, statusCode)
                         let json = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String : AnyObject]
                         if let user = User(dict: json) {
                             observer.on(.next(user))
@@ -72,9 +74,8 @@ open class PandaAPI {
                     }
                     else {
                         // Failure
-                        print("URL Session Task Failed: %@", error!.localizedDescription);
+                        os_log("url sessio task failed with error %@", log: PandaSessionAPI.log, error!.localizedDescription)
                         observer.on(.error(error!))
-                        
                     }
                 })
                 task.resume()
